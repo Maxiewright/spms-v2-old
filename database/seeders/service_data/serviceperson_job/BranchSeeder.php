@@ -13,34 +13,26 @@ class BranchSeeder extends Seeder
      */
     public function run()
     {
-        {
-            $branches = [
-                [
-                    'name' => 'Operations',
-                    'slug' => 'Ops',
-                ],
-                [
-                    'name' => 'Personnel and Administration',
-                    'slug' => 'Admin',
-                ],
-                [
-                    'name' => 'Logistics',
-                    'slug' => 'Logs',
-                ],
-                [
-                    'name' => 'Engineer',
-                    'slug' => 'Eng',
-                ]
+        $branches = [
+            [
+                'name' => 'Operations',
+                'slug' => 'Ops',
+            ],
+            [
+                'name' => 'Personnel and Administration',
+                'slug' => 'Admin',
+            ],
+            [
+                'name' => 'Logistics',
+                'slug' => 'Logs',
+            ],
+            [
+                'name' => 'Engineer',
+                'slug' => 'Eng',
+            ]
 
-            ];
-
-            Branch::insert($branches);
-        }
-
-
-
-        {
-
-        }
+        ];
+        Branch::insert($branches);
     }
+
 }

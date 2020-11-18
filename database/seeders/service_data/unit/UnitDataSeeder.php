@@ -13,13 +13,13 @@ class UnitDataSeeder extends Seeder
      */
     public function run()
     {
-        [
+        $this->call([
             FormationSeeder::class,
             BattalionSeeder::class,
             CompanySeeder::class,
             PlatoonSeeder::class,
-            Section::class,
-        ];
+            SectionSeeder::class,
+        ]);
 
     }
 

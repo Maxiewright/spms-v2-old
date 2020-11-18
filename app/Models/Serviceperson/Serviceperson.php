@@ -32,7 +32,7 @@ use OwenIt\Auditing\Contracts\Auditable;
 class Serviceperson extends Model implements Auditable
 {
     use HasFactory, MustBeApproved, \OwenIt\Auditing\Auditable, HasEvents, HasIdentification,
-        HasQualification, HasLeave, HasServiceData, HasMedicalData;
+        HasQualification, HasServiceData, HasMedicalData;
 
     protected $primaryKey = 'number';
 

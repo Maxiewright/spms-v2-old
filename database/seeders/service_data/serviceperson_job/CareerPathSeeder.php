@@ -14,9 +14,7 @@ class CareerPathSeeder extends Seeder
      */
     public function run()
     {
-        //        Career Path
-        {
-            $careerPaths = [
+        $careerPaths = [
 //            1.  Combat / Combat Support
                 [
                     'stream_id' => 1,
@@ -278,7 +276,6 @@ class CareerPathSeeder extends Seeder
                     'slug' => 'Battery/Tyre Technician',
                 ],
             ];
-            CareerPath::insert($careerPaths);
-        }
+        CareerPath::insert($careerPaths);
     }
 }

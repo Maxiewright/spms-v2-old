@@ -144,14 +144,14 @@ trait HasServiceData
         return $this->job->title->slug;
     }
 
-    /**
-     * Returns Serviceperson current job.
-     * @return HasOne
-     */
-    public function getCurrentJobAttribute()
-    {
-        return $this->job->title->name;
-    }
+//    /**
+//     * Returns Serviceperson current job.
+//     * @return HasOne
+//     */
+//    public function getCurrentJobAttribute()
+//    {
+//        return $this->job->title->name;
+//    }
 
     /**
      * Returns all serviceperson Job Appointments
@@ -163,6 +163,13 @@ trait HasServiceData
             ->orderBy('started_on', 'DESC');
     }
 
+    /**
+     * Return serviceperson current Unit
+     */
+    public function currentJob()
+    {
+        return $this->hasOne(JobAppointment::class)->latest('started_on');
+    }
 
     /** **************************************** Job Appointments ****************************************************/
 
@@ -187,6 +194,14 @@ trait HasServiceData
     {
         return $this->hasMany(Unit::class)
             ->orderBy('joined_on', 'DESC');
+    }
+
+    /**
+     * Return serviceperson current Unit
+     */
+    public function currentUnit()
+    {
+        return $this->hasOne(Unit::class)->latest('joined_on');
     }
 
     /**

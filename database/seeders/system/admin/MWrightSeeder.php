@@ -7,6 +7,7 @@ use App\Models\Serviceperson\Serviceperson;
 use App\Models\Serviceperson\EmailAddress;
 use App\Models\Serviceperson\PhoneNumber;
 use App\Models\Authentication\User;
+use App\Services\SeedingServices\DetailsService;
 use App\Services\ServicepersonServices\RetirementService;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
@@ -132,19 +133,20 @@ class MWrightSeeder extends Seeder
                     'completed_on' => '2016-01-01',
                 ]);
 
+                DetailsService::details($mWright, $nationalId);
                 //              Details
-                $currentRankId = $mWright->lastPromotion->rank_id;
-
-                $mWright->update([
-                    'rank_id' => $currentRankId,
-                    'unit_id' => $mWright->currentUnit->id,
-                    'job_id' =>  $mWright->currentJob->job->id,
-                    'career_path_id' => $mWright->currentJob->job->careerPath->id,
-                    'stream_id' => $mWright->currentJob->job->careerPath->stream->id,
-                    'branch_id' => $mWright->currentJob->job->careerPath->stream->branch->id,
-                    're_engagement_date' => $mWright->lastEnlistment->contract_end ?? null,
-                    'crod' => RetirementService::getRetirementDate($currentRankId, $nationalId->date_of_birth),
-                ]);
+//                $currentRankId = $mWright->lastPromotion->rank_id;
+//
+//                $mWright->update([
+//                    'rank_id' => $currentRankId,
+//                    'unit_id' => $mWright->currentUnit->id,
+//                    'job_id' =>  $mWright->currentJob->job->id,
+//                    'career_path_id' => $mWright->currentJob->job->careerPath->id,
+//                    'stream_id' => $mWright->currentJob->job->careerPath->stream->id,
+//                    'branch_id' => $mWright->currentJob->job->careerPath->stream->branch->id,
+//                    're_engagement_date' => $mWright->lastEnlistment->contract_end ?? null,
+//                    'crod' => RetirementService::getRetirementDate($currentRankId, $nationalId->date_of_birth),
+//                ]);
             });
         });
     }
