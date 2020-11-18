@@ -32,36 +32,43 @@ class SideMenu
                 ],
                 'title' => 'Parade State'
             ],
-//            'menu-layout' => [
-//                'icon' => 'box',
-//                'title' => 'Menu Layout',
-//                'sub_menu' => [
-//                    'side-menu' => [
-//                        'icon' => '',
-//                        'route_name' => 'dashboard',
-//                        'params' => [
-//                            'layout' => 'side-menu'
-//                        ],
-//                        'title' => 'Side Menu'
-//                    ],
-//                    'simple-menu' => [
-//                        'icon' => '',
-//                        'route_name' => 'dashboard',
-//                        'params' => [
-//                            'layout' => 'simple-menu'
-//                        ],
-//                        'title' => 'Simple Menu'
-//                    ],
-//                    'top-menu' => [
-//                        'icon' => '',
-//                        'route_name' => 'dashboard',
-//                        'params' => [
-//                            'layout' => 'top-menu'
-//                        ],
-//                        'title' => 'Top Menu'
-//                    ]
-//                ]
-//            ],
+            'servicepeople' => [
+                'icon' => 'users',
+                'route_name' => 'servicepeople',
+                'params' => [
+                    'layout' => 'side-menu'
+                ],
+                'title' => 'Servicepeople'
+            ],
+            'devider',
+            'administration' => [
+                'icon' => 'check',
+                'title' => 'Administration',
+                'sub_menu' => [
+                    'side-menu' => [
+                        'icon' => '',
+                        'route_name' => 'dashboard',
+                        'params' => [
+                            'layout' => 'side-menu'
+                        ],
+                        'title' => 'Approvals'
+                    ],
+                ]
+            ],
+            'medical' => [
+                'icon' => 'plus',
+                'title' => 'Medical Records',
+                'sub_menu' => [
+                    'side-menu' => [
+                        'icon' => '',
+                        'route_name' => 'dashboard',
+                        'params' => [
+                            'layout' => 'side-menu'
+                        ],
+                        'title' => 'Basic Medical Info'
+                    ],
+                ]
+            ],
 //            'inbox' => [
 //                'icon' => 'inbox',
 //                'route_name' => 'inbox',
