@@ -115,6 +115,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/fortify" />
       <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/cloudcake/laravel-approval" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
