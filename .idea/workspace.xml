@@ -2,114 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618e396a-adb0-4ec1-9796-7397b89394d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Serviceperson/ServicepersonController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Award.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Biodata.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Dependent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/DriversPermit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/EmailAddress.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/EmergencyContact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Enlistment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/JobAppointment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Measurement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/MedicalClassification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/MilitaryIdCard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/NationalIdCard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Passport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/PhoneNumber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Promotion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/ReEngagement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Serviceperson.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/ServicepersonAllergy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/ServicepersonCourse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/ServicepersonEducation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/ServicepersonHobby.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/ServicepersonMedicalCondition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/ServicepersonSport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/ServicepersonVaccine.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Unit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Weigh.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Dependent/DependentRelationship.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Address/CityOrTown.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Address/DivisionOrRegion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Address/DivisionOrRegionType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Biodata/BloodType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Biodata/EyeColour.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Biodata/HairColour.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Biodata/Height.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Biodata/SkinColour.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Biodata/Weight.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/CareerManagementSystem/Branch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/CareerManagementSystem/BranchEstablishment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/CareerManagementSystem/CareerPath.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/CareerManagementSystem/CareerPathEstablishment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/CareerManagementSystem/Specialty.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/CareerManagementSystem/Stream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/CareerManagementSystem/StreamEstablishment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/Job/Job.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/Job/JobClass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/Job/JobTitle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/CareerManagement/Job/JobTitleCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/DriversPermit/DriversPermitClass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/DriversPermit/DriversPermitTransactionCode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/DriversPermit/DriversPermitType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Extracurricular/Hobby.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Extracurricular/HobbyType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Extracurricular/Sport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Extracurricular/SportType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/LookUp/SOSReasons.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/LookUp/ServicepersonStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Medical/Allergy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Medical/AllergyType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Medical/MedicalClassificationGrade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Medical/MedicalCondition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Medical/Vaccine.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Course/Course.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Course/CourseInstitution.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Course/CourseQualification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Course/CourseType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Education/EducationGrade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Education/EducationLevel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Education/School.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Education/SchoolDistrict.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Education/SchoolLevel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Education/SchoolType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Qualifications/Education/Subject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/ServiceData/Decoration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/ServiceData/EngagementPeriod.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/ServiceData/EnlistmentType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/ServiceData/Rank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/ServiceData/ReEngagementPeriod.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Unit/Battalion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Unit/Company.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Unit/Formation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Unit/Platoon.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Unit/Section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Lookup/EmailType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Lookup/Ethnicity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Lookup/Gender.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Lookup/MaritalStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Lookup/PhoneType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Lookup/Relationship.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Lookup/Religion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/Certificate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/Comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/File/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/File/FileCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/File/FileSubSubcategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/File/FileSubcategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/Photo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Status/ApprovalStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/System/Universal/Status/RecommendationStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SpMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SpMS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Servicepeson/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Serviceperson/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Main/SideMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main/SideMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/serviceperson/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicepeople/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/serviceperson.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/serviceperson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_02_145155_create_permission_tables.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,9 +155,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -280,9 +177,11 @@
       <recent name="C:\Users\maxie\SpMS\resources\views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maxie\SpMS\database" />
+      <recent name="C:\Users\maxie\SpMS\app" />
+      <recent name="C:\Users\maxie\SpMS\app\Http\Controllers\Manpower" />
       <recent name="C:\Users\maxie\SpMS\app\Models" />
       <recent name="C:\Users\maxie\SpMS\resources\images" />
-      <recent name="C:\Users\maxie\SpMS" />
     </key>
   </component>
   <component name="RunManager">
@@ -301,7 +200,7 @@
       <updated>1605639522610</updated>
       <workItem from="1605639523663" duration="11763000" />
       <workItem from="1605660278743" duration="2459000" />
-      <workItem from="1605709261090" duration="365000" />
+      <workItem from="1605709261090" duration="1900000" />
     </task>
     <servers />
   </component>
@@ -312,10 +211,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605662370957">
+    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605709935389">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605662370957" />
+    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605709935389" />
     <state x="769" y="426" key="NewPhpFileDialog" timestamp="1605642771764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
