@@ -16,6 +16,10 @@ use App\Http\Controllers\DarkModeController;
 |
 */
 
+Route::get('/', function () {
+    return view('landing.index');
+});
+
 //Display the password change form
 Route::view('change-password', 'auth.change-password')
     ->name('password.change')
