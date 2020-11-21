@@ -5,190 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="618e396a-adb0-4ec1-9796-7397b89394d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Notification/NotificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdministration/CountController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdministration/LookupController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdministration/Security/ActivityLogController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdministration/Security/PermissionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemAdministration/Security/RoleController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ApprovalSystem/Dependent/CreationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ApprovalSystem/Dependent/ModificationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ApprovalSystem/Qualification/Course/CreationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ApprovalSystem/Qualification/Course/ModificationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ApprovalSystem/Qualification/Education/CreationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ApprovalSystem/Qualification/Education/ModificationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ApprovalSystem/Serviceperson/CreationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ApprovalSystem/Serviceperson/ModificationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ApprovalSystem/Unit/CreationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/ApprovalSystem/Unit/ModificationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/BranchComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/BranchEstablishmentComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/CareerPathComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/CareerPathEstablishmentComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/SpecialtyComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/StreamComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/StreamEstablishmentComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Job/JobClassComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Job/JobComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Job/JobTitleComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseInstitutionComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseQualificationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseTypeComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/EducationLevelComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SchoolComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SchoolDistrictComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SchoolTypeComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SubjectComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/Reports/RetirementReport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Medical/MedicalClassificationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/BasicInfo/EthnicityComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/BasicInfo/MaritalStatusComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/BasicInfo/RelationshipComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/BasicInfo/ReligionComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Contact/CityOrTownComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Contact/DivisionOrRegionComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Extracurricular/HobbyComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Extracurricular/HobbyTypeComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Extracurricular/SportComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Extracurricular/SportTypeComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Identification/DriversPermit/ClassComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Identification/DriversPermit/TransactionCodeComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Identification/DriversPermit/TypeComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Identification/GenderComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Medical/BioData/BloodTypeComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Medical/BioData/EyeColourComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Medical/BioData/HairColourComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Medical/BioData/HeightComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Medical/BioData/SkinColourComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Medical/BioData/WeightComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Medical/History/AllergyComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Medical/History/AllergyTypeComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Medical/History/MedicalConditionComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/Medical/History/VaccineComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/ServiceData/DecorationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/ServiceData/Enlistment/EngagementPeriodComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/ServiceData/Enlistment/EnlistmentTypeComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/ServiceData/RankComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/ServiceData/ReEngagement/ReEngagementPeriodComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/ServiceData/Unit/BattalionComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/ServiceData/Unit/CompanyComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/ServiceData/Unit/PlatoonComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Metadata/RecordCard/ServiceData/Unit/SectionComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Notifications/Approval/ModificationNotificationComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Search/ServicepeopleDropdownComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/ServicepeopleComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/ServicepersonDropdown.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdministration/Security/PermissionComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdministration/Security/RoleComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdministration/Security/UserComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/activity-log/search.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/dependent/creation-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/dependent/modification-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/partials/approval-system-layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/partials/creations-layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/partials/modification-collapse.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/partials/modification-layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/qualification/course/creation-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/qualification/course/modification-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/qualification/education/creation-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/qualification/education/modification-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/serviceperson/creation-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/serviceperson/modification-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/unit/creation-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/unit/modification-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/approval-system/unit/partials/unit_layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/branch-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/branch-establishment-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/career-path-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/career-path-establishment-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/branch_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/branch_establishment_form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/career_path_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/career_path_establishment_form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/specialty_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/stream_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/stream_establishment_form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/specialty-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/stream-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/stream-establishment-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/job/job-class-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/job/job-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/job/job-title-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/job/partials/job_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/create_and_update_form_fields_with_slug.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/create_and_update_form_fields_with_type.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/metadata_field_with_slug.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/metadata_field_with_type.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/single-field-metadata.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-institution-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-qualification-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-type-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/partials/course_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/partials/course_institution_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/education-level-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/partials/school_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/partials/subject_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/school-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/school-district-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/school-type-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/subject-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/reports/retirement-report.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/medical/medical-classification-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/medical/partials/medical_classification_form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/basic-info/ethnicity.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/basic-info/marital-status.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/basic-info/relationship.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/basic-info/religion.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/contact/city-or-town-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/contact/division-or-region-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/contact/partials/city_or_town_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/contact/partials/division_or_region_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/extracurricular/hobby-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/extracurricular/hobby-type-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/extracurricular/partials/create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/extracurricular/partials/sport_and_hobby_component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/extracurricular/sport-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/extracurricular/sport-type-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/identification/drivers-permit/class-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/identification/drivers-permit/transaction-code-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/identification/drivers-permit/type-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/identification/gender-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/medical/bio-data/blood-type-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/medical/bio-data/eye-colour-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/medical/bio-data/hair-colour-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/medical/bio-data/height-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/medical/bio-data/skin-colour-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/medical/bio-data/weight-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/medical/history/allergy-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/medical/history/allergy-type-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/medical/history/medical-condition-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/medical/history/vaccine-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/partials/create_and_update_form_fields_with_slug.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/partials/create_and_update_form_fields_with_type.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/partials/metadata_field_with_slug.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/partials/metadata_field_with_type.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/partials/single-field-metadata.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/decoration-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/enlistment/engagement-period-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/enlistment/enlistment-type-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/partials/rank_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/rank-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/re-engagement/re-engagement-period-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/unit/battalion-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/unit/company-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/unit/partials/create_and_update_form_fields_with_parent_unit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/unit/partials/metadata_field_with_parent_unit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/unit/platoon-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/metadata/record-card/service-data/unit/section-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/notifications/approval/modification-notification-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/servicepeople-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/serviceperson-dropdown.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/system-administration/security/permission-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/system-administration/security/role-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/system-administration/security/user-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/auth/change-password.blade.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/Approval/ApprovalNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/Approval/DisapprovalNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/Approval/ModificationNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/EmailChangedNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/ServicepersonCreatedNotification.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +173,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -372,11 +193,11 @@
       <recent name="C:\Users\maxie\SpMS\resources\views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\maxie\SpMS\resources\views" />
+      <recent name="C:\Users\maxie\SpMS\app" />
       <recent name="C:\Users\maxie\SpMS\app\Http" />
+      <recent name="C:\Users\maxie\SpMS\resources\views" />
       <recent name="C:\Users\maxie\SpMS\app\Http\Controllers" />
       <recent name="C:\Users\maxie\SpMS\app\Http\Controllers\Serviceperson" />
-      <recent name="C:\Users\maxie\SpMS\app\Actions\Fortify" />
     </key>
   </component>
   <component name="RunManager">
@@ -403,7 +224,7 @@
       <workItem from="1605830940844" duration="669000" />
       <workItem from="1605834653020" duration="57000" />
       <workItem from="1605889874550" duration="11541000" />
-      <workItem from="1605949183330" duration="14340000" />
+      <workItem from="1605949183330" duration="14681000" />
     </task>
     <servers />
   </component>
