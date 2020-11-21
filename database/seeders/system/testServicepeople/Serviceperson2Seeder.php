@@ -2,7 +2,7 @@
 
 namespace Database\Seeders\system\testServicepeople;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\EmailAddress;
 use App\Models\Serviceperson\JobAppointment;
 use App\Models\Serviceperson\PhoneNumber;

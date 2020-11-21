@@ -2,7 +2,7 @@
 
 namespace App\Models\Serviceperson;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\System\Serviceperson\Extracurricular\Hobby;
 use App\Models\System\Serviceperson\Extracurricular\Sport;
 use App\Models\System\Serviceperson\LookUp\ServicepersonStatus;
@@ -26,7 +26,6 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Storage;
-use Modules\Leave\Traits\HasLeave;
 use OwenIt\Auditing\Contracts\Auditable;
 
 class Serviceperson extends Model implements Auditable

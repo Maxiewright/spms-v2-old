@@ -2,7 +2,7 @@
 
 namespace App\Traits;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\Serviceperson;
 use Approval\Traits\RequiresApproval;
 use Carbon\Carbon;

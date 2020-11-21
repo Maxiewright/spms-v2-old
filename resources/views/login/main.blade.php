@@ -1,4 +1,4 @@
-@extends('../layout/' . $layout)
+@extends('layout.login')
 
 @section('head')
     <title>Login - Serviceperson Management System</title>
@@ -30,8 +30,11 @@
                     <div class="intro-x mt-8">
                         <form id="login-form">
                             <input type="text"
-                                   id="input-email" class="intro-x login__input input input--lg border border-gray-300 block"
-                                   placeholder="Email" value="midone@left4code.com">
+                                   id="input-email"
+                                   class="intro-x login__input input input--lg border border-gray-300 block"
+                                   placeholder="Email"
+                                   value="maxiewright@gmail.com"
+                            >
 
                             <div id="error-email" class="login__input-error w-5/6 text-theme-6 mt-2"></div>
                             <input type="password" id="input-password"

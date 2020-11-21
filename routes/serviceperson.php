@@ -15,8 +15,8 @@ use App\Http\Controllers\DarkModeController;
 |
 */
 
-Route::middleware('auth')->group(function() {
+//Route::middleware('auth')->group(function() {
     Route::get('/', [DashboardController::class, 'dashboard'])->name('dashboard');
     Route::get('parade_state', [ManpowerController::class, 'paradeState'])->name('parade_state');
     Route::get('servicepeople', [ServicepersonController::class, 'index'])->name('servicepeople');
-});
+//});

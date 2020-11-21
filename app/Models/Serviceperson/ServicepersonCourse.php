@@ -2,7 +2,7 @@
 
 namespace App\Models\Serviceperson;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\System\Serviceperson\Qualifications\Course\Course;
 use App\Models\System\Serviceperson\Qualifications\Course\CourseInstitution;
 use App\Models\System\Serviceperson\Qualifications\Course\CourseQualification;

@@ -6,8 +6,10 @@ use App\Actions\Fortify\CreateNewUser;
 use App\Actions\Fortify\ResetUserPassword;
 use App\Actions\Fortify\UpdateUserPassword;
 use App\Actions\Fortify\UpdateUserProfileInformation;
+use App\Models\User;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Fortify\Fortify;
+use Laravel\Fortify\Http\Requests\LoginRequest;
 
 class FortifyServiceProvider extends ServiceProvider
 {
@@ -33,8 +35,16 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
 
-        Fortify::verifyEmailView(function () {
-            return view('auth.verify-email');
+        Fortify::authenticateUsing(function (LoginRequest $request) {
+            $user = User::where('email', $request->identity)
+                ->orWhere('username', $request->identity)->first();
+
+            if (
+                $user &&
+                \Hash::check($request->password, $user->password)
+            ) {
+                return $user;
+            }
         });
 
     }

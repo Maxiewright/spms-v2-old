@@ -1,7 +1,7 @@
 <?php
 namespace Database\Seeders;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\Address;
 use App\Models\Serviceperson\DriversPermit;
 use App\Models\Serviceperson\EmailAddress;

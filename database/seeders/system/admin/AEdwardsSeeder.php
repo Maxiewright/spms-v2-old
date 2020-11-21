@@ -6,7 +6,7 @@ use App\Models\Serviceperson\JobAppointment;
 use App\Models\Serviceperson\Serviceperson;
 use App\Models\Serviceperson\EmailAddress;
 use App\Models\Serviceperson\PhoneNumber;
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Services\ServicepersonServices\RetirementService;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;

@@ -3,7 +3,7 @@
 namespace App\Models\Serviceperson;
 
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\System\Serviceperson\Qualifications\Education\EducationGrade;
 use App\Models\System\Serviceperson\Qualifications\Education\EducationLevel;
 use App\Models\System\Serviceperson\Qualifications\Education\School;

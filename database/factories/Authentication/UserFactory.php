@@ -2,7 +2,7 @@
 
 namespace Database\Factories\Authentication;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\Serviceperson;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;

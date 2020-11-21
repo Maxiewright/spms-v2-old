@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\Servicepeson\DashboardController;
+
+use App\Actions\Fortify\ChangePassword;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DarkModeController;
 
 /*
@@ -16,14 +16,18 @@ use App\Http\Controllers\DarkModeController;
 |
 */
 
+//Display the password change form
+Route::view('change-password', 'auth.change-password')
+    ->name('password.change')
+    ->middleware('verified');
+
+//Change the password
+Route::post('changePassword',[ChangePassword::class, 'changePassword'])
+    ->name('change.password');
+
 Route::get('dark-mode-switcher', [DarkModeController::class, 'switch'])->name('dark-mode-switcher');
 
-Route::middleware('loggedin')->group(function() {
-    Route::get('login', [AuthController::class, 'loginView'])->name('login-view');
-    Route::post('login', [AuthController::class, 'login'])->name('login');
-});
-
-Route::middleware('auth')->group(function() {
-    Route::get('logout', [AuthController::class, 'logout'])->name('logout');
-});
+Route::middleware(['auth:sanctum', 'verified', 'password.change'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
 

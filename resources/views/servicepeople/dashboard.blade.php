@@ -14,7 +14,9 @@
                     </a>
                 </div>
                 <div class="grid grid-cols-12 gap-6 mt-5">
-
+                    @foreach (Auth::user()->getRoleNames() as $role)
+                        <li>{{$role}}</li>
+                    @endforeach
                 </div>
             </div>
     </div>
