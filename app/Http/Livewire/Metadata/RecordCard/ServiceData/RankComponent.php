@@ -9,7 +9,7 @@ use Livewire\WithPagination;
 class RankComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $grade, $regiment, $regimentSlug, $coastGuard, $coastGuardSlug, $airGuard, $airGuardSlug, $selectedId;

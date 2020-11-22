@@ -9,7 +9,7 @@ use Livewire\WithPagination;
 class AllergyTypeComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $name, $selectedId;

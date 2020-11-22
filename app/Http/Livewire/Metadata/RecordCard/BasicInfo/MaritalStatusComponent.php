@@ -10,7 +10,7 @@ use Livewire\WithPagination;
 class MaritalStatusComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $name, $selectedId;

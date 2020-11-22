@@ -12,7 +12,7 @@ use Livewire\WithPagination;
 class BranchEstablishmentComponent extends Component
 {
     use  WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $filterBranch, $filterRank;

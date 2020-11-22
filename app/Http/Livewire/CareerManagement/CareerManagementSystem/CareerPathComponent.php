@@ -10,7 +10,7 @@ use Livewire\WithPagination;
 class CareerPathComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $filter;

@@ -10,7 +10,7 @@ use Spatie\Permission\Models\Role;
 class RoleComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public  $search = '';
     public  $name, $selectedId;

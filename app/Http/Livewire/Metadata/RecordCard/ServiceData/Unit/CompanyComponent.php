@@ -10,7 +10,7 @@ use Livewire\WithPagination;
 class CompanyComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search, $filter;
     public $name, $slug, $parentUnitId, $selectedId, $parentUnits;

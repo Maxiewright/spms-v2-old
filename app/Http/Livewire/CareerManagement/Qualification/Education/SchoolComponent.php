@@ -13,7 +13,7 @@ use Livewire\WithPagination;
 class SchoolComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search, $filterType, $filterDistrict, $filterLevel;
     public $institutions, $name, $slug, $schoolTypeId, $schoolDistrictId;

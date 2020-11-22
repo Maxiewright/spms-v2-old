@@ -10,7 +10,7 @@ use Livewire\WithPagination;
 class CityOrTownComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search, $filter;
     public $name, $divisionOrRegionId, $divisionOrRegions, $selectedId;

@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Services\CalculationServices\ParadeStateService;
 use Illuminate\Database\Query\Builder;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -26,6 +28,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
+        View::composer('manpower.parade-state', ParadeStateService::class);
     }
 }

@@ -9,7 +9,7 @@ use Spatie\Permission\Models\Permission;
 class PermissionComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public  $search = '';
     public  $name, $selectedId;

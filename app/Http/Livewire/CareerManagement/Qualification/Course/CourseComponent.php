@@ -12,7 +12,7 @@ class CourseComponent extends Component
 {
     use WithPagination;
 
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $filter = '';

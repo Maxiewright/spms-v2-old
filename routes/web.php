@@ -2,6 +2,7 @@
 
 
 use App\Actions\Fortify\ChangePassword;
+use App\Http\Controllers\Notification\NotificationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DarkModeController;
 
@@ -31,7 +32,10 @@ Route::post('changePassword',[ChangePassword::class, 'changePassword'])
 
 Route::get('dark-mode-switcher', [DarkModeController::class, 'switch'])->name('dark-mode-switcher');
 
-Route::middleware(['auth:sanctum', 'verified', 'password.change'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::view('medical/basic_medical', 'medical.basic_medical')
+    ->name('basic.medical');
+
+//    Notification
+Route::get('user/{id}', [NotificationController::class, 'readAll'])->name('notification.readAll');
+Route::get('user/{id}', [NotificationController::class, 'destroy'])->name('notification.readAll');
 

@@ -10,7 +10,7 @@ use Livewire\WithPagination;
 class SpecialtyComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $filter;

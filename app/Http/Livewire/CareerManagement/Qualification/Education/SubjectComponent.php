@@ -10,7 +10,7 @@ use Livewire\WithPagination;
 class SubjectComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search, $filterLevel;
     public $name, $educationLevelId;

@@ -3,7 +3,7 @@
 @section('body')
     <body class="app">
         @yield('content')
-        @include('../layout/components/dark-mode-switcher')
+{{--        @include('../layout/components/dark-mode-switcher')--}}
 
         <!-- BEGIN: JS Assets-->
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>

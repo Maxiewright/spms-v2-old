@@ -9,7 +9,7 @@ use Livewire\WithPagination;
 class JobClassComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $name, $slug, $description, $selectedId;

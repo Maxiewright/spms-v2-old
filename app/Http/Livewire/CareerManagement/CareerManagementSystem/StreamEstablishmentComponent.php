@@ -12,7 +12,7 @@ use Livewire\WithPagination;
 class StreamEstablishmentComponent extends Component
 {
     use  WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '', $filterStream = '', $filterRank = '';
     public $updateMode, $ranks, $rankId, $streams, $streamId, $establishment, $selectedId;

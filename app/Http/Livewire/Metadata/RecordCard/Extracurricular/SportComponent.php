@@ -10,7 +10,7 @@ use Livewire\WithPagination;
 class SportComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
     public $search, $filter;
     public $name, $selectedId,$typeId, $types;
     public $updateMode = false;

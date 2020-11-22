@@ -9,7 +9,7 @@ use Livewire\WithPagination;
 class WeightComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $name, $selectedId;

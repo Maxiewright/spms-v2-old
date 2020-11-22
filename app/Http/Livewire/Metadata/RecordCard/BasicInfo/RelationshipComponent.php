@@ -9,7 +9,7 @@ use Livewire\WithPagination;
 class RelationshipComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $name, $selectedId;

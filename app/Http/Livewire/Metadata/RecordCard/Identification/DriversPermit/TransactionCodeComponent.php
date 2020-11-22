@@ -9,7 +9,7 @@ use Livewire\WithPagination;
 class TransactionCodeComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $name, $slug, $selectedId;

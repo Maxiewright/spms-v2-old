@@ -9,7 +9,7 @@ use Livewire\WithPagination;
 class BattalionComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $name, $slug, $selectedId;

@@ -9,7 +9,7 @@ use Livewire\WithPagination;
 class EngagementPeriodComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $name, $slug, $selectedId;

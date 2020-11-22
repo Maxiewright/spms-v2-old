@@ -1,19 +1,21 @@
 <?php
 
-namespace App\View\Components\Card;
+namespace App\View\Components\Tables\Responsive;
 
 use Illuminate\View\Component;
 
-class ActionCard extends Component
+class Th extends Component
 {
+    public $details;
+
     /**
      * Create a new component instance.
      *
-     * @return void
+     * @param $details
      */
-    public function __construct()
+    public function __construct($details)
     {
-        //
+        $this->details = $details;
     }
 
     /**
@@ -23,6 +25,6 @@ class ActionCard extends Component
      */
     public function render()
     {
-        return view('components.card.action-card');
+        return view('components.tables.responsive.th');
     }
 }

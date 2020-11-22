@@ -11,7 +11,7 @@ use Livewire\WithPagination;
 class CreationComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $title = 'Course';

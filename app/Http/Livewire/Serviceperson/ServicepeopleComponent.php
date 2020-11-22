@@ -13,7 +13,7 @@ use Livewire\WithPagination;
 class ServicepeopleComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search;
 
@@ -51,7 +51,7 @@ class ServicepeopleComponent extends Component
 //                ->when($this->filterUnit, function ($query){
 //                    $query->where('unit_id', $this->filterUnit);
 //                })
-                ->paginate(10)
+                ->paginate(5)
         ]);
     }
 }

@@ -10,7 +10,7 @@ class EthnicityComponent extends Component
 {
 
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $name, $selectedId;

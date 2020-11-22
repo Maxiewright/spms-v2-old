@@ -11,7 +11,7 @@ use Spatie\Permission\Models\Role;
 class UserComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '', $filterRole, $filterJob;
     public $user, $userServicepersonName, $selectedId;

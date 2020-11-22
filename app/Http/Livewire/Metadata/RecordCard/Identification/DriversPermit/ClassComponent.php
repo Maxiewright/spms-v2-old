@@ -10,7 +10,7 @@ class ClassComponent extends Component
 {
 
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $name, $slug, $selectedId;

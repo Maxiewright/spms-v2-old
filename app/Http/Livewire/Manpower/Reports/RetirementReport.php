@@ -12,7 +12,7 @@ class RetirementReport extends Component
 {
     use WithPagination;
 
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $startDate = '';

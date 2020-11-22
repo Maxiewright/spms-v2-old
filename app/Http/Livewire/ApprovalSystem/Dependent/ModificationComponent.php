@@ -10,7 +10,7 @@ use Livewire\WithPagination;
 class ModificationComponent extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+
 
     public $search = '';
     public $title = 'Dependent';
