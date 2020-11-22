@@ -55,17 +55,17 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/serviceperson.php'));
 
             // Serviceperson Administration
-            Route::middleware(['web', 'auth', 'change_password', 'verified'])
+            Route::middleware(['web', 'auth', 'password.change', 'verified'])
                 ->prefix('approval_system')
                 ->group(base_path('routes/administration.php'));
 
             // Manpower / HR
-            Route::middleware(['web', 'auth', 'change_password', 'verified'])
+            Route::middleware(['web', 'auth', 'password.change', 'verified'])
                 ->prefix('manpower')
                 ->group(base_path('routes/manpower.php'));
 
             // System Administration
-            Route::middleware(['web', 'auth', 'change_password','verified', 'role:super-admin'])
+            Route::middleware(['web', 'auth', 'password.change','verified'])
                 ->group(base_path('routes/system_admin.php'));
 
             // Lookup

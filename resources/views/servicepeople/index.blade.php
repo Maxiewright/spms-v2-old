@@ -7,7 +7,7 @@
 @section('subcontent')
     <div class="grid grid-cols-12 gap-6">
         <div class="col-span-12 mt-8">
-            <x-layout.page-header title="Servicepeople" />
+            <x-layouts.page-header title="Servicepeople" />
             <!-- BEGIN: Servicepeople Summary -->
             <div class="grid grid-cols-12 gap-6 mt-5">
                 <x-cards.info-card title="Servicepeople" data-feather="users" counter="{{$strength->total}}"/>

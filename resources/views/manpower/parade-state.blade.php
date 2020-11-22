@@ -7,9 +7,11 @@
 @section('subcontent')
 
     <div class="col-span-12 xxl:col-span-9 grid grid-cols-12 gap-6">
+
+
         <!-- BEGIN: Parade State-->
         <div class="col-span-12 mt-8">
-            <x-layout.page-header title="Parade State" />
+            <x-layouts.page-header title="Parade State" />
             <!-- BEGIN: Parade State Summary -->
             <div class="grid grid-cols-12 gap-6 mt-5">
                 <x-cards.info-card title="Available" data-feather="shield" counter="{{$status->available}}"/>
@@ -21,6 +23,8 @@
             </div>
         </div>
         <!-- End: Parade State Summary -->
+
+
         <!-- BEGIN: Parade State -->
         <x-tables.responsive-table title="Parade State" options="">
                 <x-slot name="thead">

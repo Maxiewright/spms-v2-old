@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
             Route::view('extracurricular', 'system_admin.metadata.extracurricular')->name('metadata.extracurricular');
             Route::view('identification', 'system_admin.metadata.identification')->name('metadata.identification');
             Route::view('bio_data', 'system_admin.metadata.bio_data')->name('metadata.bio_data');
-            Route::view('medical_history', 'system_admin.metadata.medical_history')->name('metadata.medical_history');
+            Route::view('medical_history', 'system_admin.metadata.medical')->name('metadata.medical');
             Route::view('service_data', 'system_admin.metadata.service_data')->name('metadata.service_data');
         });
 

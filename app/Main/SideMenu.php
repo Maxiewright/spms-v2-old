@@ -171,7 +171,7 @@ class SideMenu
                             ],
                             'contact' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'metadata.contact',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
@@ -179,7 +179,7 @@ class SideMenu
                             ],
                             'identification' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'metadata.identification',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
@@ -187,7 +187,7 @@ class SideMenu
                             ],
                             'service-data' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'metadata.service_data',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
@@ -195,7 +195,7 @@ class SideMenu
                             ],
                             'bio-data' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'metadata.bio_data',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
@@ -203,7 +203,7 @@ class SideMenu
                             ],
                             'medical' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'metadata.medical',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
@@ -211,7 +211,7 @@ class SideMenu
                             ],
                             'extracurricular' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'metadata.extracurricular',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],

@@ -25,6 +25,6 @@ class PageHeader extends Component
      */
     public function render()
     {
-        return view('components.layout.page-header');
+        return view('components.layouts.page-header');
     }
 }
