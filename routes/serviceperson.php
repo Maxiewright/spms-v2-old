@@ -18,12 +18,11 @@ use App\Http\Controllers\DarkModeController;
 //Route::middleware('auth')->group(function() {
     Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
     Route::get('parade_state', [ManpowerController::class, 'paradeState'])->name('parade_state');
-    Route::get('servicepeople', [ServicepersonController::class, 'index'])->name('servicepeople');
 //});
 
 
-//Route::resource('servicepeople', ServicepersonController::class)
-//    ->middleware('can:view-servicepeople');
+Route::resource('servicepeople', ServicepersonController::class)
+    ->middleware('can:view-servicepeople');
 
 Route::put('serviceperson/status_update/', [ServicepersonController::class, 'updateStatus'])
     ->name('update.serviceperson.status');

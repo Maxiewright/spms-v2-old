@@ -40,7 +40,7 @@
                                          src="{{$serviceperson->image ?? ''}}"
                                          title="{{$serviceperson->name}}">
                                 </div>
-                                <a href="" class="hover:text-blue-600 text-base ml-3 align-middle">{{$serviceperson->name}}</a>
+                                <a href="{{route('servicepeople.show', $serviceperson->number)}}" class="hover:text-blue-600 text-base ml-3 align-middle">{{$serviceperson->name}}</a>
                             </div>
                         </td>
                         {{--                                Serviceperson Unit and Job --}}
