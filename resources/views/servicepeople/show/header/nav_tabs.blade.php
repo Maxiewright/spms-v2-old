@@ -20,6 +20,11 @@
     <a data-toggle="tab" data-target="#emergency-contacts" href="javascript:;" class="py-4 sm:mr-8 flex items-center">
         <i class="w-4 h-4 mr-2" data-feather="life-buoy"></i> Emergency Contacts
     </a>
+    @if ($serviceperson->is(Auth::user()->serviceperson))
+        <a data-toggle="tab" data-target="#profile" href="javascript:;" class="py-4 sm:mr-8 flex items-center">
+            <i class="w-4 h-4 mr-2" data-feather="life-buoy"></i> Profile
+        </a>
+    @endif
 </div>
 
 

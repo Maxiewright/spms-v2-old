@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="618e396a-adb0-4ec1-9796-7397b89394d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/dependents.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/emergency_contacts.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/extracurricular.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/header/basic_info.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/header/contact_card.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/header/description.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/header/nav_tabs.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/identification.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/medical_history.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/qualifications.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/service_data.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/profile.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/system_admin/metadata/basic_info.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Main/SideMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main/SideMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/servicepeople-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/servicepeople-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/serviceperson.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/serviceperson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/servicepeople/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicepeople/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/servicepeople/show/header/nav_tabs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/header/nav_tabs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/system_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/system_admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +227,7 @@
       <workItem from="1605830940844" duration="669000" />
       <workItem from="1605834653020" duration="57000" />
       <workItem from="1605889874550" duration="11541000" />
-      <workItem from="1605949183330" duration="46013000" />
+      <workItem from="1605949183330" duration="50632000" />
     </task>
     <servers />
   </component>
@@ -298,6 +290,10 @@
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state x="1920" y="0" width="1472" height="960" key="dock-window-7/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606007018627" />
+    <state x="1920" y="0" width="1472" height="960" maximized="true" key="dock-window-8" timestamp="1606043675712">
+      <screen x="1920" y="0" width="1600" height="860" />
+    </state>
+    <state x="1920" y="0" width="1472" height="960" maximized="true" key="dock-window-8/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606043675712" />
     <state x="540" y="71" width="710" height="736" key="find.popup" timestamp="1606010845007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -306,10 +302,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605961919635" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606012979645">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606043671193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606012979645" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606043671193" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

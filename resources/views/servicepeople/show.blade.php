@@ -46,5 +46,8 @@
         <div class="tab-content__pane" id="emergency-contacts">
             @include('servicepeople.show.emergency_contacts')
         </div>
+        <div class="tab-content__pane" id="emergency-contacts">
+            @include('servicepeople.show.profile')
+        </div>
     </div>
 @endsection

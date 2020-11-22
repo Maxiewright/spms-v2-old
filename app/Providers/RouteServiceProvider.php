@@ -38,19 +38,39 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->configureRateLimiting();
 
-        Route::macro('multistep', function($uri, $controller){
+        Route::macro('multistep', function ($uri, $controller) {
             return new MultiStepRouter(
                 $uri, $controller
             );
         });
 
         $this->routes(function () {
+
+            // Web - Mostly Auth / Guest Routing
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
 
+            // Serviceperson
             Route::middleware(['web', 'auth:sanctum', 'password.change'])
                 ->group(base_path('routes/serviceperson.php'));
 
+            // Serviceperson Administration
+            Route::middleware(['web', 'auth', 'change_password', 'verified'])
+                ->prefix('approval_system')
+                ->group(base_path('routes/administration.php'));
+
+            // Manpower / HR
+            Route::middleware(['web', 'auth', 'change_password', 'verified'])
+                ->prefix('manpower')
+                ->group(base_path('routes/manpower.php'));
+
+            // System Administration
+            Route::middleware(['web', 'auth', 'change_password','verified', 'role:super-admin'])
+                ->group(base_path('routes/system_admin.php'));
+
+            // Lookup
+            Route::middleware('web')
+                ->group(base_path('routes/lookup.php'));
 
             Route::prefix('api')
                 ->middleware('api')
