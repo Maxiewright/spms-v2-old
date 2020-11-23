@@ -19,16 +19,16 @@
     </x-slot>
     <x-slot name="tabContent">
         <div class="tab-content__pane active" id="ethnicity">
-            {{--                <livewire:metadata.record-card.basic-info.ethnicity-component />--}}
+            <livewire:system-admin.metadata.basic-info.ethnicity-component/>
         </div>
         <div class="tab-content__pane" id="religion">
-            {{--                <livewire:metadata.record-card.basic-info.religion-component />--}}
+            <livewire:system-admin.metadata.basic-info.religion-component/>
         </div>
-        <div class="tab-content__pane" id="religion">
-            {{--                <livewire:metadata.record-card.basic-info.relationship-component />--}}
+        <div class="tab-content__pane" id="relationship">
+            <livewire:system-admin.metadata.basic-info.relationship-component/>
         </div>
-        <div class="tab-content__pane" id="religion">
-            {{--                <livewire:metadata.record-card.basic-info.marital-status-component />--}}
+        <div class="tab-content__pane" id="maritial-status">
+            <livewire:system-admin.metadata.basic-info.marital-status-component/>
         </div>
     </x-slot>
 </x-layouts.side-menu-tabs>

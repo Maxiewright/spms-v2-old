@@ -6,14 +6,17 @@ use Illuminate\View\Component;
 
 class DataTable extends Component
 {
+    public $title;
+
     /**
      * Create a new component instance.
      *
-     * @return void
+     * @param $title
      */
-    public function __construct()
+    public function __construct($title)
     {
         //
+        $this->title = $title;
     }
 
     /**

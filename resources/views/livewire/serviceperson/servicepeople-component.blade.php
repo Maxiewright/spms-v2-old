@@ -1,4 +1,4 @@
-<x-tables.data-table data-feather="plus">
+<x-tables.data-list data-feather="plus">
     <x-slot name="action">
         <a href="$" class="button text-white bg-theme-1 shadow-md mr-2">Add Serviceperson</a>
     </x-slot>
@@ -93,5 +93,5 @@
         @endif
     </x-slot>
     <x-slot name="pagination">{{$servicepeople->links()}}</x-slot>
-</x-tables.data-table>
+</x-tables.data-list>
 

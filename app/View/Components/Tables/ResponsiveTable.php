@@ -17,7 +17,6 @@ class ResponsiveTable extends Component
      */
     public function __construct($title, $options)
     {
-        //
         $this->title = $title;
         $this->options = $options;
     }
