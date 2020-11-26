@@ -14,8 +14,8 @@ class MaritalStatusComponent extends Component
 
     public $search = '';
     public $name, $selectedId;
-    public $updateMode = false;
     public $title = 'Marital Status';
+
 
     protected $listeners = ['marital_status' => 'destroy'];
 
@@ -30,10 +30,30 @@ class MaritalStatusComponent extends Component
                 ->paginate(10)
         ]);
     }
+
+    public function create()
+    {
+
+        $this->openModal();
+        $this->resetInput();
+    }
+
+    public function openModal()
+    {
+        $this->isOpen = true;
+    }
+
+    public function closeModal()
+    {
+        $this->isOpen = false;
+    }
+
     private function resetInput()
     {
         $this->name = null;
+        $this->selectedId = null;
     }
+
     public function store()
     {
         $this->validate([
@@ -46,6 +66,7 @@ class MaritalStatusComponent extends Component
         ]);
         $this->resetInput();
     }
+
     public function edit($id)
     {
         $record = MaritalStatus::findOrFail($id);
@@ -53,23 +74,7 @@ class MaritalStatusComponent extends Component
         $this->name = $record->name;
         $this->updateMode = true;
     }
-    public function update()
-    {
-        $this->validate([
-            'selectedId' => 'required|numeric',
-            'name' => 'required|unique:marital_statuses,name',
-        ],[
-            'name.required' => 'This field is required'
-        ]);
-        if ($this->selectedId) {
-            $record = MaritalStatus::find($this->selectedId);
-            $record->update([
-                'name' => $this->name,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
-    }
+
     public function destroy($id)
     {
         if ($id) {

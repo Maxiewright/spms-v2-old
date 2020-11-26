@@ -13,15 +13,16 @@ class EthnicityComponent extends Component
 
     public $search = '';
     public $name, $selectedId;
-    public $updateMode = false;
     public $title = 'Ethnicity';
+    public $isOpen  = false;
 
-    protected $listeners = ['ethnicity' => 'destroy'];
+    protected $listeners = ['destroy'];
 
     public function render()
     {
 
         $searchTerm = '%'  .$this->search . '%';
+
         return view('livewire.system-admin.metadata.basic-info.ethnicity',[
             'data' =>  Ethnicity::query()
                 ->orderBy('created_at', 'desc')
@@ -29,10 +30,38 @@ class EthnicityComponent extends Component
                 ->paginate(10)
         ]);
     }
+
+    public function showAlert()
+    {
+        $this->emit('swal:alert', [
+            'type'    => 'success',
+            'title'   => 'This is a success alert!!',
+            'timeout' => 10000
+        ]);
+    }
+
+    public function create()
+    {
+        $this->openModal();
+        $this->resetInput();
+    }
+
+    public function openModal()
+    {
+        $this->isOpen = true;
+    }
+
+    public function closeModal()
+    {
+        $this->isOpen = false;
+    }
+
     private function resetInput()
     {
         $this->name = null;
+        $this->selectedId = null;
     }
+
     public function store()
     {
         $this->validate([
@@ -41,38 +70,33 @@ class EthnicityComponent extends Component
             'name.required' => 'This field is required'
         ]);
 
-        Ethnicity::create([
+        Ethnicity::updateOrCreate(['id' => $this->selectedId],[
             'name' => $this->name,
         ]);
+
+        session()->flash('message', $this->selectedId ? 'Updated Successfully.' : 'Created Successfully.');
+
+        $this->closeModal();
         $this->resetInput();
     }
+
     public function edit($id)
     {
         $record = Ethnicity::findOrFail($id);
         $this->selectedId = $id;
         $this->name = $record->name;
-        $this->updateMode = true;
-    }
 
-    public function update()
+        $this->openModal();
+    }
+    public function confirmDelete($id)
     {
-        $this->validate([
-            'selectedId' => 'required|numeric',
-            'name' => 'required|unique:ethnicities,name',
-        ],[
-            'name.required' => 'Please fill out this field is required'
-        ]);
-
-        if ($this->selectedId) {
-            $record = Ethnicity::find($this->selectedId);
-            $record->update([
-                'name' => $this->name,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
+        $this->emit("swal:confirm", showDeleteConfirmation($id));
     }
 
+    /**
+     * Delete a record
+     * @param $id
+     */
     public function destroy($id)
     {
         if ($id) {
@@ -80,5 +104,7 @@ class EthnicityComponent extends Component
             $record->delete();
         }
     }
+
+
 
 }

@@ -22,13 +22,13 @@
             <livewire:system-admin.metadata.basic-info.ethnicity-component/>
         </div>
         <div class="tab-content__pane" id="religion">
-            <livewire:system-admin.metadata.basic-info.religion-component/>
+{{--            <livewire:system-admin.metadata.basic-info.religion-component/>--}}
         </div>
         <div class="tab-content__pane" id="relationship">
-            <livewire:system-admin.metadata.basic-info.relationship-component/>
+{{--            <livewire:system-admin.metadata.basic-info.relationship-component/>--}}
         </div>
         <div class="tab-content__pane" id="maritial-status">
-            <livewire:system-admin.metadata.basic-info.marital-status-component/>
+{{--            <livewire:system-admin.metadata.basic-info.marital-status-component/>--}}
         </div>
     </x-slot>
 </x-layouts.side-menu-tabs>

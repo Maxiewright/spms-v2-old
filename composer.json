@@ -41,6 +41,9 @@
         }
     },
     "autoload": {
+        "files": [
+            "app/Http/Livewire/helpers.php"
+        ],
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",

@@ -1,28 +1,8 @@
 <div>
-{{--    @if ($updateMode)--}}
-{{--        <x-metadata.update title="{{$title}}">--}}
-{{--            <x-slot name="updateFields">--}}
-{{--                <div class="flex form-group">--}}
-{{--                    <input wire:model="name" type="text" class="form-control mb-2 mr-sm-2 @error('name') is-invalid @enderror" title="{{$title}}">--}}
-{{--                    @error('name')--}}
-{{--                    <div class="invalid-feedback">{{$message}}</div>--}}
-{{--                    @enderror--}}
-{{--                </div>--}}
-{{--            </x-slot>--}}
-{{--        </x-metadata.update>--}}
-{{--    @else--}}
-{{--        <x-metadata.create title="{{$title}}">--}}
-{{--            <x-slot name="createFields">--}}
-{{--                <div class="form-group">--}}
-{{--                    <input wire:model="name" type="text" class="form-control mb-2 mr-sm-2 @error('name') is-invalid @enderror" title="{{$title}}">--}}
-{{--                    @error('name')--}}
-{{--                    <div class="invalid-feedback">{{$message}}</div>--}}
-{{--                    @enderror--}}
-{{--                </div>--}}
-{{--            </x-slot>--}}
-{{--        </x-metadata.create>--}}
-{{--    @endif--}}
     <x-tables.data-table title="{{$title}}">
+        @if($isOpen)
+            @include('livewire.system-admin.metadata.partials.single_field_create_and_update_modal')
+        @endif
         <x-slot name="filters"></x-slot>
         <x-slot name="thead">
             <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">#</th>
@@ -53,7 +33,9 @@
                                href="javascript:;">
                                 <i data-feather="check-square" class="w-4 h-4 mr-1"></i>Edit
                             </a>
-                            <a wire:click="$emit('{{str_replace(' ', '_', strtolower($title)).'_destroy'}}', {{$row->id}})"
+
+                            <a wire:click="confirmDelete({{$row->id}})"
+{{--                               onclick="event.stopImmediatePropagation()"--}}
                                class="flex items-center text-theme-6"
                                href="javascript:;"
                                data-toggle="modal"
@@ -69,7 +51,6 @@
             {{$data->links()}}
         </x-slot>
     </x-tables.data-table>
-
 </div>
 
 

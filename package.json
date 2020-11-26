@@ -46,6 +46,7 @@
         "raw-loader": "3",
         "style-loader": "1",
         "svg-loaders": "^0.2.0",
+        "sweetalert2": "^10.10.2",
         "tabulator-tables": "^4.7.2",
         "tail.select": "^0.5.15",
         "tailwindcss": "^1.4.0",
