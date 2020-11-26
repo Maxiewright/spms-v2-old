@@ -26,24 +26,7 @@
                     <td class="border-b whitespace-no-wrap">
                         {{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}
                     </td>
-                    <td class="border-b whitespace-no-wrap w-56">
-                        <div class="flex justify-center items-center">
-                            <a wire:click="edit({{$row->id}})"
-                               class="flex items-center mr-3"
-                               href="javascript:;">
-                                <i data-feather="check-square" class="w-4 h-4 mr-1"></i>Edit
-                            </a>
-
-                            <a wire:click="confirmDelete({{$row->id}})"
-{{--                               onclick="event.stopImmediatePropagation()"--}}
-                               class="flex items-center text-theme-6"
-                               href="javascript:;"
-                               data-toggle="modal"
-                               data-target="#delete-confirmation-modal">
-                                <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete
-                            </a>
-                        </div>
-                    </td>
+                    <x-crud.livewire-action-row id="{{$row->id}}" />
                 </tr>
             @endforeach
         </x-slot>

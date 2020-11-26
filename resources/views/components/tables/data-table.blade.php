@@ -1,6 +1,6 @@
 <div class="intro-y box mt-5">
     <div class="flex flex-col sm:flex-row items-center p-5 border-b border-gray-200">
-        <h2 class="font-medium text-base mr-auto">{{$title}}</h2>
+        <h2 class="font-medium text-base mr-auto">{{Str::plural(ucfirst($title))}}</h2>
         {{$slot}}
         {{$filters}}
         <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0 mr-2">
@@ -15,7 +15,7 @@
            href="javascript:;"
            data-toggle="modal"
            data-target="#delete-confirmation-modal">
-            <i data-feather="plus-square" class="w-4 h-4 mr-1"></i> Add New {{ucfirst($title)}}
+            <i data-feather="plus-square" class="w-4 h-4 mr-1"></i> Add {{ucfirst($title)}}
         </a>
 
     </div>

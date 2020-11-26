@@ -14,7 +14,7 @@
         </a>
         <a data-toggle="tab" data-target="#hobby" href="javascript:;"
            class="flex items-center mt-5">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Hobby
+            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Hobbies
         </a>
     </x-slot>
     <x-slot name="tabContent">

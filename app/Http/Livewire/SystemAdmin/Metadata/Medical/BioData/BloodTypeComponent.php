@@ -2,93 +2,109 @@
 
 namespace App\Http\Livewire\SystemAdmin\Metadata\Medical\BioData;
 
+use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\Biodata\BloodType;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class BloodTypeComponent extends Component
 {
 
-    use WithPagination;
-
+    use WithPagination, WithModal, WithAlerts;
 
     public $search = '';
-    public $name, $slug, $selectedId;
-    public $updateMode = false;
+    public $name, $selectedId;
     public $title = 'Blood Type';
 
-    protected $listeners = ['blood_type' => 'destroy'];
+    protected $listeners = ['destroy'];
 
+    /**
+     * Render the component view
+     *
+     * @return Application|Factory|View
+     */
     public function render()
     {
 
-        $searchTerm = '%'  .$this->search . '%';
-        return view('livewire.system-admin.metadata.medical.bio-data.blood-type-component',[
-            'data' =>  BloodType::query()
+        $searchTerm = '%' . $this->search . '%';
+
+        return view('livewire.system-admin.metadata.medical.bio-data.blood-type-component', [
+            'data' => BloodType::query()
                 ->orderBy('created_at', 'desc')
                 ->where('name', 'like', $searchTerm)
-                ->where('slug', 'like', $searchTerm)
                 ->paginate(10)
         ]);
     }
+
+    /**
+     * Show the create form
+     */
+    public function create()
+    {
+        $this->openModal();
+        $this->resetInput();
+    }
+
+    /**
+     * Reset input fields
+     */
     private function resetInput()
     {
         $this->name = null;
-        $this->slug = null;
+        $this->selectedId = null;
     }
+
+    /**
+     * Create and update record
+     */
     public function store()
     {
         $this->validate([
-            'name' => 'required|unique:blood_types,name',
-            'slug' => 'required',
-        ],[
-            'name.required' => 'Blood Type is required',
-            'slug.required' => 'Sort Name is required'
+            'name' => 'required|unique:ethnicities,name',
+        ], [
+            'name.required' => 'This field is required'
         ]);
 
-        BloodType::create([
+        BloodType::updateOrCreate(['id' => $this->selectedId], [
             'name' => $this->name,
-            'slug' => $this->slug,
         ]);
+
+        $this->closeModal();
+
         $this->resetInput();
+
+        $this->showSuccessAlert();
+
     }
+
+    /**
+     * Show the edit form
+     * @param $id
+     */
     public function edit($id)
     {
         $record = BloodType::findOrFail($id);
         $this->selectedId = $id;
         $this->name = $record->name;
-        $this->slug = $record->slug;
-        $this->updateMode = true;
+
+        $this->openModal();
     }
 
-    public function update()
-    {
-
-        $this->validate([
-            'selectedId' => 'required|numeric',
-            'name' => 'required|unique:blood_types,name',
-            'slug' => 'required',
-        ],[
-            'name.required' => 'BloodType is required',
-            'slug.required' => 'BloodType is required'
-        ]);
-
-        if ($this->selectedId) {
-            $record = BloodType::find($this->selectedId);
-            $record->update([
-                'name' => $this->name,
-                'slug' => $this->slug,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
-    }
-
+    /**
+     * Delete a record
+     * @param $id
+     */
     public function destroy($id)
     {
         if ($id) {
             $record = BloodType::where('id', $id);
             $record->delete();
         }
+
+        $this->showDeleteAlert();
     }
 }

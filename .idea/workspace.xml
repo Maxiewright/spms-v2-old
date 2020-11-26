@@ -5,28 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="618e396a-adb0-4ec1-9796-7397b89394d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Crud/LivewireCrudModal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/crud/livewire-crud-modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithAlerts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithModal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Crud/LivewireActionBtns.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Crud/LivewireEdit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/livewireSweetAlert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/crud/livewire-action-btns.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/crud/livewire-edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/create_and_update_modal_with_type.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/ChangePassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/ChangePassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/EthnicityComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/EthnicityComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/MaritalStatusComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/MaritalStatusComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/RelationshipComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/RelationshipComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/ReligionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/ReligionComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/HobbyComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/HobbyComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/HobbyTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/HobbyTypeComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/SportComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/SportComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/SportTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/SportTypeComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/DriversPermit/TypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/DriversPermit/TypeComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/GenderComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/GenderComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/BloodTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/BloodTypeComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/EyeColourComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/EyeColourComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/HairColourComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/HairColourComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/HeightComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/HeightComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/SkinColourComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/SkinColourComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/WeightComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/WeightComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/History/AllergyTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/History/AllergyTypeComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/PermissionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/PermissionComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/medical/BiodataSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/medical/BiodataSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/tables/data-table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/tables/data-table.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/ethnicity.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/ethnicity.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/edit_modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/single_field_create_and_update_modal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/marital-status.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/marital-status.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/relationship.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/relationship.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/religion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/religion.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/extracurricular/hobby-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/extracurricular/hobby-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/create_and_update_form_fields_with_type.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/metadata_field_with_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/metadata_field_with_type.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/single-field-metadata.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/single-field-metadata.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/system_admin/metadata/basic_info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/system_admin/metadata/basic_info.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/administration.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/administration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/serviceperson.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/serviceperson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/system_admin/metadata/extracurricular.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/system_admin/metadata/extracurricular.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/system_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/system_admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +60,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="blade" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -248,7 +267,8 @@
       <workItem from="1606225451785" duration="4522000" />
       <workItem from="1606244031469" duration="1916000" />
       <workItem from="1606292112539" duration="11875000" />
-      <workItem from="1606342352489" duration="2873000" />
+      <workItem from="1606342352489" duration="3043000" />
+      <workItem from="1606382076056" duration="18576000" />
     </task>
     <servers />
   </component>
@@ -263,22 +283,22 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-958" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606049680604" />
-    <state x="588" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606082633974">
+    <state x="588" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606405588037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="588" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606082633974" />
-    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605987897864">
+    <state x="588" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606405588037" />
+    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606432633071">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605987897864" />
+    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606432633071" />
     <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1606205952919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="216" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606205952919" />
-    <state x="699" y="188" key="NewPhpClassDialog" timestamp="1606342820653">
+    <state x="699" y="188" key="NewPhpClassDialog" timestamp="1606386269484">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="699" y="188" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606342820653" />
+    <state x="699" y="188" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606386269484" />
     <state x="769" y="426" key="NewPhpFileDialog" timestamp="1606342971628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -287,23 +307,23 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="783" y="152" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605727929186" />
-    <state x="1920" y="0" width="1552" height="960" maximized="true" key="dock-window-1" timestamp="1606297039138">
+    <state x="2058" y="0" width="1252" height="960" maximized="true" key="dock-window-1" timestamp="1606383952358">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state x="1942" y="0" width="1363" height="960" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@-1920.0.1920.1040" timestamp="1606225808821" />
-    <state x="1920" y="0" width="1552" height="960" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606297039138" />
+    <state x="2058" y="0" width="1252" height="960" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606383952358" />
     <state x="-1499" y="0" width="1472" height="1015" maximized="true" key="dock-window-10" timestamp="1606050258434">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1499" y="0" width="1472" height="1015" maximized="true" key="dock-window-10/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606050258434" />
-    <state x="-1536" y="0" width="1552" height="1015" key="dock-window-2" timestamp="1606327663996">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1536" y="0" width="1552" height="1015" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606327663996" />
-    <state x="1920" y="0" width="1472" height="960" key="dock-window-3" timestamp="1605977678864">
+    <state x="2011" y="0" width="1252" height="960" maximized="true" key="dock-window-2" timestamp="1606409758505">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
-    <state x="1920" y="0" width="1472" height="960" key="dock-window-3/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605977678864" />
+    <state x="2011" y="0" width="1252" height="960" maximized="true" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606409758505" />
+    <state x="369" y="110" width="1252" height="960" key="dock-window-3" timestamp="1606409758505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="369" y="110" width="1252" height="960" key="dock-window-3/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606409758505" />
     <state x="1920" y="0" width="1472" height="680" maximized="true" key="dock-window-4" timestamp="1605993653443">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
@@ -328,19 +348,19 @@
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state x="1920" y="0" width="1472" height="960" maximized="true" key="dock-window-9/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606069212140" />
-    <state x="540" y="71" width="801" height="736" key="find.popup" timestamp="1606084345460">
+    <state x="540" y="71" width="801" height="800" key="find.popup" timestamp="1606433072044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="71" width="801" height="736" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606084345460" />
+    <state x="540" y="71" width="801" height="800" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606433072044" />
     <state x="532" y="237" key="run.anything.popup" timestamp="1605961919635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605961919635" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606300350993">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606433143251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1381" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@-1920.0.1920.1040" timestamp="1606234036587" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606300350993" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606433143251" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

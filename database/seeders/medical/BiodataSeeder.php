@@ -149,7 +149,7 @@ class BiodataSeeder extends Seeder
                     'created_at'=>'2020-02-16 11:25:00'
                 ],
                 [
-                    'name'=>'0-Positive',
+                    'name'=>'O-Positive',
                     'slug'      =>'O+',
                     'created_at'=>'2020-02-16 11:25:00'
                 ],

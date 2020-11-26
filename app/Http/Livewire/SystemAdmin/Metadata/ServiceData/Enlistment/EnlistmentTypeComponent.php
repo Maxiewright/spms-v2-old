@@ -11,7 +11,6 @@ class EnlistmentTypeComponent extends Component
 
     use WithPagination;
 
-
     public $search = '';
     public $name, $slug, $selectedId;
     public $updateMode = false;

@@ -2,33 +2,37 @@
 
 namespace App\Http\Livewire\SystemAdmin\Metadata\Extracurricular;
 
+use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\Extracurricular\Sport;
 use App\Models\System\Serviceperson\Extracurricular\SportType;
+use Illuminate\Validation\Rule;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class SportComponent extends Component
 {
-    use WithPagination;
+    use WithPagination, WithModal, WithAlerts;
+
 
     public $search, $filter;
-    public $name, $selectedId,$typeId, $types;
-    public $updateMode = false;
+    public $name, $selectedId, $typeId, $types;
     public $title = 'Sport';
 
-    protected $listeners = ['sport' => 'destroy'];
+    protected $listeners = ['destroy'];
 
     public function mount()
     {
         $this->types = SportType::all('id', 'name');
     }
 
+
     public function render()
     {
 
         $searchTerm = '%'  .$this->search . '%';
         return view('livewire.system-admin.metadata.extracurricular.sport-component',[
-            'data' =>  Sport::query()
+            'data' => Sport::query()
                 ->with('type')
                 ->orderBy('created_at', 'desc')
                 ->where('name', 'like', $searchTerm)
@@ -38,64 +42,76 @@ class SportComponent extends Component
                 ->paginate(10)
         ]);
     }
+    /**
+     * Show the create form
+     */
+    public function create()
+    {
+        $this->openModal();
+        $this->resetInput();
+    }
+
+    /**
+     * Reset input fields
+     */
     private function resetInput()
     {
-        $this->name = null;
-        $this->typeId = '';
+        $this->reset(['name', 'typeId', 'selectedId']);
     }
+
+    /**
+     * Create and update record
+     */
     public function store()
     {
-        $this->validate([
+        $this->validate( [
             'typeId' => 'required',
-            'name' => 'required|unique:sports,name',
+            'name' => [
+                'required',
+                Rule::unique('sports', 'name')
+                    ->ignore($this->selectedId)
+            ]
         ],[
             'typeId.required' => 'Select Sport Type',
             'name.required' => 'Sport is required'
         ]);
 
-        Sport::create([
+        Sport::updateOrCreate(['id' => $this->selectedId], [
             'sport_type_id' => $this->typeId,
             'name' => $this->name,
         ]);
+
+        $this->closeModal();
+
         $this->resetInput();
+
+        $this->showSuccessAlert();
     }
+
+
     public function edit($id)
     {
         $record = Sport::findOrFail($id);
+
         $this->selectedId = $id;
         $this->typeId = $record->sport_type_id;
         $this->name = $record->name;
-        $this->updateMode = true;
+
+        $this->openModal();
     }
 
-    public function update()
-    {
-        $this->validate([
-            'selectedId' => 'required|numeric',
-            'typeId' => 'required',
-            'name' => 'required',
-        ],[
-            'typeId.required' => 'Select Sport Type',
-            'name.required' => 'Sport is required'
-        ]);
-
-        if ($this->selectedId) {
-            $record = Sport::find($this->selectedId);
-            $record->update([
-                'sport_type_id' => $this->typeId,
-                'name' => $this->name,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
-    }
-
+    /**
+     * Delete a record
+     * @param $id
+     */
     public function destroy($id)
     {
         if ($id) {
             $record = Sport::where('id', $id);
             $record->delete();
         }
+
+        $this->showDeleteAlert();
     }
 
 }

@@ -2,22 +2,24 @@
 
 namespace App\Http\Livewire\SystemAdmin\Metadata\Extracurricular;
 
+use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\Extracurricular\Hobby;
 use App\Models\System\Serviceperson\Extracurricular\HobbyType;
+use Illuminate\Validation\Rule;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class HobbyComponent extends Component
 {
-    use WithPagination;
+    use WithPagination, WithModal, WithAlerts;
 
 
     public $search, $filter;
-    public $name, $selectedId,$typeId, $types;
-    public $updateMode = false;
-    public $title = 'Hobby';
+    public $name, $selectedId, $typeId, $types;
+    public $title = 'Hobbies';
 
-    protected $listeners = ['hobby' => 'destroy'];
+    protected $listeners = ['destroy'];
 
     public function mount()
     {
@@ -40,68 +42,77 @@ class HobbyComponent extends Component
                 ->paginate(10)
         ]);
     }
+    /**
+     * Show the create form
+     */
+    public function create()
+    {
+        $this->openModal();
+        $this->resetInput();
+    }
+
+    /**
+     * Reset input fields
+     */
     private function resetInput()
     {
-//        $this->typeId = null;
-        $this->name = null;
+        $this->reset(['name', 'typeId', 'selectedId']);
     }
+
+    /**
+     * Create and update record
+     */
     public function store()
     {
-        $this->validate([
+        $this->validate( [
             'typeId' => 'required',
-            'name' => 'required|unique:hobbies,name',
+            'name' => [
+                'required',
+                Rule::unique('hobbies', 'name')
+                    ->ignore($this->selectedId)
+            ]
         ],[
             'typeId.required' => 'Select Hobby Type',
             'name.required' => 'Hobby is required'
         ]);
 
-        Hobby::create([
+        Hobby::updateOrCreate(['id' => $this->selectedId], [
             'hobby_type_id' => $this->typeId,
             'name' => $this->name,
         ]);
 
+        $this->closeModal();
+
         $this->resetInput();
+
+        $this->showSuccessAlert();
     }
 
 
     public function edit($id)
     {
         $record = Hobby::findOrFail($id);
+
         $this->selectedId = $id;
         $this->typeId = $record->hobby_type_id;
         $this->name = $record->name;
-        $this->updateMode = true;
+
+        $this->openModal();
     }
 
-    public function update()
-    {
-
-        $this->validate([
-            'selectedId' => 'required|numeric',
-            'typeId' => 'required',
-            'name' => 'required|unique:hobbies,name',
-        ],[
-            'typeId.required' => 'Select Hobby Type',
-            'name.required' => 'Hobby is required'
-        ]);
-
-        if ($this->selectedId) {
-            $record = Hobby::find($this->selectedId);
-            $record->update([
-                'hobby_type_id' => $this->typeId,
-                'name' => $this->name,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
-    }
-
+    /**
+     * Delete a record
+     * @param $id
+     */
     public function destroy($id)
     {
         if ($id) {
             $record = Hobby::where('id', $id);
             $record->delete();
         }
+
+        $this->showDeleteAlert();
     }
+
 
 }
