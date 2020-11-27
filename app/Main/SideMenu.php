@@ -25,7 +25,7 @@ class SideMenu
                 'title' => 'Dashboard'
             ],
             'parade_state' => [
-                'icon' => 'users',
+                'icon' => 'user-check',
                 'route_name' => 'parade_state',
                 'params' => [
                     'layout' => 'side-menu'
@@ -33,7 +33,7 @@ class SideMenu
                 'title' => 'Parade State'
             ],
             'servicepeople' => [
-                'icon' => 'users',
+                'icon' => 'database',
                 'route_name' => 'servicepeople.index',
                 'params' => [
                     'layout' => 'side-menu'
@@ -42,7 +42,7 @@ class SideMenu
             ],
             'devider',
             'administration' => [
-                'icon' => 'check',
+                'icon' => 'clipboard',
                 'title' => 'Administration',
                 'sub_menu' => [
                     'side-menu' => [
@@ -70,11 +70,11 @@ class SideMenu
                 ]
             ],
             'manpower' => [
-                'icon' => 'layout',
+                'icon' => 'users',
                 'title' => 'Manpower',
                 'sub_menu' => [
                     'vacancies' => [
-                        'icon' => '',
+                        'icon' => 'user-minus',
                         'title' => 'Vacancies',
                         'sub_menu' => [
                             'branch' => [
@@ -97,7 +97,7 @@ class SideMenu
 
                     ],
                     'career-management' => [
-                        'icon' => '',
+                        'icon' => 'user-check',
                         'title' => 'Career Mgt',
                         'sub_menu' => [
                             'job' => [
@@ -154,7 +154,7 @@ class SideMenu
             ],
             'devider',
             'system-admin' => [
-                'icon' => 'layout',
+                'icon' => 'settings',
                 'title' => 'System Admin',
                 'sub_menu' => [
                     'metadata' => [
@@ -224,7 +224,7 @@ class SideMenu
                         'title' => 'Security',
                         'sub_menu' => [
                             'access-controll' => [
-                                'icon' => '',
+                                'icon' => 'lock',
                                 'route_name' => 'dashboard',
                                 'params' => [
                                     'layout' => 'side-menu'

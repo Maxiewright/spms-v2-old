@@ -14,7 +14,7 @@ trait WithAlerts
             'title' => 'Are you sure?',
             'text' => "You won't be able to revert this!",
             'confirmText' => 'Yes, delete!',
-            'method' => 'destroy',
+            'method' => 'destroy'. str_replace(' ', '', ucwords($this->title)),
             'params' => $id,
         ]);
     }
@@ -22,8 +22,8 @@ trait WithAlerts
     public function showDeleteAlert()
     {
         $this->emit("swal:alert",[
-            'icon' => 'info',
-            'title' => 'Item Removed.',
+            'icon' => 'warning',
+            'title' => $this->title .' Removed.',
             'timeout' => 3000
         ]);
     }

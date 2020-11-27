@@ -19,7 +19,7 @@ class RelationshipComponent extends Component
     public $name, $selectedId;
     public $title = 'Relationship';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyRelationship'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class RelationshipComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyRelationship($id)
     {
         if ($id) {
             $record = Relationship::where('id', $id);

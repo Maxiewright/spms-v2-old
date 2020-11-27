@@ -25,7 +25,7 @@ class CourseQualificationComponent extends Component
             'data' =>  CourseQualification::query()
                 ->orderBy('created_at', 'desc')
                 ->where('name', 'like', $searchTerm)
-                ->where('slug', 'like', $searchTerm)
+                ->orWhere('slug', 'like', $searchTerm)
                 ->paginate(10)
         ]);
     }

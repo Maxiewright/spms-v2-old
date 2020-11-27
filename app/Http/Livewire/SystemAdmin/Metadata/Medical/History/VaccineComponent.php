@@ -19,7 +19,7 @@ class VaccineComponent extends Component
     public $name, $selectedId;
     public $title = 'Vaccine';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyVaccine'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class VaccineComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyVaccine($id)
     {
         if ($id) {
             $record = Vaccine::where('id', $id);

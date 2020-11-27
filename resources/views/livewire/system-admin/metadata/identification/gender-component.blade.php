@@ -1,5 +1,5 @@
 <div>
-    @include('livewire.system-admin.metadata.partials.single-field-metadata')
+    @include('livewire.system-admin.metadata.partials.metadata_with_single_field')
 </div>
 @push('livewire-scripts')
     <script>

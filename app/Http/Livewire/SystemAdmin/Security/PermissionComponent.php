@@ -19,7 +19,7 @@ class PermissionComponent extends Component
     public $name, $selectedId;
     public $title = 'Permission';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyPermission'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class PermissionComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyPermission($id)
     {
         if ($id) {
             $record = Permission::where('id', $id);

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class EngagementPeriod extends Model
 {
-    protected $fillable = ['name', 'number'];
+    protected $fillable = ['name', 'slug'];
 
     public function enlistment()
     {

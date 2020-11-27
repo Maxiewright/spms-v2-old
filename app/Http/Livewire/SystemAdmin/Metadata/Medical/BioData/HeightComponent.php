@@ -19,7 +19,7 @@ class HeightComponent extends Component
     public $name, $selectedId;
     public $title = 'Height';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyHeight'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class HeightComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyHeight($id)
     {
         if ($id) {
             $record = Height::where('id', $id);

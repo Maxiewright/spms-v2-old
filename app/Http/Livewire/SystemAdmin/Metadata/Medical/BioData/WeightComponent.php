@@ -19,7 +19,7 @@ class WeightComponent extends Component
     public $name, $selectedId;
     public $title = 'Weight';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyWeight'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class WeightComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyWeight($id)
     {
         if ($id) {
             $record = Weight::where('id', $id);

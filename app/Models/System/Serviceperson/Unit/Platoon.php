@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Platoon extends Model
 {
-    public $fillable = ['platoon','slug','company_id'];
+    public $fillable = ['name','slug','company_id'];
 
     public function company(){
         return $this->belongsTo(Company::class);

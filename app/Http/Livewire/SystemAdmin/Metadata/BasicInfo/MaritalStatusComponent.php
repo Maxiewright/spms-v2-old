@@ -18,9 +18,9 @@ class MaritalStatusComponent extends Component
 
     public $search = '';
     public $name, $selectedId;
-    public $title = 'MaritalStatus';
+    public $title = 'Marital Status';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyMaritalStatus'];
 
     /**
      * Render the component view
@@ -98,7 +98,7 @@ class MaritalStatusComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyMaritalStatus($id)
     {
         if ($id) {
             $record = MaritalStatus::where('id', $id);

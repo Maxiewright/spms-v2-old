@@ -20,7 +20,7 @@ class SkinColourComponent extends Component
     public $name, $selectedId;
     public $title = 'Skin Colour';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroySkinColour'];
 
     /**
      * Render the component view
@@ -98,7 +98,7 @@ class SkinColourComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroySkinColour($id)
     {
         if ($id) {
             $record = SkinColour::where('id', $id);

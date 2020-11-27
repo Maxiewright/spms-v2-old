@@ -29,7 +29,7 @@ class CourseInstitutionComponent extends Component
             'data' =>  CourseInstitution::query()
                 ->orderBy('created_at', 'desc')
                 ->where('name', 'like', $searchTerm)
-                ->where('slug', 'like', $searchTerm)
+                ->orWhere('slug', 'like', $searchTerm)
                 ->when($this->filter, function ($query){
                     $query->where('course_type_id', '=',$this->filter);
                 })

@@ -19,7 +19,7 @@ class HobbyTypeComponent extends Component
     public $name, $selectedId;
     public $title = 'Hobby Type';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyHobbyType'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class HobbyTypeComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyHobbyType($id)
     {
         if ($id) {
             $record = HobbyType::where('id', $id);

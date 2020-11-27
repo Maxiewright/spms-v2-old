@@ -2,22 +2,24 @@
 
 namespace App\Http\Livewire\SystemAdmin\Metadata\Contact;
 
+use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\Address\CityOrTown;
 use App\Models\System\Serviceperson\Address\DivisionOrRegion;
+use Illuminate\Validation\Rule;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class CityOrTownComponent extends Component
 {
-    use WithPagination;
+    use WithPagination, WithAlerts, WithModal;
 
 
     public $search, $filter;
     public $name, $divisionOrRegionId, $divisionOrRegions, $selectedId;
-    public $updateMode = false;
     public $title = 'City Or Town';
 
-    protected $listeners = ['city_or_town' => 'destroy'];
+    protected $listeners = ['destroyCityOrTown'];
 
     public function mount()
     {
@@ -37,30 +39,50 @@ class CityOrTownComponent extends Component
                 ->when($this->filter, function ($query){
                     $query->where('division_or_region_id', '=', $this->filter);
                 })
-                ->paginate(10)
+                ->paginate(20)
         ]);
     }
+
+    public function create()
+    {
+        $this->openModal();
+        $this->resetInput();
+    }
+
     private function resetInput()
     {
-        $this->name = null;
-        $this->divisionOrRegionId = null;
+        $this->reset(['name', 'divisionOrRegionId', 'selectedId']);
     }
 
     public function store()
     {
         $this->validate([
-            'name' => 'required|unique:division_or_regions,name',
+            'name' => [
+                'required',
+                Rule::unique('city_or_towns', 'name')->where(function ($query){
+                    $query->where('division_or_region_id', $this->divisionOrRegionId);
+                })
+                    ->ignore($this->selectedId)
+            ],
             'divisionOrRegionId' => 'required'
         ],[
+
             'name.required' => 'CityOrTown is required',
+            'name.unique' => 'City or Town already exist in the select Division or Region ',
             'divisionOrRegionId.required' => 'please select Division or Region'
         ]);
 
-        CityOrTown::create([
+        CityOrTown::updateOrCreate(['id' => $this->selectedId], [
             'division_or_region_id' => $this->divisionOrRegionId,
             'name' => $this->name,
         ]);
+
+        $this->showSuccessAlert();
+
         $this->resetInput();
+
+        $this->closeModal();
+
     }
 
     public function edit($id)
@@ -69,49 +91,18 @@ class CityOrTownComponent extends Component
         $this->selectedId = $id;
         $this->name = $record->name;
         $this->divisionOrRegionId = $record->division_or_region_id;
-        $this->updateMode = true;
+
+        $this->openModal();
     }
 
-    public function update()
-    {
-        $this->validate([
-            'selectedId' => 'required|numeric',
-            'name' => 'required|unique:division_or_regions,name',
-            'divisionOrRegionId' => 'required'
-        ],[
-            'name.required' => 'CityOrTown is required',
-            'divisionOrRegionId.required' => 'please select Division or Region'
-        ]);
-
-        if ($this->selectedId) {
-            $record = CityOrTown::find($this->selectedId);
-            $record->update([
-                'division_or_region_id' => $this->divisionOrRegionId,
-                'name' => $this->name,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
-    }
-
-    public function destroy($id)
+    public function destroyCityOrTown($id)
     {
         if ($id) {
             $record = CityOrTown::where('id', $id);
             $record->delete();
         }
-    }
 
-    public function validatedData()
-    {
-        $this->validate([
-            'name' => 'required',
-            'divisionOrRegionId' => 'required'
-        ],[
-            'name.required' => 'CityOrTown is required',
-            'divisionOrRegionId.required' => 'please select Division or Region'
-        ]);
+        $this->showDeleteAlert();
     }
-
 
 }

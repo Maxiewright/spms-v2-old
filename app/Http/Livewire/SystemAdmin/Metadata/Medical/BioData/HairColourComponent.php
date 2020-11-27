@@ -19,7 +19,7 @@ class HairColourComponent extends Component
     public $name, $selectedId;
     public $title = 'Hair Colour';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyHairColour'];
 
     /**
      * @return Application|Factory|View
@@ -95,7 +95,7 @@ class HairColourComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyHairColour($id)
     {
         if ($id) {
             $record = HairColour::where('id', $id);

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Company extends Model
 {
-    protected $fillable = ['company','slug', 'battalion_id'];
+    protected $fillable = ['name','slug', 'battalion_id'];
 
     public function battalion(){
         return $this->belongsTo(Battalion::class);

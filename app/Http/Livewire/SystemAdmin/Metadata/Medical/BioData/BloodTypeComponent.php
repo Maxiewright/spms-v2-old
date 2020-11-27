@@ -20,7 +20,7 @@ class BloodTypeComponent extends Component
     public $name, $selectedId;
     public $title = 'Blood Type';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyBloodType'];
 
     /**
      * Render the component view
@@ -98,7 +98,7 @@ class BloodTypeComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyBloodType($id)
     {
         if ($id) {
             $record = BloodType::where('id', $id);

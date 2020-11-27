@@ -17,9 +17,9 @@ class TypeComponent extends Component
 
     public $search = '';
     public $name, $selectedId;
-    public $title = 'DriversPermitType';
+    public $title = 'Drivers Permit Type';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyDriversPermitType'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class TypeComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyDriversPermitType($id)
     {
         if ($id) {
             $record = DriversPermitType::where('id', $id);

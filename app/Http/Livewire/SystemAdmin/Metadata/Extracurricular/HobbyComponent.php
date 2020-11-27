@@ -14,12 +14,11 @@ class HobbyComponent extends Component
 {
     use WithPagination, WithModal, WithAlerts;
 
-
     public $search, $filter;
     public $name, $selectedId, $typeId, $types;
-    public $title = 'Hobbies';
+    public $title = 'Hobby';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyHobby'];
 
     public function mount()
     {
@@ -104,7 +103,7 @@ class HobbyComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyHobby($id)
     {
         if ($id) {
             $record = Hobby::where('id', $id);
@@ -113,6 +112,4 @@ class HobbyComponent extends Component
 
         $this->showDeleteAlert();
     }
-
-
 }

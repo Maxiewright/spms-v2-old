@@ -20,7 +20,7 @@
            class="flex items-center mt-5">
             <i data-feather="activity" class="w-4 h-4 mr-2"></i>Platoons
         </a>
-        <a data-toggle="tab" data-target="#"sections href="javascript:;"
+        <a data-toggle="tab" data-target="#sections" href="javascript:;"
            class="flex items-center mt-5">
             <i data-feather="activity" class="w-4 h-4 mr-2"></i>Sections
         </a>
@@ -42,7 +42,7 @@
             <livewire:system-admin.metadata.service-data.re-engagement.re-engagement-period-component />
         </div>
         <div class="tab-content__pane" id="battalions">
-            <livewire:system-admin.metadata.service-data.unit.company-component />
+            <livewire:system-admin.metadata.service-data.unit.battalion-component />
         </div>
         <div class="tab-content__pane" id="companies">
             <livewire:system-admin.metadata.service-data.unit.company-component />

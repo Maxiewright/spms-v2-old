@@ -20,7 +20,7 @@ class EthnicityComponent extends Component
     public $name, $selectedId;
     public $title = 'Ethnicity';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyEthnicity'];
 
     /**
      * Render the component view
@@ -99,7 +99,7 @@ class EthnicityComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyEthnicity($id)
     {
         if ($id) {
             $record = Ethnicity::where('id', $id);

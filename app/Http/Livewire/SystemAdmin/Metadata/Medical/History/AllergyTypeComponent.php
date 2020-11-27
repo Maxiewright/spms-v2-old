@@ -19,7 +19,7 @@ class AllergyTypeComponent extends Component
     public $name, $selectedId;
     public $title = 'Allergy Type';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyAllergyType'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class AllergyTypeComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyAllergyType($id)
     {
         if ($id) {
             $record = AllergyType::where('id', $id);

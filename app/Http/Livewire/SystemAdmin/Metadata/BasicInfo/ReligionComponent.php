@@ -19,7 +19,7 @@ class ReligionComponent extends Component
     public $name, $selectedId;
     public $title = 'Religion';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyReligion'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class ReligionComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyReligion($id)
     {
         if ($id) {
             $record = Religion::where('id', $id);

@@ -1,7 +1,7 @@
 <div>
     <x-tables.data-table title="{{$title}}">
         @if($isOpen)
-            @include('livewire.system-admin.metadata.partials.create_and_update_modal_with_type')
+            @include('livewire.system-admin.metadata.partials.updateOrCreate_modal_with_type')
         @endif
         <x-slot name="filters">
             <div class="mr-2">

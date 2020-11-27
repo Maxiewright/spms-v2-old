@@ -19,7 +19,7 @@ class EyeColourComponent extends Component
     public $name, $selectedId;
     public $title = 'Eye Colour';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyEyeColour'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class EyeColourComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyEyeColour($id)
     {
         if ($id) {
             $record = EyeColour::where('id', $id);

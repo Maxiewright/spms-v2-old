@@ -19,7 +19,7 @@ class SportTypeComponent extends Component
     public $name, $selectedId;
     public $title = 'Sport Type';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroySportType'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class SportTypeComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroySportType($id)
     {
         if ($id) {
             $record = SportType::where('id', $id);

@@ -2,21 +2,24 @@
 
 namespace App\Http\Livewire\SystemAdmin\Metadata\ServiceData\Unit;
 
+use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\Unit\Section;
+use Illuminate\Validation\Rule;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class SectionComponent extends Component
 {
-    use WithPagination;
+    use WithPagination, WithModal, WithAlerts;
 
 
     public $search = '';
     public $name, $slug, $selectedId;
     public $updateMode = false;
-    public $title = 'Section or Sub-department';
+    public $title = 'Section';
 
-    protected $listeners = ['section' => 'destroy'];
+    protected $listeners = ['destroySection'];
 
     public function render()
     {
@@ -26,63 +29,69 @@ class SectionComponent extends Component
             'data' =>  Section::query()
                 ->orderBy('created_at', 'desc')
                 ->where('name', 'like', $searchTerm)
-                ->where('slug', 'like', $searchTerm)
+                ->orWhere('slug', 'like', $searchTerm)
                 ->paginate(10)
         ]);
     }
+
+    /**
+     * Show the create form
+     */
+    public function create()
+    {
+        $this->openModal();
+        $this->resetInput();
+    }
+
     private function resetInput()
     {
-        $this->name = null;
-        $this->slug = null;
+        $this->reset(['name', 'slug', 'selectedId']);
     }
     public function store()
     {
         $this->validate([
-            'name' => 'required|unique:sections,name',
-            'slug' => 'required'
+            'name' => [
+                'required',
+                Rule::unique('sections' )
+                    ->ignore($this->selectedId)
+            ],
+
+            'slug' => [
+                'required',
+                Rule::unique('sections' )
+                    ->ignore($this->selectedId)
+            ],
         ],[
-            'name.required' => 'Section name is required',
-            'slug.required' => 'Short Name is required'
+            'name.required' => 'Enlistment type is required',
+            'slug.required' => 'Short Name is required',
+            'slug.unique' => 'Short Name already in use'
         ]);
 
-        Section::create([
+        Section::updateOrCreate(['id' => $this->selectedId],[
             'name' => $this->name,
             'slug' => $this->slug
         ]);
+
+        $this->showSuccessAlert();
+
         $this->resetInput();
+
+        $this->closeModal();
+
     }
+
     public function edit($id)
     {
         $record = Section::findOrFail($id);
         $this->selectedId = $id;
         $this->name = $record->name;
         $this->slug = $record->slug;
-        $this->updateMode = true;
+
+        $this->openModal();
     }
 
-    public function update()
-    {
-        $this->validate([
-            'selectedId' => 'required|numeric',
-            'name' => 'required|unique:sections,name',
-            'slug' => 'required',
-        ],[
-            'name.required' => 'Section name required',
-            'slug.required' => 'Short Name is required'
-        ]);
 
-        if ($this->selectedId) {
-            $record = Section::find($this->selectedId);
-            $record->update([
-                'name' => $this->name,
-                'slug' => $this->slug,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
-    }
-
-    public function destroy($id)
+    public function destroySection($id)
     {
         if ($id) {
             $record = Section::where('id', $id);

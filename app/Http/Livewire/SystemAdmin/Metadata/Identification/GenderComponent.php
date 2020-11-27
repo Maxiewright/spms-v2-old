@@ -19,7 +19,7 @@ class GenderComponent extends Component
     public $name, $selectedId;
     public $title = 'Gender';
 
-    protected $listeners = ['destroy'];
+    protected $listeners = ['destroyGender'];
 
     /**
      * Render the component view
@@ -97,7 +97,7 @@ class GenderComponent extends Component
      * Delete a record
      * @param $id
      */
-    public function destroy($id)
+    public function destroyGender($id)
     {
         if ($id) {
             $record = Gender::where('id', $id);
