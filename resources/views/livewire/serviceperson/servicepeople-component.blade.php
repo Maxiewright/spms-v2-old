@@ -1,6 +1,6 @@
 <x-tables.data-list data-feather="plus">
     <x-slot name="action">
-        <a href="$" class="button text-white bg-theme-1 shadow-md mr-2">Add Serviceperson</a>
+        <a href="{{route('servicepeople.create')}}" class="button text-white bg-theme-1 shadow-md mr-2">Add Serviceperson</a>
     </x-slot>
     <x-slot name="filters">
         <div class="mr-2">

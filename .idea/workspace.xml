@@ -5,102 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="618e396a-adb0-4ec1-9796-7397b89394d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/contact/partials/city_or_town_createOrUpdate_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/contact/partials/division_or_region_createOrUpdate_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/metadata_with_slug.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/updateOrCreate_modal_with_slug.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/partials/rank_updateOrCreate_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/partials/updateOrCreate_modal_with_parent_unit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/BasicInfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Dependents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/EmergencyContact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Extracurricular.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Medical.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Qualification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/CreateServicepersonComponent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithRepeaterFields.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireSelect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireText.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/SelectPrepend.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Form/MultiStep.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-select.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-text.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form/input/select-prepend.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form/input/text.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form/multi-step.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create-serviceperson-component.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/basic-info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/dependents.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/emergency-contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/extracurricular.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/medical.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/qualification.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/review.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/basic_info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/dependent.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/emergency_contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/extracurricular.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/identification.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/medical.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/qualification.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/service_data.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/medical.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseInstitutionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseInstitutionComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseQualificationComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseQualificationComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/EducationLevelComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/EducationLevelComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/EthnicityComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/EthnicityComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/MaritalStatusComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/MaritalStatusComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/RelationshipComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/RelationshipComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/ReligionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/BasicInfo/ReligionComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Contact/CityOrTownComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Contact/CityOrTownComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Contact/DivisionOrRegionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Contact/DivisionOrRegionComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/HobbyComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/HobbyComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/HobbyTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/HobbyTypeComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/SportComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/SportComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/SportTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Extracurricular/SportTypeComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/DriversPermit/ClassComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/DriversPermit/ClassComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/DriversPermit/TransactionCodeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/DriversPermit/TransactionCodeComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/DriversPermit/TypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/DriversPermit/TypeComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/GenderComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Identification/GenderComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/BloodTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/BloodTypeComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/EyeColourComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/EyeColourComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/HairColourComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/HairColourComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/HeightComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/HeightComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/SkinColourComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/SkinColourComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/WeightComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/BioData/WeightComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/History/AllergyComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/History/AllergyComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/History/MedicalConditionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/Medical/History/MedicalConditionComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/DecorationComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/DecorationComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Enlistment/EngagementPeriodComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Enlistment/EngagementPeriodComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Enlistment/EnlistmentTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Enlistment/EnlistmentTypeComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/RankComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/RankComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/ReEngagement/ReEngagementPeriodComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/ReEngagement/ReEngagementPeriodComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Unit/BattalionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Unit/BattalionComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Unit/CompanyComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Unit/CompanyComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Unit/PlatoonComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Unit/PlatoonComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Unit/SectionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Metadata/ServiceData/Unit/SectionComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/PermissionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/PermissionComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithAlerts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithAlerts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/helpers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Main/SideMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main/SideMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/System/Serviceperson/Medical/AllergyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Medical/AllergyType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/System/Serviceperson/ServiceData/EngagementPeriod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/ServiceData/EngagementPeriod.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/System/Serviceperson/Unit/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Unit/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/System/Serviceperson/Unit/Platoon.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/Unit/Platoon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/ethnicity.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/ethnicity.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/marital-status.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/marital-status.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/relationship.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/relationship.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/religion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/basic-info/religion.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/contact/city-or-town-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/contact/city-or-town-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/contact/division-or-region-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/contact/division-or-region-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/contact/partials/city_or_town_form_fields.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/contact/partials/division_or_region_form_fields.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/extracurricular/hobby-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/extracurricular/hobby-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/extracurricular/hobby-type-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/extracurricular/hobby-type-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/extracurricular/sport-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/extracurricular/sport-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/extracurricular/sport-type-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/extracurricular/sport-type-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/identification/drivers-permit/class-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/identification/drivers-permit/class-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/identification/drivers-permit/transaction-code-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/identification/drivers-permit/transaction-code-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/identification/drivers-permit/type-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/identification/drivers-permit/type-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/identification/gender-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/identification/gender-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/blood-type-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/blood-type-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/eye-colour-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/eye-colour-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/hair-colour-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/hair-colour-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/height-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/height-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/skin-colour-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/skin-colour-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/weight-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/bio-data/weight-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/history/allergy-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/history/allergy-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/history/allergy-type-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/history/allergy-type-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/history/medical-condition-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/history/medical-condition-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/history/vaccine-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/medical/history/vaccine-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/create_and_update_form_fields_with_slug.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/create_and_update_modal_with_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/updateOrCreate_modal_with_type.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/metadata_field_with_slug.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/metadata_field_with_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/metadata_with_type.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/single-field-metadata.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/metadata_with_single_field.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/single_field_create_and_update_modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/partials/updateOrCreate_modal_with_single_field.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/decoration-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/decoration-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/enlistment/engagement-period-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/enlistment/engagement-period-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/enlistment/enlistment-type-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/enlistment/enlistment-type-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/partials/rank_create_and_update_form_fields.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/rank-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/rank-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/re-engagement/re-engagement-period-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/re-engagement/re-engagement-period-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/battalion-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/battalion-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/company-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/company-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/partials/create_and_update_form_fields_with_parent_unit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/partials/metadata_field_with_parent_unit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/partials/metadata_with_parent_unit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/platoon-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/platoon-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/section-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/system-admin/metadata/service-data/unit/section-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/system_admin/metadata/service_data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/system_admin/metadata/service_data.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Serviceperson/ServicepersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Serviceperson/ServicepersonController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/servicepeople-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/servicepeople-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/servicepeople/show/medical_history.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicepeople/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,8 +64,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="blade" />
         <option value="JavaScript File" />
+        <option value="blade" />
       </list>
     </option>
   </component>
@@ -265,7 +215,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/servicepeople/show" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/livewire-multistep-forms" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -324,7 +274,13 @@
       <workItem from="1606292112539" duration="11875000" />
       <workItem from="1606342352489" duration="3043000" />
       <workItem from="1606382076056" duration="21927000" />
-      <workItem from="1606472254444" duration="25363000" />
+      <workItem from="1606472254444" duration="25612000" />
+      <workItem from="1606555569860" duration="14664000" />
+      <workItem from="1606576136875" duration="5815000" />
+      <workItem from="1606592857535" duration="3997000" />
+      <workItem from="1606596898203" duration="2122000" />
+      <workItem from="1606674538898" duration="9297000" />
+      <workItem from="1606744811130" duration="12204000" />
     </task>
     <servers />
   </component>
@@ -335,30 +291,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-958" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1606049680604">
+    <state x="-958" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1606781175225">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-958" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606049680604" />
-    <state x="588" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606405588037">
+    <state x="-958" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606781175225" />
+    <state x="588" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606558748193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="588" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606405588037" />
-    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606475926411">
+    <state x="588" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606558748193" />
+    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606596305101">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606475926411" />
-    <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1606205952919">
+    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606596305101" />
+    <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1606674796942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="216" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606205952919" />
+    <state x="687" y="216" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606674796942" />
     <state x="0" y="270" key="FileDocumentManager.FileCacheConflict" timestamp="1606511742187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="270" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606511742187" />
-    <state x="699" y="188" key="NewPhpClassDialog" timestamp="1606386269484">
+    <state x="699" y="188" key="NewPhpClassDialog" timestamp="1606572347583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="699" y="188" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606386269484" />
+    <state x="699" y="188" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606572347583" />
     <state x="769" y="426" key="NewPhpFileDialog" timestamp="1606342971628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -367,23 +323,23 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="783" y="152" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605727929186" />
-    <state x="1920" y="0" width="1305" height="960" maximized="true" key="dock-window-1" timestamp="1606474394985">
+    <state x="1920" y="0" width="1616" height="960" key="dock-window-1" timestamp="1606773493533">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state x="1942" y="0" width="1363" height="960" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@-1920.0.1920.1040" timestamp="1606225808821" />
-    <state x="1920" y="0" width="1305" height="960" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606474394985" />
+    <state x="1920" y="0" width="1616" height="960" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606773493533" />
     <state x="-1499" y="0" width="1472" height="1015" maximized="true" key="dock-window-10" timestamp="1606050258434">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1499" y="0" width="1472" height="1015" maximized="true" key="dock-window-10/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606050258434" />
-    <state x="1920" y="0" width="1305" height="960" maximized="true" key="dock-window-2" timestamp="1606496394573">
+    <state x="1920" y="0" width="1616" height="675" maximized="true" key="dock-window-2" timestamp="1606781279793">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
-    <state x="1920" y="0" width="1305" height="960" maximized="true" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606496394573" />
-    <state x="1983" y="0" width="1305" height="960" maximized="true" key="dock-window-3" timestamp="1606494713042">
+    <state x="1920" y="0" width="1616" height="675" maximized="true" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606781279793" />
+    <state x="1920" y="0" width="1418" height="960" maximized="true" key="dock-window-3" timestamp="1606568890087">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
-    <state x="1983" y="0" width="1305" height="960" maximized="true" key="dock-window-3/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606494713042" />
+    <state x="1920" y="0" width="1418" height="960" maximized="true" key="dock-window-3/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606568890087" />
     <state x="319" y="-12" width="1321" height="960" maximized="true" key="dock-window-4" timestamp="1606436468642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -408,19 +364,19 @@
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state x="1920" y="0" width="1472" height="960" maximized="true" key="dock-window-9/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606069212140" />
-    <state x="824" y="180" width="801" height="800" key="find.popup" timestamp="1606515919517">
+    <state x="824" y="180" width="801" height="800" key="find.popup" timestamp="1606776458143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="824" y="180" width="801" height="800" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606515919517" />
+    <state x="824" y="180" width="801" height="800" key="find.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606776458143" />
     <state x="532" y="237" key="run.anything.popup" timestamp="1605961919635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605961919635" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606517199809">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606781081200">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1381" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@-1920.0.1920.1040" timestamp="1606234036587" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606517199809" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606781081200" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -434,6 +390,16 @@
           <url>file://$PROJECT_DIR$/resources/views/manpower/parade-state.blade.php</url>
           <line>47</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/livewire/serviceperson/create/basic-info.blade.php</url>
+          <line>54</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact.blade.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

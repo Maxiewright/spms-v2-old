@@ -62,6 +62,7 @@ class ServicepersonController extends Controller
 
     public function create()
     {
+        return view('servicepeople.create');
         // Serviceperson create by MultiStep Form - CreateServicepersonControllers
     }
 
