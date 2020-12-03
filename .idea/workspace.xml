@@ -5,52 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="618e396a-adb0-4ec1-9796-7397b89394d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/BasicInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Dependents.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/EmergencyContact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Extracurricular.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Medical.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Qualification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/CreateServicepersonComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithRepeaterFields.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireSelect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireText.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/SelectPrepend.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Form/MultiStep.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-select.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-text.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/form/input/select-prepend.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/form/input/text.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/form/multi-step.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create-serviceperson-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/basic-info.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/dependents.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/emergency-contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/extracurricular.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/medical.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/qualification.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/review.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/basic_info.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/dependent.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/emergency_contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/extracurricular.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/identification.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/medical.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/qualification.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/create/service_data.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/servicepeople/show/medical.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Contact/EmailAddress.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Contact/PhoneNumber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/DriversPermit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/MilitaryIdCard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/NationalIdCard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/Passport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Medical/BioData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Medical/History.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Qualification/Course.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Qualification/Education.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Decoration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Enlistment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Rank.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Unit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithDynamicInput.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Cards/FormCard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireDate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/cards/form-card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-date.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/contact/email-address.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/contact/phone-number.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/drivers-permit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/military-id-card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/national-id-card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/passport.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/medical/bio-data.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/medical/history.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/qualification/course.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/qualification/education.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/decoration.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/enlistment.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/job.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/rank.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/unit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Serviceperson/ServicepersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Serviceperson/ServicepersonController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/servicepeople-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/servicepeople-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/servicepeople/show/medical_history.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicepeople/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/BasicInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/BasicInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/CreateServicepersonComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/CreateServicepersonComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithRepeaterFields.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireSelect.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireSelect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireText.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireText.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Components/Form/Input/SelectPrepend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/SelectPrepend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/form/input/livewire-select.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-select.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/form/input/livewire-text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-text.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/form/input/select-prepend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/form/input/select-prepend.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/basic-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/basic-info.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +285,10 @@
       <workItem from="1606592857535" duration="3997000" />
       <workItem from="1606596898203" duration="2122000" />
       <workItem from="1606674538898" duration="9297000" />
-      <workItem from="1606744811130" duration="12204000" />
+      <workItem from="1606744811130" duration="12477000" />
+      <workItem from="1606815729233" duration="23126000" />
+      <workItem from="1606896227740" duration="11881000" />
+      <workItem from="1606930889734" duration="17633000" />
     </task>
     <servers />
   </component>
@@ -299,10 +307,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="588" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606558748193" />
-    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606596305101">
+    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606844074963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606596305101" />
+    <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606844074963" />
     <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1606674796942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -311,10 +319,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="270" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606511742187" />
-    <state x="699" y="188" key="NewPhpClassDialog" timestamp="1606572347583">
+    <state x="699" y="188" key="NewPhpClassDialog" timestamp="1606933450727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="699" y="188" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606572347583" />
+    <state x="699" y="188" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606933450727" />
     <state x="769" y="426" key="NewPhpFileDialog" timestamp="1606342971628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -323,19 +331,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="783" y="152" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605727929186" />
-    <state x="1920" y="0" width="1616" height="960" key="dock-window-1" timestamp="1606773493533">
+    <state x="1920" y="0" width="1473" height="960" maximized="true" key="dock-window-1" timestamp="1606933657178">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
     <state x="1942" y="0" width="1363" height="960" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@-1920.0.1920.1040" timestamp="1606225808821" />
-    <state x="1920" y="0" width="1616" height="960" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606773493533" />
+    <state x="1920" y="0" width="1473" height="960" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606933657178" />
     <state x="-1499" y="0" width="1472" height="1015" maximized="true" key="dock-window-10" timestamp="1606050258434">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1499" y="0" width="1472" height="1015" maximized="true" key="dock-window-10/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606050258434" />
-    <state x="1920" y="0" width="1616" height="675" maximized="true" key="dock-window-2" timestamp="1606781279793">
+    <state x="2017" y="0" width="1473" height="960" key="dock-window-2" timestamp="1606947628797">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
-    <state x="1920" y="0" width="1616" height="675" maximized="true" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606781279793" />
+    <state x="2017" y="0" width="1473" height="960" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606947628797" />
     <state x="1920" y="0" width="1418" height="960" maximized="true" key="dock-window-3" timestamp="1606568890087">
       <screen x="1920" y="0" width="1600" height="860" />
     </state>
@@ -372,11 +380,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1605961919635" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606781081200">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606944873115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1381" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@-1920.0.1920.1040" timestamp="1606234036587" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606781081200" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1606944873115" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

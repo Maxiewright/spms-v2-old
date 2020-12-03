@@ -22,27 +22,27 @@
 
         {{--BEGIN: Column 2 --}}
         <div class="intro-y col-span-12 sm:col-span-6 lg:col-span-4">
-            <x-form.input.livewire-text model="data.serviceperson.number" placeholder="Service Number *" class="mb-3"/>
-            <x-form.input.livewire-text model="data.serviceperson.firstName" placeholder="First Name *" class="mb-3"/>
-            <x-form.input.livewire-text model="data.serviceperson.middleName" placeholder="Middle Name" class="mb-3"/>
-            <x-form.input.livewire-text model="data.serviceperson.lastName" placeholder="Last Name *" class="mb-3"/>
+            <x-form.input.livewire-text model="data.serviceperson.number" label="" placeholder="Service Number *" class="mb-3"/>
+            <x-form.input.livewire-text model="data.serviceperson.firstName" label="" placeholder="First Name *" class="mb-3"/>
+            <x-form.input.livewire-text model="data.serviceperson.middleName" label="" placeholder="Middle Name" class="mb-3"/>
+            <x-form.input.livewire-text model="data.serviceperson.lastName" label="" placeholder="Last Name *" class="mb-3"/>
         </div>
         {{--END: Column 2 --}}
 
         {{--BEGIN: Column 3 --}}
         <div class="intro-y col-span-12 sm:col-span-6 lg:col-span-4">
-            <x-form.input.livewire-text model="data.serviceperson.otherNames" placeholder="Other Name" class="mb-3"/>
-            <x-form.input.livewire-select model="" placeholder="Select Ethnicity *"  class="mb-3" wire:ignore>
+            <x-form.input.livewire-text model="data.serviceperson.otherNames" label="" placeholder="Other Name" class="mb-3"/>
+            <x-form.input.livewire-select model="" label="" placeholder="Select Ethnicity *"  class="mb-3" wire:ignore>
                 @foreach ($ethnicities as $ethnicity)
                     <option {{isset($data['ethnicityId']) == $ethnicity->id ? 'selected' : ''}} value="{{$ethnicity->id}}">{{$ethnicity->name}}</option>
                 @endforeach
             </x-form.input.livewire-select>
-            <x-form.input.livewire-select model="" placeholder="Select Religion *"  class="mb-3" wire:ignore>
+            <x-form.input.livewire-select model="" label="" placeholder="Select Religion *"  class="mb-3" wire:ignore>
                 @foreach ($religions as $religion)
                     <option {{ isset($data['religionId']) == $religion->id ? 'selected': '' }} value="{{$religion->id}}">{{$religion->name}}</option>
                 @endforeach
             </x-form.input.livewire-select>
-            <x-form.input.livewire-select model="" placeholder="Select Marital Status *" class="mb-3" wire:ignore>
+            <x-form.input.livewire-select model="" label="" placeholder="Select Marital Status *" class="mb-3" wire:ignore>
                 @foreach ($maritalStatuses as $maritalStatus)
                     <option {{isset($data['maritalStatusId']) == $maritalStatus->id ? 'selected' : ''}} value="{{$maritalStatus->id}}">{{$maritalStatus->name}}</option>
                 @endforeach

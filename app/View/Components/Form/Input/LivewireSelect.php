@@ -8,18 +8,20 @@ class LivewireSelect extends Component
 {
     public $model;
     public $placeholder;
+    public $label;
 
     /**
      * Create a new component instance.
      *
      * @param $model
      * @param $placeholder
+     * @param $label
      */
-    public function __construct($model, $placeholder)
+    public function __construct($model, $placeholder, $label)
     {
-        //
         $this->model = $model;
         $this->placeholder = $placeholder;
+        $this->label = $label;
     }
 
     /**

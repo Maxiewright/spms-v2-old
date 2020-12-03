@@ -13,14 +13,15 @@ class Contact extends Component
 {
     use WithSteps;
 
-    public $data = [];
+    public $nextStep = 3;
+
     // Address
     public $address1, $address2;
     public $cities = [];
     public $cityId;
     public $divisions, $divisionId;
     // Phone
-    public $phone = 1;
+    public $phone = 0;
     public $phoneInputs = [];
     public $phoneTypes, $phoneTypeId, $phoneNumber;
     // Email
@@ -43,25 +44,21 @@ class Contact extends Component
     ];
 
 
-
     /**
      * Add phone field
-     * @param $phone
      */
-    public function addPhone($phone)
+    public function addPhone()
     {
-        $phone = $phone + 1;
-        $this->phone = $phone;
-        array_push( $this->phoneInputs ,$phone);
+        $this->phoneInputs[] = count($this->phoneInputs)+1;
     }
 
     /**
      * Remove phone field
-     * @param $phone
+     * @param $index
      */
-    public function removePhone($phone)
+    public function removePhone($index)
     {
-        unset($this->phoneInputs[$phone]);
+        unset($this->phoneInputs[$index]);
     }
 
     /**
@@ -93,22 +90,11 @@ class Contact extends Component
 
     public function render()
     {
-        if (isset($this->data['divisionId'])){
-            $this->cities = CityOrTown::where('division_or_region_id', $this->data['divisionId'])
+        if (isset($this->data['address']['divisionId'])){
+            $this->cities = CityOrTown::where('division_or_region_id', $this->data['address']['divisionId'])
                 ->get();
         };
         return view('livewire.serviceperson.create.contact');
     }
 
-    public function updatedData()
-    {
-        $this->emit('mergeData', $this->data);
-    }
-
-    public function submit()
-    {
-        $this->validate();
-
-        $this->emit('goToStep', 3);
-    }
 }

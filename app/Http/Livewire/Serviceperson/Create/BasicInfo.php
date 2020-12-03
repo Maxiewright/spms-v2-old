@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Serviceperson\Create;
 
+use App\Http\Livewire\Traits\WithSteps;
 use App\Models\System\Universal\Lookup\Ethnicity;
 use App\Models\System\Universal\Lookup\MaritalStatus;
 use App\Models\System\Universal\Lookup\Religion;
@@ -11,10 +12,9 @@ use Livewire\WithFileUploads;
 
 class BasicInfo extends Component
 {
-    use WithFileUploads;
+    use WithFileUploads, WithSteps;
 
-    public $data = [];
-
+    public $nextStep = 2;
     public $photo;
     public $ethnicities;
     public $religions ;
@@ -28,18 +28,6 @@ class BasicInfo extends Component
         'data.serviceperson.number.required' => 'A service number is required',
         'data.serviceperson.number.numeric' => 'This must be a number'
     ];
-
-    public function updatedData()
-    {
-        $this->emit('mergeData', $this->data);
-    }
-
-    public function submit()
-    {
-        $this->validate();
-
-        $this->emit('goToStep', 2);
-    }
 
     public function mount(PhotoService $photoService)
     {

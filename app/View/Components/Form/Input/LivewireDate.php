@@ -4,7 +4,7 @@ namespace App\View\Components\Form\Input;
 
 use Illuminate\View\Component;
 
-class LivewireText extends Component
+class LivewireDate extends Component
 {
     public $model;
     public $placeholder;
@@ -31,6 +31,6 @@ class LivewireText extends Component
      */
     public function render()
     {
-        return view('components.form.input.livewire-text');
+        return view('components.form.input.livewire-date');
     }
 }

@@ -15,12 +15,24 @@ class CreateServicepersonComponent extends Component
     protected $listeners = [
         'goToStep',
         'mergeData',
+        'removeData',
         'store'
     ];
+
 
     public function mergeData($data)
     {
         $this->data = array_merge($this->data, $data);
+    }
+
+    /**
+     * Removes Dynamic Input data when field is removed
+     * @param $dimension
+     * @param $index
+     */
+    public function removeData($dimension, $index)
+    {
+        unset($this->data[$dimension][$index + 1]);
     }
 
     public function store()

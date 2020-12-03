@@ -10,6 +10,7 @@ class SelectPrepend extends Component
     public $selectPlaceholder;
     public $textModel;
     public $textPlaceholder;
+    public $label;
 
     /**
      * Create a new component instance.
@@ -18,13 +19,15 @@ class SelectPrepend extends Component
      * @param $selectPlaceholder
      * @param $textModel
      * @param $textPlaceholder
+     * @param $label
      */
-    public function __construct($selectModel, $selectPlaceholder, $textModel, $textPlaceholder)
+    public function __construct($selectModel, $selectPlaceholder, $textModel, $textPlaceholder, $label)
     {
         $this->selectModel = $selectModel;
         $this->selectPlaceholder = $selectPlaceholder;
         $this->textModel = $textModel;
         $this->textPlaceholder = $textPlaceholder;
+        $this->label = $label;
     }
 
     /**
