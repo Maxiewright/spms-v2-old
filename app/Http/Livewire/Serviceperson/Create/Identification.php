@@ -13,6 +13,22 @@ use Livewire\Component;
 class Identification extends Component
 {
 
+    use WithSteps;
+
+    public $nextStep = 4;
+
+    protected $listeners = ['componentsValidated'];
+
+    public function submit()
+    {
+        $this->emit('validateNationalId');
+    }
+
+    public function componentsValidated()
+    {
+        $this->emit('goToStep', $this->nextStep);
+    }
+
     public function render()
     {
         return view('livewire.serviceperson.create.identification');

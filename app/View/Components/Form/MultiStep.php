@@ -7,20 +7,17 @@ use Illuminate\View\Component;
 class MultiStep extends Component
 {
     public $title;
-    public $previousStep;
     public $step;
 
     /**
      * Create a new component instance.
      *
      * @param $title
-     * @param $previousStep
      * @param $step
      */
-    public function __construct($title, $previousStep, $step)
+    public function __construct($title, $step)
     {
         $this->title = $title;
-        $this->previousStep = $previousStep;
         $this->step = $step;
     }
 

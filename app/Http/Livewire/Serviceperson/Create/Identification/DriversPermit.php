@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Serviceperson\Create\Identification;
 
+use App\Http\Livewire\Traits\WithDynamicInput;
 use App\Http\Livewire\Traits\WithSteps;
 use App\Models\System\Serviceperson\DriversPermit\DriversPermitClass;
 use App\Models\System\Serviceperson\DriversPermit\DriversPermitTransactionCode;
@@ -10,13 +11,29 @@ use Livewire\Component;
 
 class DriversPermit extends Component
 {
-    use WithSteps;
 
-    public $nextStep = 4;
+    use WithDynamicInput, WithSteps;
+
     public $types;
     public $classes;
     public $codes;
 
+    protected $rules = [
+
+    ];
+
+    protected $messages = [
+
+    ];
+
+    protected $listeners = ['validateMilitaryID'];
+
+    public function validateMilitaryId()
+    {
+        $this->validate();
+
+        $this->emit('validatePassport');
+    }
 
     public function mount()
     {
@@ -24,8 +41,6 @@ class DriversPermit extends Component
         $this->classes = DriversPermitClass::all('id', 'name');
         $this->codes = DriversPermitTransactionCode::all('id', 'name');
     }
-
-
 
     public function render()
     {

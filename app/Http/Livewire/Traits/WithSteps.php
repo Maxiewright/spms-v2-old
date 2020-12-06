@@ -22,7 +22,12 @@ trait WithSteps
     public function submit()
     {
         $this->validate();
-
         $this->emit('goToStep', $this->nextStep);
     }
+
+    public function componentsValidated()
+    {
+        $this->emit('goToStep', $this->nextStep);
+    }
+
 }

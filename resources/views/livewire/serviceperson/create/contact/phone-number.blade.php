@@ -1,9 +1,7 @@
-
 <div class="intro-y col-span-12 sm:col-span-6 mb-3">
-
-    <div class="flex items-center" wire:key="phoneNumber">
-        <x-form.input.select-prepend select-model="data.phone.0.phoneTypeId" select-placeholder="Phone Type"
-                                     text-model="data.phone.0.phoneNumber" text-placeholder="Phone Number"
+    <div class="flex items-center">
+        <x-form.input.select-prepend select-model="data.{{$dimension}}.0.type" select-placeholder="Phone Type"
+                                     text-model="data.{{$dimension}}.0.number" text-placeholder="Phone Number"
                                      label="Phone Number" class="w-5/6">
             @foreach ($types as $type)
                 <option value="{{$type->id}}">{{$type->name}}</option>
@@ -15,14 +13,13 @@
             <i data-feather="plus" class="w-4 h-4"></i>
         </span>
         </button>
-
     </div>
 
-
     @foreach ($inputs as $input)
-        <div class="flex items-center" wire:key{{$loop->iteration}}}>
-            <x-form.input.select-prepend select-model="data.phone.{{$loop->iteration}}.phoneTypeId" select-placeholder="Phone Type"
-                                         text-model="data.phone.{{$loop->iteration }}.phoneNumber"
+        <div class="flex items-center">
+            <x-form.input.select-prepend select-model="data.{{$dimension}}.{{$loop->iteration}}.type"
+                                         select-placeholder="Phone Type"
+                                         text-model="data.{{$dimension}}.{{$loop->iteration}}.number"
                                          text-placeholder="Phone Number {{$input + 1}}" label="" class="w-5/6">
                 @foreach ($types as $type)
                     <option value="{{$type->id}}">{{$type->name}}</option>
@@ -37,3 +34,4 @@
         </div>
     @endforeach
 </div>
+

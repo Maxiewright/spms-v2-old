@@ -8,7 +8,7 @@ use Livewire\Component;
 class CreateServicepersonComponent extends Component
 {
 
-    public $step = 2;
+    public $step = 4;
 
     public $data = [];
 
@@ -44,7 +44,6 @@ class CreateServicepersonComponent extends Component
     {
         $this->step = $step;
     }
-
 
     public function render()
     {
