@@ -18,7 +18,7 @@ class MedicalCondition extends Component
 
     public function mount()
     {
-        $this->medicalConditions = MedicalCondition::all('id', 'name');
+        $this->medicalConditions = \App\Models\System\Serviceperson\Medical\MedicalCondition::all('id', 'name');
     }
 
     public function render()

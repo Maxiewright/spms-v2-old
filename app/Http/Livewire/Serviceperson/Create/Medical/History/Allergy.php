@@ -27,7 +27,9 @@ class Allergy extends Component
     public function render()
     {
         if (isset($this->data['allergy']['type'])){
-            $this->allergies = Allergy::where('allergy_type_id', $this->data['allergy']['type']);
+            $this->allergies = \App\Models\System\Serviceperson\Medical\Allergy::
+            where('allergy_type_id', $this->data['allergy']['type'])
+            ->get();
         }
 
         return view('livewire.serviceperson.create.medical.history.allergy');

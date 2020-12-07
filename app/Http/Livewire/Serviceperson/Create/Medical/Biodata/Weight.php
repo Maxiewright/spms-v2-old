@@ -15,6 +15,7 @@ class Weight extends Component
     {
         $this->weights = \App\Models\System\Serviceperson\Biodata\Weight::all('id', 'name');
     }
+
     public function render()
     {
         return view('livewire.serviceperson.create.medical.biodata.weight');

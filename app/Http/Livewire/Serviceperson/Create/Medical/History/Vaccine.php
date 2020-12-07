@@ -18,7 +18,7 @@ class Vaccine extends Component
 
     public function mount()
     {
-        $this->vaccines = Vaccine::all('id', 'name');
+        $this->vaccines = \App\Models\System\Serviceperson\Medical\Vaccine::all('id', 'name');
     }
     public function render()
     {
