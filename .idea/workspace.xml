@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="618e396a-adb0-4ec1-9796-7397b89394d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Extracurricular/Hobby.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Extracurricular/Sport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/extracurricular/hobby.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/extracurricular/sport.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/extracurricular/hobby.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/extracurricular/sport.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Nav.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Qualification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Qualification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Qualification/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Qualification/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Qualification/Education.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Qualification/Education.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Extracurricular.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Extracurricular.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/CreateServicepersonComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/CreateServicepersonComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/buttons/multi-step-nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/buttons/multi-step-nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create-serviceperson-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create-serviceperson-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/nav.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/qualification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/qualification.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/qualification/course.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/qualification/course.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/qualification/education.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/qualification/education.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/extracurricular.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/extracurricular.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/servicepeople/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicepeople/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +258,7 @@
       <workItem from="1607073355728" duration="7268000" />
       <workItem from="1607166445568" duration="17084000" />
       <workItem from="1607268788959" duration="22414000" />
-      <workItem from="1607333074502" duration="16139000" />
+      <workItem from="1607333074502" duration="19269000" />
     </task>
     <servers />
   </component>
@@ -291,11 +290,6 @@
           <url>file://$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact.blade.php</url>
           <line>2</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/servicepeople/create.blade.php</url>
-          <line>12</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
