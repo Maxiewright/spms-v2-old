@@ -1,15 +1,15 @@
 <div>
     <div class="wizard flex flex-col lg:flex-row justify-center px-5 sm:px-20">
-        <x-buttons.multi-step-nav wire:click.prevent="" step="{{$step}}" thisStep="1" title="Basic Info"/>
-        <x-buttons.multi-step-nav wire:click="" step="{{$step}}" thisStep="2" title="Contact"  />
-        <x-buttons.multi-step-nav wire:click="" step="{{$step}}" thisStep="3" title="Identification" />
-        <x-buttons.multi-step-nav wire:click="" step="{{$step}}" thisStep="4" title="Service Data" />
-        <x-buttons.multi-step-nav wire:click="" step="{{$step}}" thisStep="5" title="Medical"/>
-        <x-buttons.multi-step-nav wire:click="" step="{{$step}}" thisStep="6" title="Education" />
-        <x-buttons.multi-step-nav wire:click="" step="{{$step}}" thisStep="7" title="Extracurricular" />
-        <x-buttons.multi-step-nav wire:click="" step="{{$step}}" thisStep="8" title="Dependents" />
-        <x-buttons.multi-step-nav wire:click="" step="{{$step}}" thisStep="9" title="Emergency Contact" />
-        <x-buttons.multi-step-nav wire:click="" step="{{$step}}" thisStep="10" title="Review and Submit" />
+        <x-buttons.multi-step-nav step="{{$step}}" thisStep="1" title="Basic Info"/>
+        <x-buttons.multi-step-nav step="{{$step}}" thisStep="2" title="Contact"  />
+        <x-buttons.multi-step-nav step="{{$step}}" thisStep="3" title="Identification" />
+        <x-buttons.multi-step-nav step="{{$step}}" thisStep="4" title="Service Data" />
+        <x-buttons.multi-step-nav step="{{$step}}" thisStep="5" title="Medical"/>
+        <x-buttons.multi-step-nav step="{{$step}}" thisStep="6" title="Qualification" />
+        <x-buttons.multi-step-nav step="{{$step}}" thisStep="7" title="Extracurricular" />
+        <x-buttons.multi-step-nav step="{{$step}}" thisStep="8" title="Dependents" />
+        <x-buttons.multi-step-nav step="{{$step}}" thisStep="9" title="Emergency Contact" />
+        <x-buttons.multi-step-nav step="{{$step}}" thisStep="10" title="Review & Submit" />
         <div class="wizard__line hidden lg:block w-11/12 bg-gray-200 dark:bg-dark-1 absolute mt-5"></div>
     </div>
 

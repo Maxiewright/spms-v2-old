@@ -8,17 +8,22 @@ use Livewire\Component;
 class CreateServicepersonComponent extends Component
 {
 
-    public $step = 5;
+    public $step = 6;
 
     public $data = [];
 
     protected $listeners = [
+        'test',
         'goToStep',
         'mergeData',
         'removeData',
         'store'
     ];
 
+    public function test()
+    {
+        dd('Hello');
+    }
 
     public function mergeData($data)
     {
