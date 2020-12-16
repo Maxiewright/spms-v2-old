@@ -2,9 +2,9 @@
     <x-form.input.livewire-text model="data.passport.number"
                                 label="Number" placeholder="Passport Number"
                                 class="xl:col-span-4"/>
-    <x-form.input.livewire-date model="data.passport.issue" label="Issue Date"
+    <x-form.input.livewire-date model="data.passport.issued_on" label="Issue Date"
                                 placeholder="Date Issued" class="mb-3 xl:col-span-4"/>
-    <x-form.input.livewire-date model="data.passport.expiry" label="Expiry Date"
+    <x-form.input.livewire-date model="data.passport.expired_on" label="Expiry Date"
                                 placeholder="Expiry Date" class="mb-3 xl:col-span-4"/>
 </div>
 

@@ -1,7 +1,7 @@
 <div class="intro-y col-span-12 sm:col-span-6 mb-3">
     <div class="flex items-center">
-        <x-form.input.select-prepend select-model="data.{{$dimension}}.0.type" select-placeholder="Email Type"
-                                     text-model="data.{{$dimension}}.0.address" text-placeholder="Email Address"
+        <x-form.input.select-prepend select-model="data.email.0.email_type_id" select-placeholder="Email Type"
+                                     text-model="data.email.0.email" text-placeholder="Email Address"
                                      label="Email Address" class="w-5/6">
             @foreach ($types as $type)
                 <option value="{{$type->id}}">{{$type->name}}</option>
@@ -17,9 +17,9 @@
 
     @foreach ($inputs as $input)
         <div class="flex items-center">
-            <x-form.input.select-prepend select-model="data.{{$dimension}}.{{$loop->iteration}}.type"
+            <x-form.input.select-prepend select-model="data.email.{{$loop->iteration}}.email_type_id"
                                          select-placeholder="Phone Type"
-                                         text-model="data.{{$dimension}}.{{$loop->iteration}}.address"
+                                         text-model="data.email.{{$loop->iteration}}.email"
                                          text-placeholder="Phone Number {{$input + 1}}" label="" class="w-5/6">
                 @foreach ($types as $type)
                     <option value="{{$type->id}}">{{$type->name}}</option>

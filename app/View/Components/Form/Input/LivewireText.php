@@ -3,6 +3,7 @@
 namespace App\View\Components\Form\Input;
 
 use Illuminate\View\Component;
+use Illuminate\View\View;
 
 class LivewireText extends Component
 {
@@ -17,7 +18,7 @@ class LivewireText extends Component
      * @param $placeholder
      * @param $label
      */
-    public function __construct($model, $placeholder, $label)
+    public function __construct($model,$placeholder, $label)
     {
         $this->model = $model;
         $this->placeholder = $placeholder;
@@ -27,7 +28,7 @@ class LivewireText extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\View\View|string
+     * @return View|string
      */
     public function render()
     {

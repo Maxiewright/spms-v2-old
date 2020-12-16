@@ -1,5 +1,5 @@
 <div>
-    <x-form.multi-step title="Identification" step="2">
+    <x-form.multi-step title="Identification" step="3">
         <x-cards.form-card title="National Identification Card" class="sm:col-span-6">
             <livewire:serviceperson.create.identification.national-id-card />
         </x-cards.form-card>

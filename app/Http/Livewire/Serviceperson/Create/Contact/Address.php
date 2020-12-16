@@ -21,12 +21,12 @@ class Address extends Component
 
     protected $rules = [
         'data.address.address1' =>  'required',
-        'data.address.city'   =>  'required',
+        'data.address.city_or_town_id'   =>  'required',
     ];
 
     protected $messages = [
-        'data.address.address1.required' => 'A House/Apartment number or location is required.',
-        'data.address.city.required' => 'The City or Town is required.',
+        'data.address.address1.required'             =>  'An Address is Required',
+        'data.address.city_or_town_id.required'      =>  'The City or Town is required',
     ];
 
     public function validateAddress()

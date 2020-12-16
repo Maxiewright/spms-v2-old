@@ -21,12 +21,7 @@ class Identification extends Component
 
     public function submit()
     {
-        $this->emit('validateNationalId');
-    }
-
-    public function componentsValidated()
-    {
-        $this->emit('goToStep', $this->nextStep);
+        $this->emit('validateNationalID');
     }
 
     public function render()

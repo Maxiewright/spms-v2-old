@@ -15,28 +15,44 @@ class BasicInfo extends Component
     use WithFileUploads, WithSteps;
 
     public $nextStep = 2;
-    public $photo;
     public $ethnicities;
     public $religions ;
     public $maritalStatuses;
 
     protected $rules = [
-        'data.serviceperson.number' => 'required|numeric'
+        'data.serviceperson.photo'                 =>  'required|image|max:1024',
+        'data.serviceperson.number'                =>  'required|numeric|digits_between:3,5|unique:servicepeople,number',
+        'data.serviceperson.first_name'            =>  'required',
+        'data.serviceperson.last_name'             =>  'required',
+        'data.serviceperson.marital_status_id'     =>  'required',
+        'data.serviceperson.religion_id'           =>  'required',
+        'data.serviceperson.ethnicity_id'          =>  'required',
     ];
 
     protected $messages = [
-        'data.serviceperson.number.required' => 'A service number is required',
-        'data.serviceperson.number.numeric' => 'This must be a number'
+        'data.serviceperson.photo.required' => 'A Photo is required',
+        'data.serviceperson.number.unique' => 'Service number already exist',
+        'data.serviceperson.number.numeric' => 'This field must be a number',
+        'data.serviceperson.number.required' => 'Service Number is required',
+        'data.serviceperson.number.digits_between' => 'The Service Number must be between 3 and 5 digits',
+        'data.serviceperson.first_name.required' => 'First name is required',
+        'data.serviceperson.last_name.required' => 'Last name is required',
+        'data.serviceperson.marital_status_id.required' => 'Marital Status is required',
+        'data.serviceperson.religion_id.required' => 'Religion is required',
+        'data.serviceperson.ethnicity_id.required' => 'Ethnicity is required',
     ];
 
-    public function mount(PhotoService $photoService)
+//    public function updatedData()
+//    {
+//        $this->validateOnly('data.serviceperson.number');
+//    }
+
+    public function mount()
     {
-//        $this->photoService = $photoService;
         $this->ethnicities = Ethnicity::all('name', 'id');
         $this->religions = Religion::all('name', 'id');
         $this->maritalStatuses = MaritalStatus::all('name', 'id');
     }
-
 
     public function render()
     {

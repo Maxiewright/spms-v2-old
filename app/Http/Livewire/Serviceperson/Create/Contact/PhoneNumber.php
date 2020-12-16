@@ -12,21 +12,23 @@ class PhoneNumber extends Component
     use WithDynamicInput, WithSteps;
 
     public $types;
-    public $dimension;
     public $isValid = false;
+    public $title = 'phone';
 
     protected $rules = [
-        'data.phone.0.type' => 'required',
-        'data.phone.0.number' => 'required',
-        'data.phone.*.type' => 'required',
-        'data.phone.*.number' => 'required',
+        'data.phone.0.phone_type_id'     =>  'required',
+        'data.phone.0.number'            =>  'required|regex:/^([0-9]-?){7}$/',
+        'data.phone.*.phone_type_id'     =>  'required',
+        'data.phone.*.number'            =>  'required|regex:/^([0-9]-?){7}$/',
+
     ];
 
     protected $messages = [
-        'data.phone.0.type.required' => 'Please select phone type',
+        'data.phone.0.phone_type_id.required' => 'Please select phone type',
         'data.phone.0.number.required' => 'Phone number is required',
-        'data.phone.*.type.required' => 'Please select phone type',
+        'data.phone.*.phone_type_id.required' => 'Please select phone type',
         'data.phone.*.number.required' => 'Phone number is required',
+        'data.phone.*.number.regex'   =>  'Please enter a valid TT phone number e.g 123-4567',
     ];
 
     protected $listeners = ['validatePhoneNumber'];

@@ -1,10 +1,10 @@
-import Velocity from 'velocity-animate'
+import Velocity from "velocity-animate";
 
-(function(cash) { 
+(function (cash) {
     "use strict";
 
     // Show accordion content
-    cash('body').on('click', '.accordion__pane__toggle', function() {
+    cash("body").on("click", ".accordion__pane__toggle", function () {
         // Close active accordion
         Velocity(
             cash(this)
@@ -14,16 +14,14 @@ import Velocity from 'velocity-animate'
             "slideUp",
             {
                 duration: 300,
-                complete: function(el) {
-                    cash(el)
-                        .closest(".accordion__pane")
-                        .removeClass("active")
-                }
+                complete: function (el) {
+                    cash(el).closest(".accordion__pane").removeClass("active");
+                },
             }
-        )
+        );
 
         // Set active accordion
-        if (cash(this).closest('.accordion__pane').hasClass('active')) {
+        if (cash(this).closest(".accordion__pane").hasClass("active")) {
             Velocity(
                 cash(this)
                     .closest(".accordion__pane")
@@ -31,13 +29,13 @@ import Velocity from 'velocity-animate'
                 "slideUp",
                 {
                     duration: 300,
-                    complete: function(el) {
+                    complete: function (el) {
                         cash(el)
                             .closest(".accordion__pane")
                             .removeClass("active");
-                    }
+                    },
                 }
-            )
+            );
         } else {
             Velocity(
                 cash(this)
@@ -46,13 +44,11 @@ import Velocity from 'velocity-animate'
                 "slideDown",
                 {
                     duration: 300,
-                    complete: function(el) {
-                    cash(el)
-                        .closest(".accordion__pane")
-                        .addClass("active");
-                    }
+                    complete: function (el) {
+                        cash(el).closest(".accordion__pane").addClass("active");
+                    },
                 }
-            )
+            );
         }
-    })
-})(cash)
+    });
+})(cash);

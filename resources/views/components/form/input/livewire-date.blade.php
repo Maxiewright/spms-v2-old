@@ -2,7 +2,7 @@
     <label>{{$label}}</label>
     <input wire:model="{{$model}}"
            type="date"
-           class="input w-full border flex-1 mt-2  @error($model) is-invalid @enderror"
+           class="input w-full border flex-1 mt-2  @error($model) border-red-500 @enderror"
            placeholder="{{$placeholder}}"
         {{$attributes}}
     >

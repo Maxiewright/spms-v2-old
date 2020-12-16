@@ -20,14 +20,14 @@
     </div>
     {{--END: Division or Region--}}
     {{--BEGIN: City or Town--}}
-    <div class="intro-y col-span-12 sm:col-span-6" wire:key="city">
+    <div class="intro-y col-span-12 sm:col-span-6">
         <x-form.input.livewire-select
-            model="data.address.city"
+            model="data.address.city_or_town_id"
             placeholder="{{isset($data['address']['division']) ? 'Select City or Town' : 'Select Division or Region First'}}"
             label="City or Town"
         >
             @foreach($cities as $city)
-                <option {{isset($data['address']['city']) == $city->id ? 'selected' : ''}}
+                <option
                         value="{{$city->id}}">{{$city->name}}
                 </option>
             @endforeach

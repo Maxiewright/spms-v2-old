@@ -14,21 +14,27 @@ class EmailAddress extends Component
     use WithDynamicInput, WithSteps;
 
     public $types;
-    public $dimension;
     public $isValid = false;
+    public $title = 'email';
 
     protected $rules = [
-        'data.email.0.type' => 'required',
-        'data.email.0.address' => 'required',
-        'data.email.*.type' => 'required',
-        'data.email.*.address' => 'required',
+        'data.email.0.email_type_id' => 'required',
+        'data.email.0.email' => 'required',
+
+        'data.email.*.email_type_id' => 'required',
+        'data.email.*.email' => 'required|email|unique:email_addresses,email',
     ];
 
     protected $messages = [
-        'data.email.0.type.required' => 'Please select email type',
-        'data.email.0.address.required' => 'Phone number is required',
-        'data.email.*.type.required' => 'Please select email type',
-        'data.email.*.address.required' => 'Phone number is required',
+        'data.email.0.email_type_id.required' => 'Please select email type',
+        'data.email.0.email.required' => 'An Email Address is required',
+        'data.email.0.email.email' => 'Please enter a valid email address',
+        'data.email.0.email.unique' => 'The Email already exist',
+
+        'data.email.*.email_type_id.required' => 'Please select email type',
+        'data.email.*.email.required' => 'An Email Address is required',
+        'data.email.*.email.email' => 'Please enter a valid email address',
+        'data.email.*.email.unique' => 'The Email already exist',
     ];
 
     protected $listeners = ['validateEmailAddress'];
@@ -43,14 +49,6 @@ class EmailAddress extends Component
     public function mount()
     {
         $this->types = EmailType::all('id', 'name');
-    }
-
-    public function remove($index)
-    {
-        $this->emit('removeData', 'email', $index);
-        unset($this->data['email'][$index + 1]);
-        unset($this->inputs[$index]);
-        $this->inputs = array_values($this->inputs);
     }
 
     public function render()

@@ -24,12 +24,10 @@ trait WithDynamicInput
      */
     public function remove($index)
     {
-        $this->emit('removeData', $this->dimension, $index);
-        unset($this->data[$this->dimension][$index + 1]);
+        $this->emit('removeData', $this->title, $index);
+        unset($this->data[$this->title][$index + 1]);
         unset($this->inputs[$index]);
         $this->inputs = array_values($this->inputs);
     }
-
-
 
 }

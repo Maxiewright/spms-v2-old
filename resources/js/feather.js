@@ -1,11 +1,11 @@
-import feather from 'feather-icons'
+import feather from "feather-icons";
 
-(function() { 
+(function () {
     "use strict";
-        
+
     // Feather Icons
     feather.replace({
-        'stroke-width': 1.5
-    })
-    window.feather = feather
-})()
+        "stroke-width": 1.5,
+    });
+    window.feather = feather;
+})();
