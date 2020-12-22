@@ -8,7 +8,7 @@ use Livewire\Component;
 class CreateServicepersonComponent extends Component
 {
 
-    public $step = 3;
+    public $step = 4;
 
     public $data = [];
 

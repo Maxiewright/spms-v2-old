@@ -13,18 +13,26 @@ class Job extends Component
 {
     use WithSteps;
 
-    public $branches ;
+    public $branches;
     public $streams = [];
     public $careerPaths = [];
     public $specialities = [];
     public $jobs = [];
 
     protected $rules = [
-
+        'data.serviceperson_job.0.branch_id' => 'nullable',
+        'data.serviceperson_job.0.career_path_id' => 'nullable',
+        'data.serviceperson_job.0.job_id' => 'required',
+        'data.serviceperson_job.0.speciality_id' => 'nullable',
+        'data.serviceperson_job.0.started_on' => 'required|date|before_or_equal:today',
+        'data.serviceperson_job.0.ended_on' => 'nullable|date|after:joined_on',
     ];
 
-    protected  $messages = [
-
+    protected $messages = [
+        'data.serviceperson_job.*.job_id.required' => 'Job is required',
+        'data.serviceperson_job.*.started_on.required' => 'Date started is required',
+        'data.serviceperson_job.*.started_on.before_or_equal' => 'Date started cannot be after today',
+        'data.serviceperson_job.*.ended_on.after' => 'Date left cannot be before date joined',
     ];
 
     protected $listeners = ['validateJob'];
@@ -33,30 +41,30 @@ class Job extends Component
     {
         $this->validate();
 
-        $this->emit('validate...');
+        $this->emit('validateRank');
     }
 
     public function mount()
     {
-        $this->branches = Branch::all('id','name');
+        $this->branches = Branch::all('id', 'name');
     }
 
     public function render()
     {
-        if (isset($this->data['job']['branch'])){
-            $this->streams = Stream::where('branch_id', $this->data['job']['branch'])->get();
+        if (isset($this->data['serviceperson_job'][0]['branch_id'])) {
+            $this->streams = Stream::where('branch_id', $this->data['serviceperson_job'][0]['branch_id'])->get();
         }
 
-        if (isset($this->data['job']['stream'])){
-            $this->careerPaths = CareerPath::where('stream_id',$this->data['job']['stream'])->get();
+        if (isset($this->data['serviceperson_job'][0]['stream_id'])) {
+            $this->careerPaths = CareerPath::where('stream_id', $this->data['serviceperson_job'][0]['stream_id'])->get();
         }
 
-        if (isset($this->data['job']['career_path'])){
-            $this->specialities = Specialty::where('career_path_id', $this->data['job']['career_path'])->get();
+        if (isset($this->data['serviceperson_job'][0]['career_path_id'])) {
+            $this->specialities = Specialty::where('career_path_id', $this->data['serviceperson_job'][0]['career_path_id'])->get();
             $this->jobs = \App\Models\System\Serviceperson\CareerManagement\Job\Job::
-            join('job_titles', 'job_title_id','=', 'job_titles.id')
+            join('job_titles', 'job_title_id', '=', 'job_titles.id')
                 ->select('name', 'slug', 'jobs.id')
-                ->where('career_path_id', $this->data['job']['career_path'])->get();
+                ->where('career_path_id', $this->data['serviceperson_job'][0]['career_path_id'])->get();
         }
 
         return view('livewire.serviceperson.create.service-data.job');

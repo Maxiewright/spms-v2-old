@@ -1,5 +1,5 @@
 <div class="grid grid-cols-12 gap-4 row-gap-5 mt-5 p-3">
-    <x-form.input.livewire-select model="data.job.branch" placeholder="Select Branch"
+    <x-form.input.livewire-select model="data.serviceperson_job.0.branch_id" placeholder="Select Branch"
                                   label="Branch" class=" sm:col-span-4">
         @foreach($branches as $branch)
             <option
@@ -8,8 +8,8 @@
         @endforeach
     </x-form.input.livewire-select>
 
-    <x-form.input.livewire-select model="data.job.stream"
-                                  placeholder="{{isset($data['job']['branch']) ? 'Select Stream' : 'Select Branch First'}}"
+    <x-form.input.livewire-select model="data.serviceperson_job.0.stream_id"
+                                  placeholder="{{isset($data['serviceperson_job']['branch_id']) ? 'Select Stream' : 'Select Branch First'}}"
                                   label="Stream" class="sm:col-span-4">
         @foreach($streams as $stream)
             <option
@@ -18,8 +18,8 @@
         @endforeach
     </x-form.input.livewire-select>
 
-    <x-form.input.livewire-select model="data.job.career_path"
-                                  placeholder="{{isset($data['job']['stream']) ? 'Select Career Path' : 'Select Stream First'}} "
+    <x-form.input.livewire-select model="data.serviceperson_job.0.career_path_id"
+                                  placeholder="{{isset($data['serviceperson_job']['stream_id']) ? 'Select Career Path' : 'Select Stream First'}} "
                                   label="Career Path" class="sm:col-span-4">
         @foreach($careerPaths as $careerPath)
             <option
@@ -28,8 +28,8 @@
         @endforeach
     </x-form.input.livewire-select>
 
-    <x-form.input.livewire-select model="data.job.speciality"
-                                  placeholder="{{isset($data['job']['career_path']) ? 'Select Speciality' : 'Select Career Path First'}}"
+    <x-form.input.livewire-select model="data.serviceperson_job.0.speciality_id"
+                                  placeholder="{{isset($data['serviceperson_job']['career_path_id']) ? 'Select Speciality' : 'Select Career Path First'}}"
                                   label="Speciality" class="sm:col-span-4">
         @foreach($specialities as $speciality)
             <option
@@ -38,8 +38,8 @@
         @endforeach
     </x-form.input.livewire-select>
 
-    <x-form.input.livewire-select model="data.job.job"
-                                  placeholder="{{isset($data['job']['career_path']) ? 'Select Job' : 'Select Career Path First'}} "
+    <x-form.input.livewire-select model="data.serviceperson_job.0.job_id"
+                                  placeholder="{{isset($data['serviceperson_job']['career_path_id']) ? 'Select Job' : 'Select Career Path First'}} "
                                   label="Job" class="sm:col-span-4">
         @foreach($jobs as $job)
             <option
@@ -48,6 +48,9 @@
         @endforeach
     </x-form.input.livewire-select>
 
-    <x-form.input.livewire-date model="data.job.start_date" label="Start Date"
+    <x-form.input.livewire-date model="data.serviceperson_job.0.started_on" label="Start Date"
                                 placeholder="Start Date" class=" sm:col-span-2"/>
+
+{{--    <x-form.input.livewire-date model="data.serviceperson_job.0.ended_on" label="End Date"--}}
+{{--                                placeholder="End Date" class=" sm:col-span-2"/>--}}
 </div>

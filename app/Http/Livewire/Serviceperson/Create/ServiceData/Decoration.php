@@ -11,6 +11,25 @@ class Decoration extends Component
 
     public $decorations;
 
+    protected $rules = [
+        'data.decoration.*.decoration_id'    => 'sometimes',
+        'data.decoration.*.received_on'     => 'required_with:decoration.*.decoration_id|before_or_equal:today',
+    ];
+
+    protected $messages = [
+        'data.decoration.*.received_on.required_with'    => 'Date required with Award',
+        'data.decoration.*.received_on.before_or_equal'  => 'The award receipt date cannot be a future date',
+    ];
+
+    protected $listeners = ['validateDecoration'];
+
+    public function validateDecoration()
+    {
+        $this->validate();
+
+        $this->emit('componentsValidated');
+    }
+
     public function mount()
     {
         $this->decorations = \App\Models\System\Serviceperson\ServiceData\Decoration::all('id', 'name');

@@ -5,199 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="618e396a-adb0-4ec1-9796-7397b89394d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/EmergencyContact/Address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/EmergencyContact/BasicInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/EmergencyContact/EmailAddress.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/EmergencyContact/PhoneNumber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Buttons/RemoveField.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@ckeditor/ckeditor5-theme/icons/font-background.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@ckeditor/ckeditor5-theme/icons/font-color.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@ckeditor/ckeditor5-theme/icons/font-family.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@ckeditor/ckeditor5-theme/icons/font-size.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-basic-styles/theme/icons/bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-basic-styles/theme/icons/code.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-basic-styles/theme/icons/italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-basic-styles/theme/icons/strikethrough.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-basic-styles/theme/icons/subscript.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-basic-styles/theme/icons/superscript.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-basic-styles/theme/icons/underline.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-core/theme/icons/cancel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-core/theme/icons/check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-core/theme/icons/eraser.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-core/theme/icons/image.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-core/theme/icons/low-vision.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-core/theme/icons/pencil.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-core/theme/icons/three-vertical-dots.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-heading/theme/icons/heading1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-heading/theme/icons/heading2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-heading/theme/icons/heading3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-heading/theme/icons/heading4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-heading/theme/icons/heading5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-heading/theme/icons/heading6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-highlight/theme/icons/marker.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-highlight/theme/icons/pen.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-link/theme/icons/link.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-link/theme/icons/unlink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-select-all/theme/icons/select-all.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-theme/icons/image_placeholder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-ui/theme/icons/color-tile-check.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-ui/theme/icons/dropdown-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-ui/theme/icons/next-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-ui/theme/icons/previous-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-undo/theme/icons/redo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-undo/theme/icons/undo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-widget/theme/icons/drag-handle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vendor/@ckeditor/ckeditor5-widget/theme/icons/return-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_accordion.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_blog.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_boxed-tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_breakpoint.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_chat-dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_chat.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_checkbox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_ckeditor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_content.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_dark-mode-switcher.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_dropzone.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_error-page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_feather-icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_file.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_image-fit.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_inbox-filter.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_inbox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_input.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_intro.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_litepicker.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_mini-chat-box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_mini-chat-list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_mini-chat.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_mini-report-chart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_mobile-menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_news.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_notification-content.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_notification.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_pos-dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_pos.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_post.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_pricing-tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_pristine.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_report-box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_report-chart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_report-maps.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_report-timeline.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_scrollbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_search-result.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_search.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_side-nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_tab.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_table-report.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_tabulator.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_tail-select.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_tailwind.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_tiny-slider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_tippy.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_toastify.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_top-bar-boxed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_top-bar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_top-nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_typing-dots.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_wizard.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_zoom-in.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_zoom-vanilla.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/fonts/_roboto.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/buttons/remove-field.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/emergency-contact/address.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/emergency-contact/basic-info.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/emergency-contact/email-address.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/emergency-contact/phone-number.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/BasicInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/BasicInfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Contact/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Contact/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Contact/EmailAddress.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Contact/EmailAddress.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Contact/PhoneNumber.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Contact/PhoneNumber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Dependents.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Dependents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/EmergencyContact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/EmergencyContact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/DriversPermit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/DriversPermit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/MilitaryIdCard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/MilitaryIdCard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/NationalIdCard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/NationalIdCard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/Passport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/Passport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Unit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/CreateServicepersonComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/CreateServicepersonComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithDynamicInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithDynamicInput.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireText.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Form/Input/LivewireText.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/bg-login-page.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/images/bg-login-page.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/images/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/accordion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/copy-code.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/copy-code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dark-mode-switcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dark-mode-switcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/datepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/dropzone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/feather.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/feather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/highlight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/maps.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/maps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/mobile-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/mobile-menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/show-code.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/show-code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/show-dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/show-dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/show-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/show-modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/side-menu-tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/side-menu-tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/side-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/side-menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/svg-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/svg-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/tab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/tabulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/tabulator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/tail-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/tail-select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/tiny-slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/tiny-slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/tippy.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/tippy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/toast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/validation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/zoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/zoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/form/input/livewire-date.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-date.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/form/input/livewire-select.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-select.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/form/input/livewire-text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-text.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/form/input/text.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/basic-info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/basic-info.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact/address.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact/address.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact/email-address.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact/email-address.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact/phone-number.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact/phone-number.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/dependents.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/dependents.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/emergency-contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/emergency-contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/drivers-permit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/drivers-permit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/military-id-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/military-id-card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/national-id-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/national-id-card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/passport.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/passport.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/servicepeson/create/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/partials/drivers_permit_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/job.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/job.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/unit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/unit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -448,7 +262,8 @@
       <workItem from="1607938458260" duration="8348000" />
       <workItem from="1607957974685" duration="610000" />
       <workItem from="1608027401910" duration="4897000" />
-      <workItem from="1608111500706" duration="8251000" />
+      <workItem from="1608111500706" duration="8335000" />
+      <workItem from="1608554978004" duration="4944000" />
     </task>
     <servers />
   </component>
