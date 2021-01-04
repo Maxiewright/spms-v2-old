@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\Dependent;
 use App\Models\Serviceperson\EmergencyContact;
 use App\Models\Serviceperson\Serviceperson;

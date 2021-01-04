@@ -2,7 +2,7 @@
 
 namespace App\Policies\Serviceperson\Extracurricular;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\ServicepersonHobby;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

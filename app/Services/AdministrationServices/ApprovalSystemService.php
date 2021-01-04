@@ -4,7 +4,7 @@
 namespace App\Services\AdministrationServices;
 
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use Approval\Models\Modification;
 
 class ApprovalSystemService

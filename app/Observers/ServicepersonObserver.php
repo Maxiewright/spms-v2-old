@@ -2,7 +2,7 @@
 
 namespace App\Observers;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\Serviceperson;
 use App\Notifications\ServicepersonCreatedNotification;
 use Approval\Models\Approval;

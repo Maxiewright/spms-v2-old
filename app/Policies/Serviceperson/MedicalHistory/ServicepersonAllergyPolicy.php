@@ -3,7 +3,7 @@
 namespace App\Policies\Serviceperson\MedicalHistory;
 
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\ServicepersonAllergy;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

@@ -3,7 +3,7 @@
 namespace App\Policies\Serviceperson;
 
 use App\Models\Serviceperson\EmailAddress;
-use App\Models\Authentication\User;
+use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class EmailAddressPolicy
@@ -77,7 +77,7 @@ class EmailAddressPolicy
      */
     public function update(User $user, EmailAddress $emailAddress)
     {
-        
+
         if ($user->can('create-contact-information')){
             return true;
         }

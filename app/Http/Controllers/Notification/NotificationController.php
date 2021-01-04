@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Notification;
 
 use App\Http\Controllers\Controller;
-use App\Models\Authentication\User;
+use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Notifications\Notification;

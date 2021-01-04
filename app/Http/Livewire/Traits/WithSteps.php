@@ -22,6 +22,7 @@ trait WithSteps
     public function submit()
     {
         $this->validate();
+
         $this->emit('goToStep', $this->nextStep);
     }
 

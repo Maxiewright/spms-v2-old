@@ -3,7 +3,7 @@
 namespace App\Policies\Serviceperson;
 
 use App\Models\Serviceperson\PhoneNumber;
-use App\Models\Authentication\User;
+use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PhoneNumberPolicy

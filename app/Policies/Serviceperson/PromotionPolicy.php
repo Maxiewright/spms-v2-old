@@ -2,7 +2,7 @@
 
 namespace App\Policies\Serviceperson;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\Promotion;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

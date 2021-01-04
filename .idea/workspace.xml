@@ -1,17 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="618e396a-adb0-4ec1-9796-7397b89394d1" name="Default Changelist" comment="">
+    <list default="true" id="27db36ba-3abb-4f47-ac7d-754208014d93" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Notification/NotificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Notification/NotificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Decoration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Decoration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Enlistment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Enlistment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Unit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/CreateServicepersonComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/CreateServicepersonComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/job.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/job.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/unit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/unit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Rank.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Rank.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/UserComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/UserComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/Approval/ApprovalObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/Approval/ApprovalObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/Approval/DisapprovalObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/Approval/DisapprovalObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/Approval/ModificationObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/Approval/ModificationObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/ServicepersonObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/ServicepersonObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/AddressPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/AddressPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/BiodataPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/BiodataPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/DependentPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/DependentPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/DriversPermitPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/DriversPermitPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/EmailAddressPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/EmailAddressPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/EmergencyContactPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/EmergencyContactPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/EnlistmentPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/EnlistmentPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/Extracurricular/ServicepersonHobbyPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/Extracurricular/ServicepersonHobbyPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/Extracurricular/ServicepersonSportPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/Extracurricular/ServicepersonSportPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/JobAppointmentPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/JobAppointmentPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalClassificationPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalClassificationPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/MeasurementPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/MeasurementPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonAllergyPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonAllergyPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonMedicalConditionPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonMedicalConditionPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonVaccinePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonVaccinePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/WeighPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/WeighPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MilitaryIdCardPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MilitaryIdCardPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/NationalIdCardPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/NationalIdCardPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/PassportPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/PassportPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/PhoneNumberPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/PhoneNumberPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/PromotionPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/PromotionPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/ReEngagementPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/ReEngagementPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/ServiceData/AwardPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/ServiceData/AwardPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonCoursePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonCoursePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonEducationPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonEducationPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/UnitPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/UnitPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RelationsServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RelationsServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/AdministrationServices/ApprovalSystemService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/AdministrationServices/ApprovalSystemService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/ServicepersonServices/StoreServicepersonService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ServicepersonServices/StoreServicepersonService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/ADavidSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/ADavidSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/KRaphaelSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/KRaphaelSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/LJosephSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/LJosephSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/MWilliamsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/MWilliamsSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/NAmingSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/NAmingSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/PDerrySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/PDerrySeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/SAntoinetteSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/SAntoinetteSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/decoration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/decoration.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/enlistment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/enlistment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/rank.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/rank.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,23 +70,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="blade" />
+        <option value="composer.json" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/psr/http-client" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
@@ -89,16 +129,13 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation" />
@@ -159,24 +196,21 @@
       <path value="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1kQj56eMQbphALRLvGnTYH2CwDA" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1mI6jHur5bGD6F7wOsypYaISx0y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -184,114 +218,23 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\maxie\SpMS" />
-      <recent name="C:\Users\maxie\SpMS\resources\js" />
-      <recent name="C:\Users\maxie\SpMS\resources" />
-      <recent name="C:\Users\maxie\SpMS\resources\views\servicepeople\show" />
-      <recent name="C:\Users\maxie\SpMS\routes" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\maxie\SpMS\app\Http\Livewire\SystemAdmin\Metadata" />
-      <recent name="C:\Users\maxie\SpMS\app\Http\Livewire\SystemAdmin" />
-      <recent name="C:\Users\maxie\SpMS\resources\views\livewire\system-admin\metadata" />
-      <recent name="C:\Users\maxie\SpMS\resources\views\livewire\system-admin" />
-      <recent name="C:\Users\maxie\SpMS\resources\views\components\layouts" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="618e396a-adb0-4ec1-9796-7397b89394d1" name="Default Changelist" comment="" />
-      <created>1605639522610</created>
+      <changelist id="27db36ba-3abb-4f47-ac7d-754208014d93" name="Default Changelist" comment="" />
+      <created>1609168896895</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605639522610</updated>
-      <workItem from="1605639523663" duration="11763000" />
-      <workItem from="1605660278743" duration="2459000" />
-      <workItem from="1605709261090" duration="7317000" />
-      <workItem from="1605725626072" duration="19183000" />
-      <workItem from="1605770583203" duration="7000" />
-      <workItem from="1605777093263" duration="12634000" />
-      <workItem from="1605814135958" duration="693000" />
-      <workItem from="1605830940844" duration="669000" />
-      <workItem from="1605834653020" duration="57000" />
-      <workItem from="1605889874550" duration="11541000" />
-      <workItem from="1605949183330" duration="64963000" />
-      <workItem from="1606083893506" duration="8094000" />
-      <workItem from="1606117944160" duration="9309000" />
-      <workItem from="1606225451785" duration="4522000" />
-      <workItem from="1606244031469" duration="1916000" />
-      <workItem from="1606292112539" duration="11875000" />
-      <workItem from="1606342352489" duration="3043000" />
-      <workItem from="1606382076056" duration="21927000" />
-      <workItem from="1606472254444" duration="25612000" />
-      <workItem from="1606555569860" duration="14664000" />
-      <workItem from="1606576136875" duration="5815000" />
-      <workItem from="1606592857535" duration="3997000" />
-      <workItem from="1606596898203" duration="2122000" />
-      <workItem from="1606674538898" duration="9297000" />
-      <workItem from="1606744811130" duration="12477000" />
-      <workItem from="1606815729233" duration="23126000" />
-      <workItem from="1606896227740" duration="11881000" />
-      <workItem from="1606930889734" duration="17711000" />
-      <workItem from="1606993927522" duration="10270000" />
-      <workItem from="1607016967843" duration="812000" />
-      <workItem from="1607072046504" duration="764000" />
-      <workItem from="1607072833462" duration="306000" />
-      <workItem from="1607073225141" duration="108000" />
-      <workItem from="1607073355728" duration="7268000" />
-      <workItem from="1607166445568" duration="17084000" />
-      <workItem from="1607268788959" duration="22414000" />
-      <workItem from="1607333074502" duration="36050000" />
-      <workItem from="1607610523768" duration="288000" />
-      <workItem from="1607629745979" duration="34000" />
-      <workItem from="1607773554922" duration="4180000" />
-      <workItem from="1607857275823" duration="2975000" />
-      <workItem from="1607938458260" duration="8348000" />
-      <workItem from="1607957974685" duration="610000" />
-      <workItem from="1608027401910" duration="4897000" />
-      <workItem from="1608111500706" duration="8335000" />
-      <workItem from="1608554978004" duration="4944000" />
+      <updated>1609168896895</updated>
+      <workItem from="1609168898418" duration="38000" />
+      <workItem from="1609168939437" duration="2059000" />
+      <workItem from="1609771074065" duration="4536000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/manpower/parade-state.blade.php</url>
-          <line>47</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/livewire/serviceperson/create/basic-info.blade.php</url>
-          <line>56</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/livewire/serviceperson/create/contact.blade.php</url>
-          <line>2</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

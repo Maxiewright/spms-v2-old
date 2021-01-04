@@ -2,7 +2,7 @@
 
 namespace App\Observers\Approval;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Notifications\Approval\DisapprovalNotification;
 use Approval\Models\Disapproval;
 use Illuminate\Support\Facades\Notification;

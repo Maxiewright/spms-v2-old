@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\SystemAdministration\Security;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use http\Client\Request;
 use Livewire\Component;
 use Livewire\WithPagination;

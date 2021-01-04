@@ -15,13 +15,13 @@ class Enlistment extends Component
     public $periods;
 
     protected $rules = [
-        'data.enlistment.*.enlistment_type_id'   =>  'required',
-        'data.enlistment.*.date'                 =>  'required|date|before_or_equal:today',
-        'data.enlistment.*.engagement_period_id' =>  'required',
+        'data.enlistment.0.enlistment_type_id'   =>  'required',
+        'data.enlistment.0.date'                 =>  'required|date|before_or_equal:today',
+        'data.enlistment.0.engagement_period_id' =>  'required',
     ];
 
     protected $messages = [
-        'data.enlistment.*.enlistment_type_id.required'      =>  'Enlistment data is required',
+        'data.enlistment.*.enlistment_type_id.required'      =>  'Enlistment type required',
         'data.enlistment.*.date.required'                    =>  'Enlistment date is required',
         'data.enlistment.*.engagement_period_id.required'    =>  'Engagement Period is required',
     ];

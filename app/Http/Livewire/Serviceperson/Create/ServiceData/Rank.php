@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Serviceperson\Create\ServiceData;
 
+use App\Http\Livewire\Traits\WithDynamicInput;
 use App\Http\Livewire\Traits\WithSteps;
 use Livewire\Component;
 
@@ -12,13 +13,13 @@ class Rank extends Component
     public $ranks;
 
     protected $rules = [
-        'data.rank.*.rank_id' => 'required',
-        'data.rank.*.promoted_on' => 'required|date|before_or_equal:today',
+        'data.rank.0.rank_id' => 'required',
+        'data.rank.0.promoted_on' => 'required|date|before_or_equal:today',
     ];
 
     protected $messages = [
-        'data.rank.*.rank_id.required' => 'Promotion information is required',
-        'data.rank.*.promoted_on.required' => 'Promotion date is required',
+        'data.rank.*.rank_id.required' => 'Rank is required',
+        'data.rank.*.promoted_on.required' => 'Promotion date required',
         'data.rank.*.promoted_on.before_or_equal' => 'The promotion date cannot be a future date',
     ];
 

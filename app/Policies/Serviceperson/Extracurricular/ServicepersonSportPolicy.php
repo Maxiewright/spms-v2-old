@@ -2,7 +2,7 @@
 
 namespace App\Policies\Serviceperson\Extracurricular;
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\ServicepersonSport;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

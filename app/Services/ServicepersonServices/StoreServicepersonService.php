@@ -8,7 +8,7 @@ use App\Models\Serviceperson\Dependent;
 use App\Models\Serviceperson\Serviceperson;
 use App\Models\Serviceperson\EmailAddress;
 use App\Models\Serviceperson\PhoneNumber;
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\System\Serviceperson\Biodata\Height;
 use App\Models\System\Serviceperson\Biodata\Weight;
 use App\Models\System\Serviceperson\Medical\Allergy;

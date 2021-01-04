@@ -3,7 +3,7 @@
 namespace App\Policies\Serviceperson\ServiceData;
 
 
-use App\Models\Authentication\User;
+use App\Models\User;
 use App\Models\Serviceperson\Award;
 use Illuminate\Auth\Access\HandlesAuthorization;
 

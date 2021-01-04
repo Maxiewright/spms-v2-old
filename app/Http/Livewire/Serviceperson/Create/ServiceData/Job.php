@@ -52,15 +52,20 @@ class Job extends Component
     public function render()
     {
         if (isset($this->data['serviceperson_job'][0]['branch_id'])) {
-            $this->streams = Stream::where('branch_id', $this->data['serviceperson_job'][0]['branch_id'])->get();
+            $this->streams = Stream::query()
+                ->where('branch_id', $this->data['serviceperson_job'][0]['branch_id'])
+                ->get();
         }
 
         if (isset($this->data['serviceperson_job'][0]['stream_id'])) {
-            $this->careerPaths = CareerPath::where('stream_id', $this->data['serviceperson_job'][0]['stream_id'])->get();
+            $this->careerPaths = CareerPath::query()
+                ->where('stream_id', $this->data['serviceperson_job'][0]['stream_id'])
+                ->get();
         }
 
         if (isset($this->data['serviceperson_job'][0]['career_path_id'])) {
-            $this->specialities = Specialty::where('career_path_id', $this->data['serviceperson_job'][0]['career_path_id'])->get();
+            $this->specialities = Specialty::query()
+            ->where('career_path_id', $this->data['serviceperson_job'][0]['career_path_id'])->get();
             $this->jobs = \App\Models\System\Serviceperson\CareerManagement\Job\Job::
             join('job_titles', 'job_title_id', '=', 'job_titles.id')
                 ->select('name', 'slug', 'jobs.id')
