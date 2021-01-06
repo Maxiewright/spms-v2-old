@@ -2,14 +2,16 @@
 
 namespace App\Http\Livewire\Serviceperson\Create\ServiceData;
 
+use App\Http\Livewire\Traits\WithDynamicInput;
 use App\Http\Livewire\Traits\WithSteps;
 use Livewire\Component;
 
 class Decoration extends Component
 {
-    use WithSteps;
+    use WithSteps, WithDynamicInput;
 
     public $decorations;
+    public $title = 'decoration';
 
     protected $rules = [
         'data.decoration.0.decoration_id'   => 'nullable',
@@ -28,11 +30,16 @@ class Decoration extends Component
         $this->validate();
 
         $this->emit('componentsValidated');
+
+        $this->inputs[] = 1;
     }
 
     public function mount()
     {
+
         $this->decorations = \App\Models\System\Serviceperson\ServiceData\Decoration::all('id', 'name');
+
+        $this->inputs[] = 1;
     }
 
     public function render()

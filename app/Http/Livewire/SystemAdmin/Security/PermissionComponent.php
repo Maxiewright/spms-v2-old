@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\SystemAdministration\Security;
+namespace App\Http\Livewire\SystemAdmin\Security;
 
 use App\Http\Livewire\Traits\WithAlerts;
 use App\Http\Livewire\Traits\WithModal;

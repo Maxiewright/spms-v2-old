@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Serviceperson\Create\ServiceData;
 
+use App\Http\Livewire\Traits\WithDynamicInput;
 use App\Http\Livewire\Traits\WithSteps;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\Branch;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\CareerPath;
@@ -11,13 +12,14 @@ use Livewire\Component;
 
 class Job extends Component
 {
-    use WithSteps;
+    use WithSteps, WithDynamicInput;
 
     public $branches;
     public $streams = [];
     public $careerPaths = [];
     public $specialities = [];
     public $jobs = [];
+    public $title = 'serviceperson_job';
 
     protected $rules = [
         'data.serviceperson_job.0.branch_id' => 'nullable',
@@ -47,6 +49,8 @@ class Job extends Component
     public function mount()
     {
         $this->branches = Branch::all('id', 'name');
+
+        $this->inputs[] = 1;
     }
 
     public function render()

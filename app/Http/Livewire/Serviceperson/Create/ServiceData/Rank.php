@@ -8,9 +8,10 @@ use Livewire\Component;
 
 class Rank extends Component
 {
-    use WithSteps;
+    use WithSteps, WithDynamicInput;
 
     public $ranks;
+    public $title = 'rank';
 
     protected $rules = [
         'data.rank.0.rank_id' => 'required',
@@ -35,6 +36,8 @@ class Rank extends Component
     public function mount()
     {
         $this->ranks = \App\Models\System\Serviceperson\ServiceData\Rank::all('id', 'regiment_slug');
+
+        $this->inputs[] = 1;
     }
 
     public function render()

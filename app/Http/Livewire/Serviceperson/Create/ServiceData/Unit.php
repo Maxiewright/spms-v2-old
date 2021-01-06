@@ -46,6 +46,7 @@ class Unit extends Component
     {
         $this->battalions = Battalion::all('id', 'name');
         $this->sections = Section::all('id', 'name');
+        $this->inputs[] = 1;
     }
 
     public function render()

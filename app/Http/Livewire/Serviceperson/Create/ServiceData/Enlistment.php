@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Serviceperson\Create\ServiceData;
 
+use App\Http\Livewire\Traits\WithDynamicInput;
 use App\Http\Livewire\Traits\WithSteps;
 use App\Models\System\Serviceperson\ServiceData\EngagementPeriod;
 use App\Models\System\Serviceperson\ServiceData\EnlistmentType;
@@ -9,10 +10,11 @@ use Livewire\Component;
 
 class Enlistment extends Component
 {
-    use WithSteps;
+    use WithSteps, WithDynamicInput;
 
     public $types;
     public $periods;
+    public $title = 'enlistment';
 
     protected $rules = [
         'data.enlistment.0.enlistment_type_id'   =>  'required',
@@ -39,6 +41,7 @@ class Enlistment extends Component
     {
         $this->types = EnlistmentType::all('id', 'name');
         $this->periods = EngagementPeriod::all('id', 'name');
+        $this->inputs[] = 1;
     }
 
     public function render()

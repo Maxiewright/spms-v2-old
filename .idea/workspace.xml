@@ -2,61 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27db36ba-3abb-4f47-ac7d-754208014d93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/serviceperson-management-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serviceperson-management-system.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Notification/NotificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Notification/NotificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/DriversPermit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/DriversPermit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Decoration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Decoration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Enlistment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Enlistment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Rank.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Rank.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Unit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/PermissionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/PermissionComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/RoleComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/RoleComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/UserComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/UserComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/Approval/ApprovalObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/Approval/ApprovalObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/Approval/DisapprovalObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/Approval/DisapprovalObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/Approval/ModificationObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/Approval/ModificationObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Observers/ServicepersonObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/ServicepersonObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/AddressPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/AddressPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/BiodataPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/BiodataPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/DependentPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/DependentPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/DriversPermitPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/DriversPermitPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/EmailAddressPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/EmailAddressPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/EmergencyContactPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/EmergencyContactPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/EnlistmentPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/EnlistmentPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/Extracurricular/ServicepersonHobbyPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/Extracurricular/ServicepersonHobbyPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/Extracurricular/ServicepersonSportPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/Extracurricular/ServicepersonSportPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/JobAppointmentPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/JobAppointmentPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalClassificationPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalClassificationPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/MeasurementPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/MeasurementPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonAllergyPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonAllergyPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonMedicalConditionPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonMedicalConditionPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonVaccinePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/ServicepersonVaccinePolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/WeighPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MedicalHistory/WeighPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/MilitaryIdCardPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/MilitaryIdCardPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/NationalIdCardPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/NationalIdCardPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/PassportPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/PassportPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/PhoneNumberPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/PhoneNumberPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/PromotionPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/PromotionPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/ReEngagementPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/ReEngagementPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/ServiceData/AwardPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/ServiceData/AwardPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonCoursePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonCoursePolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonEducationPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonEducationPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/ServicepersonPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Serviceperson/UnitPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Serviceperson/UnitPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RelationsServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RelationsServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/AdministrationServices/ApprovalSystemService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/AdministrationServices/ApprovalSystemService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/ServicepersonServices/StoreServicepersonService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ServicepersonServices/StoreServicepersonService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/ADavidSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/ADavidSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/KRaphaelSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/KRaphaelSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/LJosephSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/LJosephSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/MWilliamsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/MWilliamsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/NAmingSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/NAmingSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/PDerrySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/PDerrySeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/system/hr/SAntoinetteSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/system/hr/SAntoinetteSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithDynamicInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithDynamicInput.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Components/Layouts/PageHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Layouts/PageHeader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/drivers-permit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/drivers-permit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/decoration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/decoration.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/enlistment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/enlistment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/job.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/job.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/rank.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/rank.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/unit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/unit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +47,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -200,16 +179,25 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mI6jHur5bGD6F7wOsypYaISx0y" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -218,7 +206,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\app\Http\Livewire\Traits" />
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\app\Http\Livewire\Thing" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -230,11 +225,30 @@
       <updated>1609168896895</updated>
       <workItem from="1609168898418" duration="38000" />
       <workItem from="1609168939437" duration="2059000" />
-      <workItem from="1609771074065" duration="4536000" />
+      <workItem from="1609771074065" duration="6486000" />
+      <workItem from="1609798579369" duration="100000" />
+      <workItem from="1609799531944" duration="8046000" />
+      <workItem from="1609888733149" duration="193000" />
+      <workItem from="1609889065523" duration="4254000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

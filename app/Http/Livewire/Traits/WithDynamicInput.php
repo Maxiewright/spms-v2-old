@@ -13,7 +13,7 @@ trait WithDynamicInput
      */
     public function add()
     {
-        $this->validate();
+//        $this->validate();
         $this->inputs[] = count($this->inputs) + 1;
     }
 

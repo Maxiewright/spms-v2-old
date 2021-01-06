@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Livewire\SystemAdministration\Security;
+namespace App\Http\Livewire\SystemAdmin\Security;
 
 use App\Models\User;
-use http\Client\Request;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Spatie\Permission\Models\Role;

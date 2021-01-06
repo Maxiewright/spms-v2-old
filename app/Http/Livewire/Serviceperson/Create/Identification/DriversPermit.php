@@ -64,6 +64,7 @@ class DriversPermit extends Component
         $this->types = DriversPermitType::all('id', 'name');
         $this->classes = DriversPermitClass::all('id', 'name');
         $this->codes = DriversPermitTransactionCode::all('id', 'name');
+        $this->inputs[] = 1;
     }
 
     public function render()
