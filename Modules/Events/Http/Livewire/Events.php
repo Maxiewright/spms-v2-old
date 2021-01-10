@@ -7,6 +7,7 @@ namespace Modules\Events\Http\Livewire;
 use App\Http\Livewire\Traits\WithModal;
 use App\Models\Serviceperson\Serviceperson;
 use App\Models\Serviceperson\Unit;
+use App\Models\System\Serviceperson\Unit\Company;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Livewire\WithPagination;
@@ -23,8 +24,8 @@ class Events extends Component
 
     public $search = '';
     public $selectedId;
-    public $name, $description, $image, $startAt, $endAt;
-    public $statusId, $venueId, $typeId, $servicepersonNumber, $unitId;
+    public $name, $description, $image, $start_at, $end_at;
+    public $event_status_id, $event_venue_id, $event_type_id, $servicepersonNumber, $unitId;
     public $statuses, $venues, $types, $servicepeople, $units;
     public $filterByStatus, $filterByVenue, $filterByType;
 
@@ -33,6 +34,21 @@ class Events extends Component
 
     protected $listeners = ['event' => 'destroy'];
 
+    protected $rules = [
+        'name' => 'required',
+        'description' => 'required',
+        'image' => 'nullable|sometimes',
+        'event_type_id' => 'required',
+        'event_status_id' => 'required',
+        'event_venue_id' => 'required',
+        'start_at' => 'required',
+        'end_at' => 'required',
+    ];
+
+    protected $messages = [
+
+    ];
+
 
     public function mount()
     {
@@ -40,7 +56,7 @@ class Events extends Component
         $this->venues = EventVenue::all('id', 'name');
         $this->types = EventType::all('id', 'name');
         $this->servicepeople = Serviceperson::all();
-        $this->units = Unit::all();
+        $this->units = Company::all();
     }
 
     public function render()
@@ -71,16 +87,7 @@ class Events extends Component
 
     public function store()
     {
-        $validatedData = $this->validate([
-            'name' => 'required',
-            'description' => 'required',
-            'image' => 'sometimes',
-            'typeId' => 'required',
-            'statusId' => 'required',
-            'venueId' => 'required',
-            'startAt' => 'required',
-            'endAt' => 'required',
-        ]);
+        $validatedData = $this->validate();
 
         Event::create($validatedData);
 

@@ -2,198 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27db36ba-3abb-4f47-ac7d-754208014d93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Config/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Config/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Console/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Factories/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Factories/EventFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Migrations/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Migrations/2021_01_07_005135_create_events_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Seeders/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Seeders/EventStatusTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Seeders/EventTypeTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Seeders/EventVenueTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Seeders/EventsDatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Entities/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Entities/Event.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Entities/EventStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Entities/EventType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Entities/EventVenue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Controllers/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Controllers/EventsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Livewire/DashboardEvents.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Livewire/Events.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Livewire/LoginEvents.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Middleware/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Requests/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Providers/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Providers/EventsServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/assets/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/lang/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/events.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/layouts/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/dashboard-events.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/events.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-class-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-title-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/login-events.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/partials/create_and_update_form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Routes/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Tests/Feature/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/Tests/Unit/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/module.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Events/webpack.mix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Config/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Config/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Console/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Factories/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Factories/LeaveAdjustmentFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Factories/LeaveEntitlementFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Factories/LeaveFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Migrations/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Migrations/2020_11_08_092541_create_leaves_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveAdjustmentReasonSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveDatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveGroupEntitlementSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveGroupSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveStatusSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveTypeSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/Leave.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveAdjustment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveAdjustmentReason.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveEntitlement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveGroup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveGroupEntitlement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveRefunded.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveRemark.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveTaken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Controllers/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Controllers/DashboardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Controllers/LeaveController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Controllers/LeaveEntitlementController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Controllers/TestingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Adjustments/Adjustments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/AllLeave.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Entitlement/CreateEntitlement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Entitlement/MassCreateEntitlement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Entitlement/ShowEntitlement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Leave/CreateLeave.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Reports/Current.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Reports/Excessive.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Reports/Pending.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Middleware/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Requests/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Providers/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Providers/LeaveServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/assets/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/lang/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/adjustments.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/buttons/dynamic-input-btn.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/card/action-card.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/data-table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/dynamic-select.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/form/input.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/form/save-btn.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/form/select.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/form/textarea.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/info-card.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/layout/section-with-nav.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/layout/section.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/modal-select-row.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/modal/modal-form-row.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/modal/modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/entitlement/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/entitlement/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/entitlement/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/layouts/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/layouts/partials/notification/main.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/layouts/partials/notification/modification.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/layouts/partials/notification/serivceperson-creation.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/leave/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/adjustments/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/all-leave.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/entitlement/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/entitlement/mass-create-entitlement.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/entitlement/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/leave/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/reports/current.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/reports/excessive.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/reports/pending.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/partials/all-leave.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/partials/leave-entitlement.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/partials/serviceperson-dropdown-select.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/partials/top-nav.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/test.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Routes/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Services/LeaveService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/TODO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Tests/Feature/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Tests/Unit/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Tests/Unit/LeaveTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Traits/HasLeave.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Buttons/DynamicInputBtn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Card/ActionCard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/DataTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/DynamicSelect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Form/Input.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Form/SaveBtn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Form/Select.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Form/TextArea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/InfoCard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Layout/TopNav.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Modal/Modal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Modal/ModalFormRow.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/module.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/webpack.mix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/modules.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/serviceperson-management-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serviceperson-management-system.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_branch_establishment_modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_branch_modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_career_path_establishment_modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_career_path_modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_specialty_modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_stream_establishment_modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_stream_modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/career_management/career_management_system.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/career_management/jobs.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/career_management/qualifications.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Decoration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Decoration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Enlistment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Enlistment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Rank.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Rank.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithModal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithModal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Events/Http/Livewire/Events.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Http/Livewire/Events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/events.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-class-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-class-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-title-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-title-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/partials/create_and_update_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/partials/create_and_update_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/BranchComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/BranchComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/BranchEstablishmentComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/BranchEstablishmentComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/CareerPathComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/CareerPathComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/CareerPathEstablishmentComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/CareerPathEstablishmentComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/SpecialtyComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/SpecialtyComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/StreamComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/StreamComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/StreamEstablishmentComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/StreamEstablishmentComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Job/JobClassComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Job/JobClassComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Job/JobComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Job/JobComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Job/JobTitleComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Job/JobTitleComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Course/CourseComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseInstitutionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Course/CourseInstitutionComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseQualificationComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Course/CourseQualificationComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Course/CourseTypeComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/EducationLevelComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Education/EducationLevelComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SchoolComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Education/SchoolComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SchoolDistrictComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Education/SchoolDistrictComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SchoolTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Education/SchoolTypeComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SubjectComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Education/SubjectComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Main/SideMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main/SideMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/tables/data-table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/tables/data-table.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/components/top-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/components/top-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/side-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/side-menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/decoration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/decoration.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/servicepeople/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicepeople/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/servicepeople/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicepeople/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/crud/livewire-crud-modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/crud/livewire-crud-modal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/branch-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/branch-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/branch-establishment-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/branch-establishment-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/career-path-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/career-path-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/career-path-establishment-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/career-path-establishment-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/branch_create_and_update_form_fields.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/branch_establishment_form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/career_path_create_and_update_form_fields.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/career_path_establishment_form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/specialty_create_and_update_form_fields.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/stream_create_and_update_form_fields.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/stream_establishment_form.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/specialty-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/specialty-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/stream-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/stream-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/stream-establishment-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/stream-establishment-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/job/job-class-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/job/job-class-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/job/job-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/job/job-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/job/job-title-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/job/job-title-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/job/partials/job_create_and_update_form_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/job/partials/job_create_and_update_form_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/create_and_update_form_fields_with_slug.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/partials/create_and_update_form_fields_with_slug.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/create_and_update_form_fields_with_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/partials/create_and_update_form_fields_with_type.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/metadata_field_with_slug.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/partials/metadata_field_with_slug.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/metadata_field_with_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/partials/metadata_field_with_type.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/single-field-metadata.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/partials/single-field-metadata.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/course-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-institution-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/course-institution-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-qualification-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/course-qualification-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-type-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/course-type-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/partials/course_create_and_update_form_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/partials/course_create_and_update_form_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/partials/course_institution_create_and_update_form_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/partials/course_institution_create_and_update_form_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/education-level-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/education-level-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/partials/school_create_and_update_form_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/partials/school_create_and_update_form_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/partials/subject_create_and_update_form_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/partials/subject_create_and_update_form_fields.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/school-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/school-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/school-district-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/school-district-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/school-type-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/school-type-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/subject-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/subject-component.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -366,7 +249,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/Events/Resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/manpower/metadata" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -379,10 +262,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\views\manpower\metadata" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\Modules\Events\Resources\views" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\Modules" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\views\livewire\manpower" />
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\app\Http\Livewire\Manpower" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\app\Http\Livewire\Traits" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\app\Http\Livewire\Thing" />
     </key>
@@ -403,7 +289,7 @@
       <workItem from="1609888733149" duration="193000" />
       <workItem from="1609889065523" duration="22296000" />
       <workItem from="1610216674803" duration="69000" />
-      <workItem from="1610234774051" duration="3731000" />
+      <workItem from="1610234774051" duration="14503000" />
     </task>
     <servers />
   </component>
@@ -424,5 +310,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_branch_establishment_modal.blade.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_branch_establishment_modal.blade.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

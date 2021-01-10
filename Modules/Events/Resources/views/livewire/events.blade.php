@@ -1,28 +1,31 @@
 <div>
+
     <x-tables.data-table title="{{$title}}">
+
         @if($isOpen)
             @include('events::livewire.partials.create_and_update_form')
         @endif
+
         <x-slot name="filters">
             <select wire:model="filterByVenue" data-placeholder="Venue" class="input w-56 box pr-10" >
                 <option value="">Filter By Venue</option>
                 @foreach ($venues as $venue)
                     <option
-                        {{$venueId == $venue->id ? 'selected' : ''}} value="{{$venue->id}}">{{$venue->name}}
+                        {{$event_venue_id == $venue->id ? 'selected' : ''}} value="{{$venue->id}}">{{$venue->name}}
                     </option>
                 @endforeach
             </select>
             <select wire:model="filterByType" data-placeholder="Type" class="input w-56 box pr-10">
                 <option value="">Filter By Type</option>
                 @foreach ($types as $type)
-                    <option {{$typeId == $type->id ? 'selected' : ''}} value="{{$type->id}}">{{$type->name}}</option>
+                    <option {{$event_type_id == $type->id ? 'selected' : ''}} value="{{$type->id}}">{{$type->name}}</option>
                 @endforeach
             </select>
             <select wire:model="filterByStatus" data-placeholder="Status" class="input w-56 box pr-10">
                 <option value="">Filter By Status</option>
                 @foreach ($statuses as $status)
                     <option
-                        {{$statusId == $status->id ? 'selected' : ''}} value="{{$status->id}}">{{$status->regiment_slug}}</option>
+                        {{$event_status_id == $status->id ? 'selected' : ''}} value="{{$status->id}}">{{$status->regiment_slug}}</option>
                 @endforeach
             </select>
         </x-slot>
@@ -87,6 +90,7 @@
             {{$data->links()}}
         </x-slot>
     </x-tables.data-table>
+
 </div>
 
 

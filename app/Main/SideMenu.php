@@ -111,7 +111,7 @@ class SideMenu
                         'sub_menu' => [
                             'job' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'manpower.career_management.jobs',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
@@ -119,7 +119,7 @@ class SideMenu
                             ],
                             'qualification' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'manpower.career_management.qualifications',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
@@ -127,7 +127,7 @@ class SideMenu
                             ],
                             'PDCMS' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'manpower.career_management.career_management_system',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],

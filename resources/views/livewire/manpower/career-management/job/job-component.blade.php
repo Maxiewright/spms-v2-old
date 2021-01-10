@@ -74,8 +74,8 @@
                     <td style="word-wrap: break-word; white-space: normal !important;">
                         {{$row->description ?? ''}}
                     </td>
-                    <td>{{$row->created_at != null ? $row->created_at->toFormattedDateString() : ''}}</td>
-                    <td>{{$row->updated_at != null ? $row->updated_at->toFormattedDateString() : ''}}</td>
+                    <td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</td>
+                    <td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</td>
                     <x-metadata.action-buttons id="{{$row->id}}" destroyField="{{$title}}"/>
                 </tr>
             @endforeach
