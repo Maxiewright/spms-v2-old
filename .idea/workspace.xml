@@ -2,32 +2,198 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27db36ba-3abb-4f47-ac7d-754208014d93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Config/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Config/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Console/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Factories/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Factories/EventFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Migrations/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Migrations/2021_01_07_005135_create_events_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Seeders/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Seeders/EventStatusTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Seeders/EventTypeTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Seeders/EventVenueTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Database/Seeders/EventsDatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Entities/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Entities/Event.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Entities/EventStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Entities/EventType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Entities/EventVenue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Controllers/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Controllers/EventsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Livewire/DashboardEvents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Livewire/Events.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Livewire/LoginEvents.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Middleware/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Http/Requests/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Providers/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Providers/EventsServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/assets/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/lang/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/events.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/layouts/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/dashboard-events.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/events.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-class-component.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-component.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-title-component.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/login-events.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/partials/create_and_update_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Routes/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Tests/Feature/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/Tests/Unit/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/module.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Events/webpack.mix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Config/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Config/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Console/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Factories/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Factories/LeaveAdjustmentFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Factories/LeaveEntitlementFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Factories/LeaveFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Migrations/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Migrations/2020_11_08_092541_create_leaves_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveAdjustmentReasonSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveDatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveGroupEntitlementSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveGroupSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveStatusSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Database/Seeders/LeaveTypeSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/Leave.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveAdjustment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveAdjustmentReason.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveEntitlement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveGroupEntitlement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveRefunded.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveRemark.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveTaken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Entities/LeaveType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Controllers/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Controllers/LeaveController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Controllers/LeaveEntitlementController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Controllers/TestingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Adjustments/Adjustments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/AllLeave.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Entitlement/CreateEntitlement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Entitlement/MassCreateEntitlement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Entitlement/ShowEntitlement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Leave/CreateLeave.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Reports/Current.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Reports/Excessive.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Livewire/Reports/Pending.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Middleware/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Http/Requests/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Providers/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Providers/LeaveServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/assets/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/lang/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/adjustments.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/buttons/dynamic-input-btn.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/card/action-card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/data-table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/dynamic-select.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/form/input.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/form/save-btn.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/form/select.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/form/textarea.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/info-card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/layout/section-with-nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/layout/section.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/modal-select-row.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/modal/modal-form-row.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/components/modal/modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/entitlement/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/entitlement/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/entitlement/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/layouts/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/layouts/partials/notification/main.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/layouts/partials/notification/modification.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/layouts/partials/notification/serivceperson-creation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/leave/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/adjustments/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/all-leave.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/entitlement/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/entitlement/mass-create-entitlement.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/entitlement/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/leave/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/reports/current.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/reports/excessive.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/livewire/reports/pending.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/partials/all-leave.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/partials/leave-entitlement.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/partials/serviceperson-dropdown-select.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/partials/top-nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Resources/views/test.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Routes/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Services/LeaveService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/TODO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Tests/Feature/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Tests/Unit/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Tests/Unit/LeaveTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/Traits/HasLeave.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Buttons/DynamicInputBtn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Card/ActionCard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/DataTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/DynamicSelect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Form/Input.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Form/SaveBtn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Form/Select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Form/TextArea.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/InfoCard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Layout/TopNav.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Modal/Modal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/View/Components/Modal/ModalFormRow.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/module.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Leave/webpack.mix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/modules.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/serviceperson-management-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serviceperson-management-system.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/DriversPermit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/Identification/DriversPermit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Decoration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Decoration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Enlistment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Enlistment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Job.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Rank.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Rank.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Serviceperson/Create/ServiceData/Unit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/PermissionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/PermissionComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/RoleComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/RoleComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/UserComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SystemAdmin/Security/UserComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithDynamicInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithDynamicInput.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/View/Components/Layouts/PageHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Layouts/PageHeader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithModal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithModal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Traits/WithSteps.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Main/SideMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main/SideMenu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/drivers-permit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/identification/drivers-permit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/tables/data-table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/tables/data-table.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/components/top-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/components/top-bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/side-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/side-menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/decoration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/decoration.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/enlistment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/enlistment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/job.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/job.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/rank.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/rank.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/unit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serviceperson/create/service-data/unit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/servicepeople/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicepeople/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/servicepeople/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicepeople/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +348,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/nwidart/laravel-modules" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mI6jHur5bGD6F7wOsypYaISx0y" />
@@ -199,6 +366,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Modules/Events/Resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -210,6 +378,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\Modules\Events\Resources\views" />
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\Modules" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\serviceperson-management-system\app\Http\Livewire\Traits" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\app\Http\Livewire\Thing" />
@@ -229,7 +401,9 @@
       <workItem from="1609798579369" duration="100000" />
       <workItem from="1609799531944" duration="8046000" />
       <workItem from="1609888733149" duration="193000" />
-      <workItem from="1609889065523" duration="4254000" />
+      <workItem from="1609889065523" duration="22296000" />
+      <workItem from="1610216674803" duration="69000" />
+      <workItem from="1610234774051" duration="3731000" />
     </task>
     <servers />
   </component>

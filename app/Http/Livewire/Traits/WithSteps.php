@@ -26,6 +26,9 @@ trait WithSteps
         $this->emit('goToStep', $this->nextStep);
     }
 
+    /**
+     * Proceeds to the next step after all component on a page is validated
+     */
     public function componentsValidated()
     {
         $this->emit('goToStep', $this->nextStep);

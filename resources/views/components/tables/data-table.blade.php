@@ -2,8 +2,11 @@
     <div class="flex flex-col sm:flex-row items-center p-5 border-b border-gray-200">
         <h2 class="font-medium text-base mr-auto">{{Str::plural(ucfirst($title))}}</h2>
         {{$slot}}
-        {{$filters}}
+        <div class="flex flex-row mr-2">
+            {{$filters}}
+        </div>
         <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0 mr-2">
+
             <div class="w-56 relative text-gray-700 dark:text-gray-300">
                 <input wire:model="search" type="text" class="input w-56 box pr-10 placeholder-theme-13"
                        placeholder="Search...">

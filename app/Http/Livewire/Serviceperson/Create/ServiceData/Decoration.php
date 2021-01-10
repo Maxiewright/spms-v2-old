@@ -29,9 +29,7 @@ class Decoration extends Component
     {
         $this->validate();
 
-        $this->emit('componentsValidated');
-
-        $this->inputs[] = 1;
+        $this->emit('validateRank');
     }
 
     public function mount()

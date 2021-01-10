@@ -30,7 +30,7 @@ class Rank extends Component
     {
         $this->validate();
 
-        $this->emit('validateEnlistment');
+        $this->emit('validateUnit');
     }
 
     public function mount()

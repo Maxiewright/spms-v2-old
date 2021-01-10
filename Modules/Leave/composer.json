@@ -1,0 +1,23 @@
+{
+    "name": "spms/leave",
+    "description": "",
+    "authors": [
+        {
+            "name": "Maxie Wright",
+            "email": "maxiewright@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Leave\\": ""
+        }
+    }
+}

@@ -43,7 +43,7 @@ class Job extends Component
     {
         $this->validate();
 
-        $this->emit('validateRank');
+        $this->emit('componentsValidated');
     }
 
     public function mount()

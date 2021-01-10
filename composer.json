@@ -20,6 +20,7 @@
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.0",
         "livewire/livewire": "^2.0",
+        "nwidart/laravel-modules": "^8.2",
         "owen-it/laravel-auditing": "^11.0",
         "spatie/laravel-permission": "^3.17"
     },
@@ -44,6 +45,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
+            "Modules\\": "Modules/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

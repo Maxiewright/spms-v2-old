@@ -45,7 +45,7 @@ class SideMenu
                 'icon' => 'clipboard',
                 'title' => 'Administration',
                 'sub_menu' => [
-                    'side-menu' => [
+                    'approval' => [
                         'icon' => '',
                         'route_name' => 'dashboard',
                         'params' => [
@@ -53,7 +53,16 @@ class SideMenu
                         ],
                         'title' => 'Approvals'
                     ],
-                ]
+                    'leave' => [
+                        'icon' => '',
+                        'route_name' => 'leave.dashboard',
+                        'params' => [
+                            'layout' => 'side-menu'
+                        ],
+                        'title' => 'Leave'
+                    ],
+                ],
+
             ],
             'medical' => [
                 'icon' => 'plus',

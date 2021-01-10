@@ -15,7 +15,7 @@ class ServiceData extends Component
 
     public function submit()
     {
-        $this->emit('validateUnit');
+        $this->emit('validateEnlistment');
     }
 
     public function render()

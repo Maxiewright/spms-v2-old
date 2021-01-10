@@ -23,4 +23,13 @@ trait WithModal
     {
         $this->isOpen = false;
     }
+
+    /**
+     * Show the create form
+     */
+    public function create()
+    {
+        $this->openModal();
+        $this->resetInput();
+    }
 }

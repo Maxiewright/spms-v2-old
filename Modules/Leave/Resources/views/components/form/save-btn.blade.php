@@ -1,0 +1,1 @@
+<button class="btn btn-primary" wire:model="save">Save</button>
