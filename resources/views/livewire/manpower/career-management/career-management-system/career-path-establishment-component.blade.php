@@ -7,7 +7,7 @@
         <x-slot name="filters">
             <div class="row">
                 <div class="col" wire:ignore>
-                    <select wire:model="filterCareerPath" class="form-control custom-select">
+                    <select wire:model="filterCareerPath" class="input box pr-10 w-full">
                         <option value="">Filter By Branch</option>
                         @foreach ($careerPaths as $careerPath)
                             <option value="{{$careerPath->id}}">{{$careerPath->name}}</option>
@@ -15,8 +15,8 @@
                     </select>
                 </div>
                 <div class="col" wire:ignore>
-                    <select wire:model="filterRank" class="form-control custom-select">
-                        <option value="">Select Rank</option>
+                    <select wire:model="filterRank" class="input box pr-10 w-full">
+                        <option value="">Filter By Rank</option>
                         @foreach ($ranks as $rank)
                             <option value="{{$rank->id}}">{{$rank->regiment}}</option>
                         @endforeach
@@ -26,27 +26,29 @@
         </x-slot>
 {{--        table--}}
         <x-slot name="thead">
-            <th>Career Path</th>
-            <th>Rank</th>
-            <th>Establishment</th>
-            <th>Inserted</th>
-            <th>Updated</th>
+            <x-tables.th>#</x-tables.th>
+            <x-tables.th>Career Path</x-tables.th>
+            <x-tables.th>Rank</x-tables.th>
+            <x-tables.th>Establishment</x-tables.th>
+            <x-tables.th>Inserted</x-tables.th>
+            <x-tables.th>Updated</x-tables.th>
+            <x-tables.th class="text-center">Actions</x-tables.th>
         </x-slot>
         <x-slot name="tbody">
             @foreach($data as $row)
                 <tr>
-                    <td class="w40">{{$loop->iteration}}</td>
-                    <td>{{$row->careerPath->name ?? ''}}</td>
-                    <td>{{$row->rank->regiment_slug ?? ''}}</td>
-                    <td>{{$row->establishment ?? ''}}</td>
-                    <td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</td>
-                    <td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</td>
-                    <x-crud.livewire-action-btns id="{{$row->id}}" />
+                    <x-tables.td>{{$loop->iteration}}</x-tables.td>
+                    <x-tables.td>{{$row->careerPath->name ?? ''}}</x-tables.td>
+                    <x-tables.td>{{$row->rank->regiment_slug ?? ''}}</x-tables.td>
+                    <x-tables.td>{{$row->establishment ?? ''}}</x-tables.td>
+                    <x-tables.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-tables.td>
+                    <x-tables.td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</x-tables.td>
+                    <x-crud.livewire-action-btns id="{{$row->id}}"/>
                 </tr>
             @endforeach
         </x-slot>
         <x-slot name="pagination">
-            {{$data->onEachSide(1)->links()}}
+            {{$data->links()}}
         </x-slot>
     </x-tables.data-table>
 </div>

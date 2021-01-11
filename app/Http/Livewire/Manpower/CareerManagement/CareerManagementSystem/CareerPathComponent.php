@@ -14,7 +14,7 @@ class CareerPathComponent extends Component
 
 
     public $search = '';
-    public $filter;
+    public $filterStream;
     public $name, $slug, $streamId, $streams, $selectedId;
     public $updateMode = false;
     public $title = 'Career Path';
@@ -40,8 +40,8 @@ class CareerPathComponent extends Component
                             $query->where('name', 'like', $searchTerm);
                         });
                 })
-                ->when($this->filter, function ($query){
-                    $query->where('stream_id', '=', $this->filter);
+                ->when($this->filterStream, function ($query){
+                    $query->where('stream_id', '=', $this->filterStream);
                 })
                 ->paginate(10)
         ]);

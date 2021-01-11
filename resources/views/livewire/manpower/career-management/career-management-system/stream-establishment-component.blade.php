@@ -7,7 +7,7 @@
         <x-slot name="filters">
             <div class="row">
                 <div class="col" wire:ignore>
-                    <select wire:model="filterStream" class="form-control custom-select">
+                    <select wire:model="filterStream" class="input box pr-10 w-full">
                         <option value="">Filter By Stream</option>
                         @foreach ($streams as $stream)
                             <option value="{{$stream->id}}">{{$stream->name}}</option>
@@ -15,7 +15,7 @@
                     </select>
                 </div>
                 <div class="col" wire:ignore>
-                    <select wire:model="filterRank" class="form-control custom-select">
+                    <select wire:model="filterRank" class="input box pr-10 w-full">
                         <option value="">Select Rank</option>
                         @foreach ($ranks as $rank)
                             <option value="{{$rank->id}}">{{$rank->regiment}}</option>
@@ -26,22 +26,24 @@
         </x-slot>
 {{--        tables--}}
         <x-slot name="thead">
-            <th>Stream</th>
-            <th>Rank</th>
-            <th>Establishment</th>
-            <th>Inserted</th>
-            <th>Updated</th>
+            <x-tables.th>#</x-tables.th>
+            <x-tables.th>Stream</x-tables.th>
+            <x-tables.th>Rank</x-tables.th>
+            <x-tables.th>Establishment</x-tables.th>
+            <x-tables.th>Inserted</x-tables.th>
+            <x-tables.th>Updated</x-tables.th>
+            <x-tables.th class="text-center">Actions</x-tables.th>
         </x-slot>
         <x-slot name="tbody">
             @foreach($data as $row)
                 <tr>
-                    <td class="w40">{{$loop->iteration}}</td>
-                    <td>{{$row->stream->name ?? ''}}</td>
-                    <td>{{$row->rank->regiment_slug ?? ''}}</td>
-                    <td>{{$row->establishment ?? ''}}</td>
-                    <td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</td>
-                    <td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</td>
-                    <x-crud.livewire-action-btns id="{{$row->id}}" />
+                    <x-tables.td>{{$loop->iteration}}</x-tables.td>
+                    <x-tables.td>{{$row->stream->name ?? ''}}</x-tables.td>
+                    <x-tables.td>{{$row->rank->regiment_slug ?? ''}}</x-tables.td>
+                    <x-tables.td>{{$row->establishment ?? ''}}</x-tables.td>
+                    <x-tables.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-tables.td>
+                    <x-tables.td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</x-tables.td>
+                    <x-crud.livewire-action-btns id="{{$row->id}}"/>
                 </tr>
             @endforeach
         </x-slot>

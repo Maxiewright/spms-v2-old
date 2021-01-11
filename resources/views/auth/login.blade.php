@@ -6,7 +6,9 @@
 
 @section('content')
     <x-layouts.auth-layout  title="Sign In">
-        <x-slot name="events"></x-slot>
+        <x-slot name="events">
+            <img src="{{asset('dist/images/ttr-logo.png')}}" alt="">
+        </x-slot>
         <x-form.auth-form action="login" submitBtn="Login" btnSize="32">
             <x-form.input.auth-input type="text" name="identity" placeholder="Username or Email"/>
             <x-form.input.auth-input type="password" name="password" placeholder="Password"/>

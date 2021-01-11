@@ -15,7 +15,6 @@ class DataTable extends Component
      */
     public function __construct($title)
     {
-        //
         $this->title = $title;
     }
 
