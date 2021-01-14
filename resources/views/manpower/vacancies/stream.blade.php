@@ -28,23 +28,23 @@
                         <x-tables.th colspan="2" class="border text-center">Total</x-tables.th>
                     </tr>
                     <tr>
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcan.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-green-500">Est.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-red-500">Vcan.</x-tables.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcan.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-green-500">Est.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-red-500">Vcan.</x-tables.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcan.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-green-500">Est.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-red-500">Vcan.</x-tables.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcan.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-green-500">Est.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-red-500">Vcan.</x-tables.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcan.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-green-500">Est.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-red-500">Vcan.</x-tables.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcan.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-green-500">Est.</x-tables.th>
+                        <x-tables.th class="sticky top-0 border text-bold text-red-500">Vcan.</x-tables.th>
 
                         <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
                         <x-tables.th class="border text-bold text-red-500">Vcan.</x-tables.th>

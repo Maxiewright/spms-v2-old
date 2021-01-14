@@ -1,17 +1,15 @@
 <?php
 
-namespace App\Models\Serviceperson;
+namespace Modules\Medical\Entities;
 
-
-use App\Models\System\Serviceperson\Medical\MedicalClassificationGrade;
+use App\Models\Serviceperson\Serviceperson;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
-
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class MedicalClassification extends Model
 {
-    use  SoftDeletes;
+    use HasFactory;
 
     protected $fillable = [
         'serviceperson_number','physical_capacity','upper_limbs',
@@ -19,6 +17,11 @@ class MedicalClassification extends Model
         'eyesight_left','eyesight_right','mental_capacity','stability',
         'performed_on','performed_at','medical_officer', 'medical_officer_remarks'
     ];
+
+    protected static function newFactory()
+    {
+        return \Modules\Medical\Database\factories\MedicalClassificationFactory::new();
+    }
 
 //    public $dates =  ['performed_on'];
 
@@ -85,5 +88,4 @@ class MedicalClassification extends Model
     {
         return $this->belongsTo(MedicalClassificationGrade::class, 'stability');
     }
-    /** ************************************************************************************************************** */
 }

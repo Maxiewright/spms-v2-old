@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Livewire\Medical;
+namespace Modules\Medical\Http\Livewire;
 
-use App\Models\Serviceperson\MedicalClassification;
-use App\Models\System\Serviceperson\Medical\MedicalClassificationGrade;
+use App\Http\Livewire\Traits\WithModal;
 use Livewire\Component;
 use Livewire\WithPagination;
+use Modules\Medical\Entities\MedicalClassification;
+use Modules\Medical\Entities\MedicalClassificationGrade;
 
 class MedicalClassificationComponent extends Component
 {
-    use WithPagination;
-
+    use WithPagination, WithModal;
 
     public $search = '';
     public $filterRank;
@@ -20,12 +20,26 @@ class MedicalClassificationComponent extends Component
         $eyesight_left, $eyesight_right, $mental_capacity, $stability, $performed_on, $performed_at, $medical_officer,
         $medical_officer_remarks, $grades;
 
-
-    public $updateMode = false;
+    protected $rules = [
+        'serviceperson_number' => 'required|numeric',
+        'physical_capacity' => 'required',
+        'upper_limbs' => 'required',
+        'locomotion' => 'required',
+        'hearing_left' => 'required',
+        'hearing_right' => 'required',
+        'eyesight_left' => 'required',
+        'eyesight_right' => 'required',
+        'mental_capacity' => 'required',
+        'stability' => 'required',
+        'performed_on' => 'required',
+        'performed_at' => 'required',
+        'medical_officer' => 'required|numeric',
+        'medical_officer_remarks' => 'nullable'
+    ];
 
     public function mount()
     {
-        $this->grades = MedicalClassificationGrade::all('degree');
+        $this->grades = MedicalClassificationGrade::all('id', 'degree');
     }
 
     public $title = 'Medical Classification';
@@ -35,7 +49,7 @@ class MedicalClassificationComponent extends Component
     public function render()
     {
         $searchTerm = '%' . $this->search . '%';
-        return view('livewire.medical.medical-classification-component', [
+        return view('medical::livewire.medical-classification-component', [
             'data' => MedicalClassification::query()
                 ->orderBy('created_at', 'desc')
                 ->whereHas('serviceperson', function ($q) use ($searchTerm) {
@@ -68,9 +82,15 @@ class MedicalClassificationComponent extends Component
 
     public function store()
     {
-        MedicalClassification::create($this->validatedData());
+        $validatedData = $this->validate();
+
+        MedicalClassification::updateOrCreate(['id' => $this->selectedId],$validatedData);
+
+//        $this->showSuccessAlert();
 
         $this->resetInput();
+
+        $this->closeModal();
     }
 
     public function edit($id)
@@ -98,52 +118,12 @@ class MedicalClassificationComponent extends Component
         $this->updateMode = true;
     }
 
-    public function update()
-    {
-
-
-        if ($this->selectedId) {
-            $record = MedicalClassification::find($this->selectedId);
-
-            $validatedData = $this->validateMedicalClassification();
-
-            $record->update([$validatedData]);
-
-            $this->resetInput();
-
-            $this->resetInput();
-
-            $this->updateMode = false;
-        }
-    }
-
     public function destroy($id)
     {
         if ($id) {
             $record = MedicalClassification::where('id', $id);
             $record->delete();
         }
-    }
-
-    public function validatedData()
-    {
-        return $this->validate([
-            'serviceperson_number' => 'required|numeric',
-            'physical_capacity' => 'required',
-            'upper_limbs' => 'required',
-            'locomotion' => 'required',
-            'hearing_left' => 'required',
-            'hearing_right' => 'required',
-            'eyesight_left' => 'required',
-            'eyesight_right' => 'required',
-            'mental_capacity' => 'required',
-            'stability' => 'required',
-            'performed_on' => 'required',
-            'performed_at' => 'required',
-            'medical_officer' => 'required|numeric',
-            'medical_officer_remarks' => 'required'
-        ]);
-
     }
 
 }

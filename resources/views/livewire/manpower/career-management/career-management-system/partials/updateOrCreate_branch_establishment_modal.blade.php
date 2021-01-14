@@ -28,7 +28,7 @@
 
 {{--    Rank--}}
     <label class="block mt-4">
-        <span class="text-gray-700">Select Type</span>
+        <span class="text-gray-700">Select Rank</span>
         <select wire:model="rankId" class="input w-full border mt-1" autofocus>
             <option {{$rankId == null ? 'selected': ''}} value="">Select Rank</option>
             @foreach ($ranks as $rank)
@@ -37,20 +37,6 @@
         </select>
     </label>
 
-    <div class="col" wire:ignore>
-        <select wire:model="rankId"
-                class="form-control custom-select mb-2 mr-sm-2 @error('rankId') is-invalid @enderror"
-            {{$updateMode != null ? 'readonly disabled':''}}
-        >
-            <option {{$rankId == null ? 'selected': ''}} value="">Select Rank</option>
-            @foreach ($ranks as $rank)
-                <option {{$rankId == $rank->id ? 'selected' : ''}} value="{{$rank->id}}">{{$rank->regiment}}</option>
-            @endforeach
-        </select>
-        @error('rankId')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
-    </div>
 
 {{--    Establishment--}}
     <div class="col-2">

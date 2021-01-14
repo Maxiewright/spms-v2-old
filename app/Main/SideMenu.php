@@ -2,16 +2,13 @@
 
 namespace App\Main;
 
-use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-
 class SideMenu
 {
     /**
      * List of side menu items.
      *
-     * //     * @param Request $request
-     * //     * @return array
+     * //     *
+     * @return array
      */
     public static function menu()
     {
@@ -33,16 +30,24 @@ class SideMenu
                 'title' => 'Parade State'
             ],
             'personnel' => [
-                'icon' => 'clipboard',
+                'icon' => 'users',
                 'title' => 'Personnel',
                 'sub_menu' => [
-                    'approval' => [
+                    'servicepeople' => [
                         'icon' => '',
                         'route_name' => 'servicepeople.index',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
                         'title' => 'Servicepeople'
+                    ],
+                    'medical' => [
+                        'icon' => '',
+                        'route_name' => 'medial_classifications',
+                        'params' => [
+                            'layout' => 'side-menu'
+                        ],
+                        'title' => 'Medical'
                     ],
                     'leave' => [
                         'icon' => '',
