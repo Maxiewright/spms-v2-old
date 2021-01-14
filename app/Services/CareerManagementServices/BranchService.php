@@ -55,13 +55,13 @@ class BranchService
             ->selectRaw("sum(CASE WHEN branch_id = 4 and rank_id = 8 THEN 1 END) as engrWO1")
             ->selectRaw("sum(CASE WHEN branch_id = 4 THEN 1 END) as engrTotal")
 //            Totals
-            ->selectRaw("sum(CASE WHEN rank_id = 2 THEN 1 END) as pte")
-            ->selectRaw("sum(CASE WHEN rank_id = 3 THEN 1 END) as lcpl")
-            ->selectRaw("sum(CASE WHEN rank_id = 4 THEN 1 END) as cpl")
-            ->selectRaw("sum(CASE WHEN rank_id = 5 THEN 1 END) as sgt")
-            ->selectRaw("sum(CASE WHEN rank_id = 6 THEN 1 END) as ssgt")
-            ->selectRaw("sum(CASE WHEN rank_id = 7 THEN 1 END) as wo2")
-            ->selectRaw("sum(CASE WHEN rank_id = 8 THEN 1 END) as wo1")
+            ->selectRaw("sum(CASE WHEN rank_id = 2 THEN 1 END) as Pte")
+            ->selectRaw("sum(CASE WHEN rank_id = 3 THEN 1 END) as LCpl")
+            ->selectRaw("sum(CASE WHEN rank_id = 4 THEN 1 END) as Cpl")
+            ->selectRaw("sum(CASE WHEN rank_id = 5 THEN 1 END) as Sgt")
+            ->selectRaw("sum(CASE WHEN rank_id = 6 THEN 1 END) as SSgt")
+            ->selectRaw("sum(CASE WHEN rank_id = 7 THEN 1 END) as WO2")
+            ->selectRaw("sum(CASE WHEN rank_id = 8 THEN 1 END) as WO1")
             ->selectRaw("count(*) as total")
             ->first();
     }
@@ -111,13 +111,13 @@ class BranchService
             ->selectRaw("sum(CASE WHEN branch_id = 4 and rank_id = 8 THEN establishment ELSE 0 END) as engrWO1")
             ->selectRaw("sum(CASE WHEN branch_id = 4 THEN establishment ELSE 0 END) as engrTotal")
 //            Totals
-            ->selectRaw("sum(CASE WHEN rank_id = 2 THEN establishment ELSE 0 END) as pte")
-            ->selectRaw("sum(CASE WHEN rank_id = 3 THEN establishment ELSE 0 END) as lcpl")
-            ->selectRaw("sum(CASE WHEN rank_id = 4 THEN establishment ELSE 0 END) as cpl")
-            ->selectRaw("sum(CASE WHEN rank_id = 5 THEN establishment ELSE 0 END) as sgt")
-            ->selectRaw("sum(CASE WHEN rank_id = 6 THEN establishment ELSE 0 END) as ssgt")
-            ->selectRaw("sum(CASE WHEN rank_id = 7 THEN establishment ELSE 0 END) as wo2")
-            ->selectRaw("sum(CASE WHEN rank_id = 8 THEN establishment ELSE 0 END) as wo1")
+            ->selectRaw("sum(CASE WHEN rank_id = 2 THEN establishment ELSE 0 END) as Pte")
+            ->selectRaw("sum(CASE WHEN rank_id = 3 THEN establishment ELSE 0 END) as LCpl")
+            ->selectRaw("sum(CASE WHEN rank_id = 4 THEN establishment ELSE 0 END) as Cpl")
+            ->selectRaw("sum(CASE WHEN rank_id = 5 THEN establishment ELSE 0 END) as Sgt")
+            ->selectRaw("sum(CASE WHEN rank_id = 6 THEN establishment ELSE 0 END) as SSgt")
+            ->selectRaw("sum(CASE WHEN rank_id = 7 THEN establishment ELSE 0 END) as WO2")
+            ->selectRaw("sum(CASE WHEN rank_id = 8 THEN establishment ELSE 0 END) as WO1")
             ->selectRaw('sum(establishment) as total')
             ->first();
     }

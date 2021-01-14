@@ -18,6 +18,23 @@ Route::group(['prefix' => 'career_management'], function () {
 
 });
 
+Route::get('dashboard', [ManpowerController::class, 'index'])
+    ->name('manpower.dashboard');
+
+/**
+ * Vacancies
+ */
+
+Route::group(['prefix' => 'vacancies'], function () {
+
+    Route::get('branch', [ManpowerController::class, 'branch'])
+        ->name('manpower.vacancies.branch');
+
+    Route::get('stream', [ManpowerController::class, 'stream'])
+        ->name('manpower.vacancies.stream');
+
+});
+
 /**
  * Manpower Reports
  */
@@ -27,13 +44,11 @@ Route::group(['prefix' => 'reports'], function () {
 });
 
 
-Route::get('dashboard', [ManpowerController::class, 'index'])
-    ->name('manpower.dashboard');
 
-Route::get('branch', [ManpowerController::class, 'branch'])
-    ->name('manpower.branch');
 
-Route::get('stream', [ManpowerController::class, 'stream'])
-    ->name('manpower.stream');
+
+
+
+
 
 

@@ -32,26 +32,17 @@ class SideMenu
                 ],
                 'title' => 'Parade State'
             ],
-            'servicepeople' => [
-                'icon' => 'database',
-                'route_name' => 'servicepeople.index',
-                'params' => [
-                    'layout' => 'side-menu'
-                ],
-                'title' => 'Servicepeople'
-            ],
-            'devider',
-            'administration' => [
+            'personnel' => [
                 'icon' => 'clipboard',
-                'title' => 'Administration',
+                'title' => 'Personnel',
                 'sub_menu' => [
                     'approval' => [
                         'icon' => '',
-                        'route_name' => 'dashboard',
+                        'route_name' => 'servicepeople.index',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
-                        'title' => 'Approvals'
+                        'title' => 'Servicepeople'
                     ],
                     'leave' => [
                         'icon' => '',
@@ -64,20 +55,9 @@ class SideMenu
                 ],
 
             ],
-            'medical' => [
-                'icon' => 'plus',
-                'title' => 'Medical Records',
-                'sub_menu' => [
-                    'side-menu' => [
-                        'icon' => '',
-                        'route_name' => 'dashboard',
-                        'params' => [
-                            'layout' => 'side-menu'
-                        ],
-                        'title' => 'Basic Medical Info'
-                    ],
-                ]
-            ],
+
+            'devider',
+
             'manpower' => [
                 'icon' => 'users',
                 'title' => 'Manpower',
@@ -88,7 +68,7 @@ class SideMenu
                         'sub_menu' => [
                             'branch' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'manpower.vacancies.branch',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
@@ -96,7 +76,7 @@ class SideMenu
                             ],
                             'stream' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'manpower.vacancies.stream',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
@@ -136,35 +116,43 @@ class SideMenu
                         ]
                     ],
                 ],
-                'Security' => [
-                    'wizards' => [
+            ],
+
+            'administration' => [
+                'icon' => 'clipboard',
+                'title' => 'Admin',
+                'sub_menu' => [
+                    'approval' => [
                         'icon' => '',
-                        'title' => 'Security',
-                        'sub_menu' => [
-                            'access-control' => [
-                                'icon' => '',
-                                'route_name' => 'dashboard',
-                                'params' => [
-                                    'layout' => 'side-menu'
-                                ],
-                                'title' => 'Access Control'
-                            ],
-                            'audit' => [
-                                'icon' => '',
-                                'route_name' => 'dashboard',
-                                'params' => [
-                                    'layout' => 'side-menu'
-                                ],
-                                'title' => 'Audit data'
-                            ],
-                        ]
+                        'route_name' => 'dashboard',
+                        'params' => [
+                            'layout' => 'side-menu'
+                        ],
+                        'title' => 'Approvals'
+                    ],
+                ],
+
+            ],
+
+            'medical' => [
+                'icon' => 'plus',
+                'title' => 'Medical',
+                'sub_menu' => [
+                    'side-menu' => [
+                        'icon' => '',
+                        'route_name' => 'dashboard',
+                        'params' => [
+                            'layout' => 'side-menu'
+                        ],
+                        'title' => 'Basic Medical Info'
                     ],
                 ]
             ],
+
             'devider',
             'system-admin' => [
                 'icon' => 'settings',
-                'title' => 'System Admin',
+                'title' => 'System',
                 'sub_menu' => [
                     'metadata' => [
                         'icon' => '',

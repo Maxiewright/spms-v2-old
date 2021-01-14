@@ -2,210 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27db36ba-3abb-4f47-ac7d-754208014d93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Tables/Td.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Tables/Th.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dist/images/ttr-login-page.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dist/images/ttr-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/ttr-login-page.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/tables/td.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/tables/th.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_branch_establishment_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_branch_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_career_path_establishment_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_career_path_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_specialty_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_stream_establishment_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_stream_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/manpower/career_management/career_management_system.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/manpower/career_management/jobs.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/manpower/career_management/qualifications.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Form/Modal/Select.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Tables/Vacancy/Cell.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Tables/Vacancy/EstablishmentTd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Tables/Vacancy/VacancyTd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/form/modal/select.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/tables/vacancy/cell.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/tables/vacancy/establishment-td.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/tables/vacancy/vacancy-td.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/branch.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/branch/administration.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/branch/engineers.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/branch/logistics.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/branch/operations.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/branch/total.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/clerical-legal-hr.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/combat-support.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/engr-artisan.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/engr-specialist.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/engr-technician.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/food-and-catering.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/hhs.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/ict.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/intelligence.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/musical.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/operations.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/provost.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/sfod.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/supply.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/total.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream/transport.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/stream.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Events/Http/Livewire/Events.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Http/Livewire/Events.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/events.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-class-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-class-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-title-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/job/job-title-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/partials/create_and_update_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Resources/views/livewire/partials/create_and_update_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/BranchComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/BranchComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/BranchEstablishmentComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/BranchEstablishmentComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/CareerPathEstablishmentComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/CareerPathEstablishmentComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/SpecialtyComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/SpecialtyComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/StreamComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/StreamComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/CareerManagementSystem/StreamEstablishmentComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/StreamEstablishmentComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Job/JobClassComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Job/JobClassComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Job/JobComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Job/JobComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Job/JobTitleComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Job/JobTitleComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Course/CourseComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseInstitutionComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Course/CourseInstitutionComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseQualificationComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Course/CourseQualificationComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Course/CourseTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Course/CourseTypeComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/EducationLevelComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Education/EducationLevelComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SchoolComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Education/SchoolComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SchoolDistrictComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Education/SchoolDistrictComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SchoolTypeComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Education/SchoolTypeComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CareerManagement/Qualification/Education/SubjectComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/Qualification/Education/SubjectComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/CareerPathComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Manpower/CareerManagement/CareerManagementSystem/CareerPathComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Main/SideMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main/SideMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/View/Components/Tables/DataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Tables/DataTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/food-beverage-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/preview-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/profile-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/images/ttr-bg-login-page.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/bg-login-page.svg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/bg-login-page.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/food-beverage-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/preview-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/profile-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_login.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/crud/livewire-crud-modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/crud/livewire-crud-modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/layouts/auth-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/layouts/auth-layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/branch_create_and_update_form_fields.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/branch_establishment_form.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/career_path_create_and_update_form_fields.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/career_path_establishment_form.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/specialty_create_and_update_form_fields.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/stream_create_and_update_form_fields.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/career-management-system/partials/stream_establishment_form.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/job/job-class-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/job/job-class-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/job/job-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/job/job-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/job/job-title-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/job/job-title-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/job/partials/job_create_and_update_form_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/job/partials/job_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/create_and_update_form_fields_with_slug.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/partials/create_and_update_form_fields_with_slug.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/create_and_update_form_fields_with_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/partials/create_and_update_form_fields_with_type.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/metadata_field_with_slug.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/partials/metadata_field_with_slug.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/metadata_field_with_type.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/partials/metadata_field_with_type.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/partials/single-field-metadata.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/partials/single-field-metadata.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/course-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-institution-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/course-institution-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-qualification-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/course-qualification-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/course-type-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/course-type-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/partials/course_create_and_update_form_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/partials/course_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/course/partials/course_institution_create_and_update_form_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/course/partials/course_institution_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/education-level-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/education-level-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/partials/school_create_and_update_form_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/partials/school_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/partials/subject_create_and_update_form_fields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/partials/subject_create_and_update_form_fields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/school-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/school-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/school-district-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/school-district-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/school-type-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/school-type-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/career-management/qualification/education/subject-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/qualification/education/subject-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/branch-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/branch-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/branch-establishment-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/branch-establishment-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/career-path-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/career-path-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/career-path-establishment-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/career-path-establishment-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/specialty-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/specialty-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/stream-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/stream-component.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/stream-establishment-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/stream-establishment-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/CareerManagementServices/BranchService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/CareerManagementServices/BranchService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/form/input/livewire-select.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/form/input/livewire-select.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_branch_establishment_modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_branch_establishment_modal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/manpower.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/manpower.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +211,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/dist/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/manpower/vacancies/partials/stream" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -391,18 +224,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\views\manpower\vacancies\partials\stream" />
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\views\manpower\vacancies\partials\branch" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\public\dist\images" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\public\dist\images\placeholders" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\views\manpower\metadata" />
-      <recent name="C:\xampp\htdocs\serviceperson-management-system\Modules\Events\Resources\views" />
-      <recent name="C:\xampp\htdocs\serviceperson-management-system\Modules" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\views\manpower" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\public\dist\images" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\images" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\views\livewire\manpower" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\app\Http\Livewire\Manpower" />
-      <recent name="C:\xampp\htdocs\serviceperson-management-system\app\Http\Livewire\Traits" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -421,7 +254,9 @@
       <workItem from="1609888733149" duration="193000" />
       <workItem from="1609889065523" duration="22296000" />
       <workItem from="1610216674803" duration="69000" />
-      <workItem from="1610234774051" duration="24331000" />
+      <workItem from="1610234774051" duration="26380000" />
+      <workItem from="1610374168917" duration="2116000" />
+      <workItem from="1610548520183" duration="16002000" />
     </task>
     <servers />
   </component>
