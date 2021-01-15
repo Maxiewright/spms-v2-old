@@ -5,6 +5,7 @@ namespace App\Traits\Serviceperson;
 
 
 use App\Models\Serviceperson\Award;
+use App\Models\Serviceperson\Deployment;
 use App\Models\Serviceperson\Enlistment;
 use App\Models\Serviceperson\JobAppointment;
 use App\Models\Serviceperson\Promotion;
@@ -18,6 +19,7 @@ use App\Models\System\Serviceperson\ServiceData\Decoration;
 use App\Models\System\Serviceperson\ServiceData\Rank;
 use App\Models\System\Serviceperson\Unit\Formation;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
@@ -72,7 +74,7 @@ trait HasServiceData
             return $this->rank->regiment_slug;
         } elseif ($this->formation->name == 'Coast Guard') {
             return $this->rank->coast_guard_slug;
-        }elseif ($this->formation->name == 'Air Guard'){
+        } elseif ($this->formation->name == 'Air Guard') {
             return $this->rank->air_guard_slug;
         }
     }
@@ -87,7 +89,7 @@ trait HasServiceData
             return $this->rank->regiment;
         } elseif ($this->formation->name == 'Coast Guard') {
             return $this->rank->coast_guard;
-        }elseif ($this->formation->name == 'Air Guard'){
+        } elseif ($this->formation->name == 'Air Guard') {
             return $this->rank->air_guard;
         }
     }
@@ -174,7 +176,6 @@ trait HasServiceData
     /** **************************************** Job Appointments ****************************************************/
 
 
-
     /**
      * Return serviceperson Current unit
      * @return HasOne
@@ -257,7 +258,7 @@ trait HasServiceData
 
     /** ********************************* Decorations / Awards / Commendations ****************************************/
 
-    public function awards()
+    public function awards(): BelongsToMany
     {
         return $this->belongsToMany(Decoration::class, 'serviceperson_decoration')
             ->using(Award::class)
@@ -265,5 +266,12 @@ trait HasServiceData
             ->as('details')
             ->orderBy('pivot_received_on', 'DESC')
             ->withTimestamps();
+    }
+
+//    Deployments
+
+    public function deployments(): HasMany
+    {
+        return $this->hasMany(Deployment::class);
     }
 }

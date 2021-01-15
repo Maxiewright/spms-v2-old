@@ -1,5 +1,6 @@
 {
     "Leave": true,
     "Events": true,
-    "Medical": true
+    "Medical": true,
+    "Records": true
 }

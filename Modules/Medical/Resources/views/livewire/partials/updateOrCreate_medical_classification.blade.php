@@ -100,7 +100,7 @@
             <span class="text-gray-700">Performed At</span>
             <input wire:model="performed_at"
                    type="text" class="input w-full border mt-1"
-                   placeholder="Performed On"
+                   placeholder="Performed At"
             >
             @error('performed_at') <span class="text-red-500">{{ $message }}</span>@enderror
         </label>

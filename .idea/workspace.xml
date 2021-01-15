@@ -2,10 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27db36ba-3abb-4f47-ac7d-754208014d93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Config/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Config/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Console/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Factories/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Factories/Index/FileCategoryFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Factories/Index/FileFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Factories/Index/FileSubCategoryFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Factories/Index/FileSubSubCategoryFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Migrations/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Migrations/2021_01_15_183342_create_files_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/AccommodationSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/AdministrationSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/BoardsSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/ConfrencesCommitteMeetingSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/EstablishementSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/FileCategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/FileSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/FinancialAndAccountingMattersSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/FuneralWargravesSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/GovermentOfficialsSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/MentalAndDentalSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/OperationsSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/ParadesSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/PersonnelSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/RecordsDatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/SecuritySubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/SportsSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/TrainingSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Database/Seeders/VolunteerDefenceForceSubSubcategoryTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Entities/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Entities/Index/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Entities/Index/FileCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Entities/Index/FileSubCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Entities/Index/FileSubSubcategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Http/Controllers/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Http/Controllers/RecordsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Http/Middleware/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Http/Requests/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Providers/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Providers/RecordsServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Resources/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Resources/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Resources/assets/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Resources/lang/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Resources/views/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Resources/views/layouts/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Routes/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Tests/Feature/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/Tests/Unit/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/module.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Records/webpack.mix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Serviceperson/Deployment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/ServiceData/DeploymentCountry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/System/Serviceperson/ServiceData/DeploymentType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_15_153646_create_deployments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/service_data/deployment/DeploymentCountrySeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/service_data/deployment/DeploymentTypeSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Medical/Http/Livewire/MedicalClassificationComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Medical/Http/Livewire/MedicalClassificationComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/medical-classification-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/medical-classification-component.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/partials/updateOrCreate_medical_classification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/partials/updateOrCreate_medical_classification.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Traits/Serviceperson/HasServiceData.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/Serviceperson/HasServiceData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/service_data/ServiceDataSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/service_data/ServiceDataSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules_statuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,11 +263,11 @@
       <recent name="C:\xampp\htdocs\serviceperson-management-system\public\dist\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\database\seeders\service_data\deployment" />
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\database\seeders\service_data" />
+      <recent name="C:\xampp\htdocs\serviceperson-management-system\database\seeders\service_data\unit" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\views\manpower" />
       <recent name="C:\xampp\htdocs\serviceperson-management-system\public\dist\images" />
-      <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\images" />
-      <recent name="C:\xampp\htdocs\serviceperson-management-system\resources\views\livewire\manpower" />
-      <recent name="C:\xampp\htdocs\serviceperson-management-system\app\Http\Livewire\Manpower" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -224,7 +289,8 @@
       <workItem from="1610234774051" duration="26380000" />
       <workItem from="1610374168917" duration="2116000" />
       <workItem from="1610548520183" duration="16056000" />
-      <workItem from="1610647381542" duration="18102000" />
+      <workItem from="1610647381542" duration="18314000" />
+      <workItem from="1610722597846" duration="12352000" />
     </task>
     <servers />
   </component>
