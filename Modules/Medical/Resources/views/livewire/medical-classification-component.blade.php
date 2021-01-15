@@ -13,6 +13,7 @@
 {{--                </select>--}}
         </x-slot>
         <x-slot name="thead">
+            <x-tables.th>#</x-tables.th>
             <x-tables.th>Serviceperson</x-tables.th>
             <x-tables.th>P</x-tables.th>
             <x-tables.th>U</x-tables.th>
@@ -51,7 +52,7 @@
                         {{$row->medical_officer_remarks  ?? ''}}
                     </x-tables.td>
                     <x-tables.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-tables.td>
-{{--                    <x-crud.livewire-action-btns />--}}
+                    <x-crud.livewire-action-btns id="{{$row->id}}" />
                 </tr>
             @endforeach
         </x-slot>

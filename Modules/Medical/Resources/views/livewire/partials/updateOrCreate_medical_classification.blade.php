@@ -16,30 +16,35 @@
                 <option>P</option>
                 @include('medical::livewire.partials.grades')
             </select>
+            @error('physical_capacity') <span class="text-red-500">{{ $message }}</span>@enderror
         </div>
         <div>
             <select wire:model="upper_limbs" class="input w-full border mt-1">
                 <option>U</option>
                 @include('medical::livewire.partials.grades')
             </select>
+            @error('upper_limbs') <span class="text-red-500">{{ $message }}</span>@enderror
         </div>
         <div>
             <select wire:model="locomotion" class="input w-full border mt-1">
                 <option>L</option>
                 @include('medical::livewire.partials.grades')
             </select>
+            @error('locomotion') <span class="text-red-500">{{ $message }}</span>@enderror
         </div>
         <div>
             <select wire:model="hearing_left" class="input w-full border mt-1">
                 <option>H</option>
                 @include('medical::livewire.partials.grades')
             </select>
+            @error('hearing_left') <span class="text-red-500">{{ $message }}</span>@enderror
         </div>
         <div>
             <select wire:model="hearing_right" class="input w-full border mt-1">
                 <option>H</option>
                 @include('medical::livewire.partials.grades')
             </select>
+            @error('hearing_right') <span class="text-red-500">{{ $message }}</span>@enderror
         </div>
     </div>
 
@@ -50,12 +55,15 @@
                 <option>E</option>
                 @include('medical::livewire.partials.grades')
             </select>
+            @error('eyesight_left') <span class="text-red-500">{{ $message }}</span>@enderror
         </div>
+
         <div>
             <select wire:model="eyesight_right" class="input w-full border mt-1">
                 <option>E</option>
                 @include('medical::livewire.partials.grades')
             </select>
+            @error('eyesight_right') <span class="text-red-500">{{ $message }}</span>@enderror
         </div>
 
 
@@ -64,12 +72,14 @@
                 <option>M</option>
                 @include('medical::livewire.partials.grades')
             </select>
+            @error('mental_capacity') <span class="text-red-500">{{ $message }}</span>@enderror
         </div>
         <div>
             <select wire:model="stability" class="input w-full border mt-1">
                 <option>S</option>
                 @include('medical::livewire.partials.grades')
             </select>
+            @error('stability') <span class="text-red-500">{{ $message }}</span>@enderror
         </div>
     </div>
 

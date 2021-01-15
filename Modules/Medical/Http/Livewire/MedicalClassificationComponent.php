@@ -2,6 +2,7 @@
 
 namespace Modules\Medical\Http\Livewire;
 
+use App\Http\Livewire\Traits\WithAlerts;
 use App\Http\Livewire\Traits\WithModal;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -10,7 +11,7 @@ use Modules\Medical\Entities\MedicalClassificationGrade;
 
 class MedicalClassificationComponent extends Component
 {
-    use WithPagination, WithModal;
+    use WithPagination, WithModal, WithAlerts;
 
     public $search = '';
     public $filterRank;
@@ -19,6 +20,10 @@ class MedicalClassificationComponent extends Component
     public $serviceperson_number, $physical_capacity, $upper_limbs, $locomotion, $hearing_left, $hearing_right,
         $eyesight_left, $eyesight_right, $mental_capacity, $stability, $performed_on, $performed_at, $medical_officer,
         $medical_officer_remarks, $grades;
+
+    public $title = 'Medical Classification';
+
+    protected $listeners = ['destroyMedicalClassification'];
 
     protected $rules = [
         'serviceperson_number' => 'required|numeric',
@@ -42,9 +47,6 @@ class MedicalClassificationComponent extends Component
         $this->grades = MedicalClassificationGrade::all('id', 'degree');
     }
 
-    public $title = 'Medical Classification';
-
-    protected $listeners = ['medical_classification' => 'destroy'];
 
     public function render()
     {
@@ -84,9 +86,9 @@ class MedicalClassificationComponent extends Component
     {
         $validatedData = $this->validate();
 
-        MedicalClassification::updateOrCreate(['id' => $this->selectedId],$validatedData);
+        MedicalClassification::updateOrCreate(['id' => $this->selectedId], $validatedData);
 
-//        $this->showSuccessAlert();
+        $this->showSuccessAlert();
 
         $this->resetInput();
 
@@ -97,12 +99,10 @@ class MedicalClassificationComponent extends Component
     {
         $record = MedicalClassification::findOrFail($id);
 
-//        dd($record->performed_on);
-
         $this->selectedId = $id;
         $this->serviceperson_number = $record->serviceperson_number;
         $this->medical_officer = $record->medical_officer;
-        $this->physical_capacity = $record->physical_capicity;
+        $this->physical_capacity = $record->physical_capacity;
         $this->upper_limbs = $record->upper_limbs;
         $this->locomotion = $record->locomotion;
         $this->hearing_left = $record->hearing_left;
@@ -115,15 +115,17 @@ class MedicalClassificationComponent extends Component
         $this->performed_at = $record->performed_at;
         $this->medical_officer_remarks = $record->medical_officer_remarks;
 
-        $this->updateMode = true;
+        $this->openModal();
     }
 
-    public function destroy($id)
+    public function destroyMedicalClassification($id)
     {
         if ($id) {
             $record = MedicalClassification::where('id', $id);
             $record->delete();
         }
+
+        $this->showDeleteAlert();
     }
 
 }

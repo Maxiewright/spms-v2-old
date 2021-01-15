@@ -2,57 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27db36ba-3abb-4f47-ac7d-754208014d93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Config/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Config/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Console/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Database/Factories/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Database/Factories/MedicalClassificationFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Database/Factories/MedicalClassificationGradeFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Database/Migrations/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Database/Migrations/2021_01_14_210306_create_medical_classifications_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Database/Seeders/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Database/Seeders/MedicalClassificationGradeTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Database/Seeders/MedicalDatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Entities/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Entities/MedicalClassification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Entities/MedicalClassificationGrade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Http/Controllers/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Http/Controllers/MedicalController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Http/Middleware/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Http/Requests/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Providers/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Providers/MedicalServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/assets/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/lang/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/layouts/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/medical-classification-component.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/partials/grades.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/partials/updateOrCreate_medical_classification.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/medical_classification/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Routes/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Tests/Feature/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/Tests/Unit/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/module.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Medical/webpack.mix.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Medical/MedicalClassificationComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Medical/Http/Livewire/MedicalClassificationComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Main/SideMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main/SideMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Serviceperson/MedicalClassification.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/System/Serviceperson/Medical/MedicalClassificationGrade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/View/Components/Form/Modal/Select.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Form/Modal/Select.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules_statuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/form/modal/select.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/form/modal/select.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_branch_establishment_modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/manpower/career-management/career-management-system/partials/updateOrCreate_branch_establishment_modal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/manpower/vacancies/stream.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/manpower/vacancies/stream.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Medical/Http/Livewire/MedicalClassificationComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Medical/Http/Livewire/MedicalClassificationComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/medical-classification-component.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/medical-classification-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/partials/updateOrCreate_medical_classification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Medical/Resources/views/livewire/partials/updateOrCreate_medical_classification.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +224,7 @@
       <workItem from="1610234774051" duration="26380000" />
       <workItem from="1610374168917" duration="2116000" />
       <workItem from="1610548520183" duration="16056000" />
-      <workItem from="1610647381542" duration="15766000" />
+      <workItem from="1610647381542" duration="18102000" />
     </task>
     <servers />
   </component>
