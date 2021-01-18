@@ -1,31 +1,24 @@
 <?php
 
-namespace Modules\Leave\Providers;
+namespace Modules\Documentation\Providers;
 
+use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use Livewire\Livewire;
-use Modules\Leave\Http\Livewire\Adjustments\Adjustments;
-use Modules\Leave\Http\Livewire\AllLeave;
-use Modules\Leave\Http\Livewire\Entitlement\CreateEntitlement;
-use Modules\Leave\Http\Livewire\Entitlement\MassCreateEntitlement;
-use Modules\Leave\Http\Livewire\Entitlement\ShowEntitlement;
-use Modules\Leave\Http\Livewire\Leave\CreateLeave;
-use Modules\Leave\Http\Livewire\Reports\Current;
-use Modules\Leave\Http\Livewire\Reports\Excessive;
-use Modules\Leave\Http\Livewire\Reports\Pending;
+use Illuminate\Database\Eloquent\Factory;
+use Modules\Documentation\Http\View\Composers\DocsMenuComposer;
 
-
-class LeaveServiceProvider extends ServiceProvider
+class DocumentationServiceProvider extends ServiceProvider
 {
     /**
      * @var string $moduleName
      */
-    protected $moduleName = 'Leave';
+    protected $moduleName = 'Documentation';
 
     /**
      * @var string $moduleNameLower
      */
-    protected $moduleNameLower = 'leave';
+    protected $moduleNameLower = 'documentation';
 
     /**
      * Boot the application events.
@@ -39,6 +32,10 @@ class LeaveServiceProvider extends ServiceProvider
         $this->registerViews();
         $this->loadMigrationsFrom(module_path($this->moduleName, 'Database/Migrations'));
 
+
+        //View Composer
+        View::composer('documentation::*', DocsMenuComposer::class);
+
     }
 
     /**
@@ -49,7 +46,6 @@ class LeaveServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
-        $this->app->register(LivewireServiceProvider::class);
     }
 
     /**

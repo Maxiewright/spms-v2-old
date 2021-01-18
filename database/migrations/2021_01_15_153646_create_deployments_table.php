@@ -13,17 +13,6 @@ class CreateDeploymentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('deployments', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('serviceperson_number')->constrained('servicepeople', 'number');
-            $table->foreignId('deployment_type_id');
-            $table->foreignId('deployment_country_id')->constrained();
-            $table->date('from');
-            $table->date('to')->nullable();
-            $table->text('particulars')->nullable();
-            $table->timestamps();
-        });
-
         //Types
         Schema::create('deployment_types', function (Blueprint $table) {
             $table->id();
@@ -40,6 +29,20 @@ class CreateDeploymentsTable extends Migration
             $table->string('code');
             $table->timestamps();
         });
+
+        //Serviceperson Deployments
+        Schema::create('deployments', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('serviceperson_number')->constrained('servicepeople', 'number');
+            $table->foreignId('deployment_type_id');
+            $table->foreignId('deployment_country_id')->constrained();
+            $table->date('from');
+            $table->date('to')->nullable();
+            $table->text('particulars')->nullable();
+            $table->timestamps();
+        });
+
+
 
 
     }

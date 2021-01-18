@@ -2,5 +2,6 @@
     "Leave": true,
     "Events": true,
     "Medical": true,
-    "Records": true
+    "Records": true,
+    "Documentation": true
 }
