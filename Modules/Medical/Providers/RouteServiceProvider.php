@@ -47,7 +47,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapWebRoutes()
     {
-        Route::middleware('web')
+        Route::middleware('web', 'auth', 'password.change', 'verified')
             ->namespace($this->moduleNamespace)
             ->group(module_path('Medical', '/Routes/web.php'));
     }

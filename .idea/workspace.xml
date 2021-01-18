@@ -2,95 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27db36ba-3abb-4f47-ac7d-754208014d93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Config/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Config/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Console/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Database/Factories/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Database/Migrations/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Database/Seeders/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Database/Seeders/DocumentationDatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Entities/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Http/Controllers/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Http/Controllers/DocumentationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Http/Middleware/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Http/Requests/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Http/View/Composers/DocsMenuComposer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Main/DocsSideMenu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Main/DocsSimpleMenu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Main/DocsTopMenu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Providers/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Providers/DocumentationServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/assets/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/lang/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/administration/approval.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/getting_started/adding-servicepeople.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/getting_started/introduction.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/getting_started/system-access.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/getting_started/views.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/layout/base.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/layout/components/dark-mode-switcher.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/layout/components/mobile-menu.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/layout/main.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/layout/side-menu.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/layout/simple-menu.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/manpower/career-management.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/manpower/vacancies.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/personnel/leave.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/personnel/medical/medical-classification.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/system/metadata.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/system/metadata/record_card.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/system/security/access-control.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Resources/views/system/security/audit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Routes/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Tests/Feature/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/Tests/Unit/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/module.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Documentation/webpack.mix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Leave/Providers/LivewireServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Accordion/BoxedPane.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Cards/ContentCard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Link/TableOfContent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dist/css/ttr_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/accordion/boxed-pane.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/cards/content-card.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/link/table-of-content.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Leave/Providers/LeaveServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Leave/Providers/LeaveServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/File/File.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/File/FileCategory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/File/FileSubSubcategory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/System/Universal/Polymorphic/File/FileSubcategory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_13_143417_create_medical_classifications_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_08_110839_create_files_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_15_153646_create_deployments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_15_153646_create_deployments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/AccommodationSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/AdministrationSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/BoardsSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/ConferencesCommitteeMeetingSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/EstablishmentSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/FileCategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/FileSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/FinancialAndAccountingMattersSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/FuneralWargravesSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/GovernmentOfficialsSubSubCategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/MentalAndDentalSubSubCategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/OperationsSubSubCategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/ParadesSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/PersonnelSubSubCategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/SecuritySubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/SportsSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/TrainingSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/file/VolunteerDefenceForceSubSubcategorySeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules_statuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Documentation/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Documentation/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Events/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Events/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Leave/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Leave/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Leave/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Leave/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Medical/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Medical/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Records/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Records/Providers/RouteServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +230,8 @@
       <workItem from="1610374168917" duration="2116000" />
       <workItem from="1610548520183" duration="16056000" />
       <workItem from="1610647381542" duration="18314000" />
-      <workItem from="1610722597846" duration="40839000" />
+      <workItem from="1610722597846" duration="41006000" />
+      <workItem from="1610965583792" duration="907000" />
     </task>
     <servers />
   </component>

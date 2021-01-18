@@ -17,7 +17,7 @@ use Modules\Leave\Http\Controllers\TestingController;
 use Modules\Leave\Http\Livewire\Entitlement\ShowEntitlement;
 
 
-Route::group(['prefix' => 'leave', 'middleware' => 'auth'], function (){
+Route::group(['prefix' => 'leave'], function (){
     //    Dashboard
     Route::get('/', [DashboardController::class, 'dashboard'])->name('leave.dashboard');
     Route::get('all', [DashboardController::class, 'index'])->name('leave.all');
