@@ -14,6 +14,7 @@
     @yield('head')
 
     <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="{{ asset('dist/css/ttr_theme.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/css/app.css') }}" />
     <!-- END: CSS Assets-->
 </head>

@@ -51,7 +51,7 @@ class CityOrTownComponent extends Component
 
     private function resetInput()
     {
-        $this->reset(['name', 'divisionOrRegionId', 'selectedId']);
+        $this->reset(['name', 'divisionOrRegionId', 'selected_id']);
     }
 
     public function store()

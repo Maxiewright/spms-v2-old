@@ -29,7 +29,8 @@ trait WithModal
      */
     public function create()
     {
-        $this->openModal();
+        $this->selectedId = null;
         $this->resetInput();
+        $this->openModal();
     }
 }

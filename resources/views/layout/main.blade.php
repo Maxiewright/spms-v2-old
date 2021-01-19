@@ -16,7 +16,7 @@
         @stack('modals')
 
         @livewireScripts
-
+        @stack('livewire-scripts')
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <script src="{{asset('js/livewireSweetAlert.js')}}"></script>
     </body>

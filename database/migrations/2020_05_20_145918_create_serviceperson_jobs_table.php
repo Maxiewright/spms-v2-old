@@ -24,8 +24,15 @@ class CreateServicepersonJobsTable extends Migration
 
 //        Branch Establishment
         Schema::create('branch_establishment', function (Blueprint $table) {
-            $table->foreignId('branch_id')->constrained();
-            $table->foreignId('rank_id')->constrained();
+            $table->id();
+            $table->foreignId('branch_id')
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table->foreignId('rank_id')
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->integer('establishment');
             $table->timestamps();
             $table->softDeletes();
@@ -44,8 +51,15 @@ class CreateServicepersonJobsTable extends Migration
 
 //        Stream Establishment
         Schema::create('stream_establishment', function (Blueprint $table) {
-            $table->foreignId('stream_id')->constrained();
-            $table->foreignId('rank_id')->constrained();
+            $table->id();
+            $table->foreignId('stream_id')
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table->foreignId('rank_id')
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->integer('establishment');
             $table->timestamps();
             $table->softDeletes();
@@ -62,6 +76,7 @@ class CreateServicepersonJobsTable extends Migration
 
 //        Career Path  Establishment
         Schema::create('career_path_establishment', function (Blueprint $table) {
+            $table->id();
             $table->foreignId('career_path_id')->constrained();
             $table->foreignId('rank_id')->constrained();
             $table->integer('establishment');
@@ -69,7 +84,7 @@ class CreateServicepersonJobsTable extends Migration
             $table->softDeletes();
         });
 
-//    Specialities
+//    specialties
         Schema::create('specialties', function (Blueprint $table) {
             $table->id();
             $table->foreignId('career_path_id')->constrained();

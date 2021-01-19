@@ -63,7 +63,7 @@ class CourseQualificationComponent extends Component
     public function update()
     {
         $this->validate([
-            'selectedId' => 'required|numeric',
+            'selected_id' => 'required|numeric',
             'name' => 'required',
             'slug' => 'required',
         ],[

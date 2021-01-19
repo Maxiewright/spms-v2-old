@@ -61,8 +61,6 @@ class CreateEnlistmentsTable extends Migration
             $table->foreignId('re_engagement_period_id')->constrained();
             $table->date('requested_on');
 
-            //Medical Reference
-            $table->foreignId('medical_classification_id')->nullable()->constrained();
 
             // Recommendation
             $table->foreignId('recommendation_status_id')->nullable()->constrained();;
@@ -77,6 +75,9 @@ class CreateEnlistmentsTable extends Migration
             $table->text('approval_particulars')->nullable();
             $table->timestamps();
             $table->softDeletes();
+
+            // Medical Reference - To be added from Medical Module Migrations
+
         });
     }
 

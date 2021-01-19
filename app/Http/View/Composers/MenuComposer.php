@@ -59,7 +59,7 @@ class MenuComposer
         $firstLevelActiveIndex = '';
         $secondLevelActiveIndex = '';
         $thirdLevelActiveIndex = '';
-        
+
 
         if ($layout == 'top-menu') {
             foreach (TopMenu::menu() as $menuKey => $menu) {
@@ -80,7 +80,7 @@ class MenuComposer
                                     $firstLevelActiveIndex = $menuKey;
                                     $secondLevelActiveIndex = $subMenuKey;
                                     $thirdLevelActiveIndex = $lastSubMenuKey;
-                                }       
+                                }
                             }
                         }
                     }
@@ -88,7 +88,7 @@ class MenuComposer
             }
         } else if ($layout == 'simple-menu') {
             foreach (SimpleMenu::menu() as $menuKey => $menu) {
-                if ($menu !== 'devider' && isset($menu['route_name']) && $menu['route_name'] == $pageName && empty($firstPageName)) {
+                if ($menu !== 'divider' && isset($menu['route_name']) && $menu['route_name'] == $pageName && empty($firstPageName)) {
                     $firstLevelActiveIndex = $menuKey;
                 }
 
@@ -105,7 +105,7 @@ class MenuComposer
                                     $firstLevelActiveIndex = $menuKey;
                                     $secondLevelActiveIndex = $subMenuKey;
                                     $thirdLevelActiveIndex = $lastSubMenuKey;
-                                }       
+                                }
                             }
                         }
                     }
@@ -113,7 +113,7 @@ class MenuComposer
             }
         } else {
             foreach (SideMenu::menu() as $menuKey => $menu) {
-                if ($menu !== 'devider' && isset($menu['route_name']) && $menu['route_name'] == $pageName && empty($firstPageName)) {
+                if ($menu !== 'divider' && isset($menu['route_name']) && $menu['route_name'] == $pageName && empty($firstPageName)) {
                     $firstLevelActiveIndex = $menuKey;
                 }
 
@@ -130,7 +130,7 @@ class MenuComposer
                                     $firstLevelActiveIndex = $menuKey;
                                     $secondLevelActiveIndex = $subMenuKey;
                                     $thirdLevelActiveIndex = $lastSubMenuKey;
-                                }       
+                                }
                             }
                         }
                     }

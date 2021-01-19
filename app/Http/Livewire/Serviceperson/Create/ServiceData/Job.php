@@ -17,7 +17,7 @@ class Job extends Component
     public $branches;
     public $streams = [];
     public $careerPaths = [];
-    public $specialities = [];
+    public $specialties = [];
     public $jobs = [];
     public $title = 'serviceperson_job';
 
@@ -68,7 +68,7 @@ class Job extends Component
         }
 
         if (isset($this->data['serviceperson_job'][0]['career_path_id'])) {
-            $this->specialities = Specialty::query()
+            $this->specialties = Specialty::query()
             ->where('career_path_id', $this->data['serviceperson_job'][0]['career_path_id'])->get();
             $this->jobs = \App\Models\System\Serviceperson\CareerManagement\Job\Job::
             join('job_titles', 'job_title_id', '=', 'job_titles.id')

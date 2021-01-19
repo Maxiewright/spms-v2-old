@@ -1,25 +1,10 @@
 <x-crud.livewire-crud-modal title="{{$title}}">
-    <div class="col">
-        <input wire:model="name"
-               type="text"
-               class="form-control mb-2 mr-sm-2 @error('name') is-invalid @enderror"
-               title="{{$title}}"
-               placeholder="Name"
-        >
-        @error('name')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+    <div class="">
+        <x-form.input.livewire-text model="name" label="Name" placeholder="Name"  />
     </div>
-    <div class="col">
-        <input wire:model="slug"
-               type="text"
-               class="form-control mb-2 mr-sm-2 @error('slug') is-invalid @enderror"
-               title="{{$title}}"
-               placeholder="Short Name"
-        >
-        @error('slug')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+
+    <div class="mt-3">
+        <x-form.input.livewire-text model="slug"  label="Short Name" placeholder="Short Name" />
     </div>
 </x-crud.livewire-crud-modal>
 

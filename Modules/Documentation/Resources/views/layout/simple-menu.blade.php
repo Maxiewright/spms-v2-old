@@ -1,22 +1,22 @@
-@extends('Documentation::layout.main')
+@extends('documentation::layout.main')
 
 @section('head')
     @yield('subhead')
 @endsection
 
 @section('content')
-    @include('Documentation::layout.components.mobile-menu')
+    @include('documentation::layout.components.mobile-menu')
     <div class="flex">
         <!-- BEGIN: Simple Menu -->
         <nav class="side-nav side-nav--simple">
             <a href="" class="intro-x flex items-center pl-5 pt-4">
                 <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="{{ asset('dist/images/logo.svg') }}">
             </a>
-            <div class="side-nav__devider my-6"></div>
+            <div class="side-nav__divider my-6"></div>
             <ul>
                 @foreach ($docs_simple_menu as $menuKey => $menu)
-                    @if ($menu == 'devider')
-                        <li class="side-nav__devider my-6"></li>
+                    @if ($menu == 'divider')
+                        <li class="side-nav__divider my-6"></li>
                     @else
                         <li>
                             <a href="{{ isset($menu['route_name']) ? route($menu['route_name'], $menu['params']) : 'javascript:;' }}" class="{{ $first_level_active_index == $menuKey ? 'side-menu side-menu--active' : 'side-menu' }}">

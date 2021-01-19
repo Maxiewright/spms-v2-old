@@ -1,34 +1,14 @@
 <x-layouts.side-menu-tabs sub-head="Career Management | Career Management System" title="Career Management System">
     <x-slot name="tabs">
-        <a data-toggle="tab" data-target="#branch" href="javascript:;"
-           class="flex items-center active">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i> Branch
-        </a>
-        <a data-toggle="tab" data-target="#branch-establishment" href="javascript:;"
-           class="flex items-center">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i> Branch Establishment
-        </a>
-        <a data-toggle="tab" data-target="#streams" href="javascript:;"
-           class="flex items-center">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i> Streams
-        </a>
-        <a data-toggle="tab" data-target="#stream-establishment" href="javascript:;"
-           class="flex items-center">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i> Stream Establishment
-        </a>
-        <a data-toggle="tab" data-target="#career-paths" href="javascript:;"
-           class="flex items-center">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i> Career Paths
-        </a>
-        <a data-toggle="tab" data-target="#career-path-establishment" href="javascript:;"
-           class="flex items-center">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i> Career Path Establishment
-        </a>
-        <a data-toggle="tab" data-target="#specialities" href="javascript:;"
-           class="flex items-center">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i> Specialities
-        </a>
+        <x-link.tab target="#branch" icon="chevrons-right" title="Branch" class="active" />
+        <x-link.tab target="#branch-establishment" icon="chevrons-right" title="Branch Establishment"/>
+        <x-link.tab target="#streams" icon="chevrons-right" title="Streams"/>
+        <x-link.tab target="#stream-establishment" icon="chevrons-right" title="Stream Establishment"/>
+        <x-link.tab target="#career-paths" icon="chevrons-right" title="Career Paths"/>
+        <x-link.tab target="#career-path-establishment" icon="chevrons-right" title="Career Path Establishment"/>
+        <x-link.tab target="#specialties" icon="chevrons-right" title="specialties" class="mb-5" />
     </x-slot>
+
     <x-slot name="tabContent">
         <div class="tab-content__pane active" id="branch">
             <livewire:manpower.career-management.career-management-system.branch-component/>
@@ -48,8 +28,8 @@
         <div class="tab-content__pane" id="career-path-establishment">
             <livewire:manpower.career-management.career-management-system.career-path-establishment-component />
         </div>
-        <div class="tab-content__pane" id="specialities">
-{{--            <livewire:manpower.career-management.career-management-system.specialities />--}}
+        <div class="tab-content__pane" id="specialties">
+            <livewire:manpower.career-management.career-management-system.specialty-component />
         </div>
     </x-slot>
 </x-layouts.side-menu-tabs>

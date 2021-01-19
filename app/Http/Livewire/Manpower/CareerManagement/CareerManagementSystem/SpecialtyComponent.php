@@ -2,24 +2,31 @@
 
 namespace App\Http\Livewire\Manpower\CareerManagement\CareerManagementSystem;
 
+use App\Http\Livewire\Traits\WithAlerts;
 use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\CareerPath;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\Specialty;
+use Illuminate\Validation\Rule;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class SpecialtyComponent extends Component
 {
-    use WithPagination, WithModal;
-
+    use WithPagination, WithModal, WithAlerts;
 
     public $search = '';
     public $filter;
-    public $name, $slug, $careerPathId, $careerPaths, $selectedId;
-    public $updateMode = false;
+    public $name, $slug, $career_path_id, $careerPaths, $selectedId;
     public $title = 'Specialty';
 
-    protected $listeners = ['specialty' => 'destroy'];
+    protected $listeners = ['destroySpecialty'];
+
+    //Validation rule are in the store method
+    protected $messages = [
+        'name.required' => 'Please fill out this field',
+        'slug.required' => 'Short name is required',
+        'career_path_id.required' => 'Career Path is required',
+    ];
 
     public function mount()
     {
@@ -29,89 +36,73 @@ class SpecialtyComponent extends Component
     public function render()
     {
 
-        $searchTerm = '%'  .$this->search . '%';
-        return view('livewire.manpower.career-management.career-management-system.specialty-component',[
-            'data' =>  Specialty::query()
+        $searchTerm = '%' . $this->search . '%';
+        return view('livewire.manpower.career-management.career-management-system.specialty-component', [
+            'data' => Specialty::query()
                 ->with('careerPath')
                 ->orderBy('created_at', 'desc')
-                ->where(function ($query) use ($searchTerm){
+                ->where(function ($query) use ($searchTerm) {
                     $query->where('name', 'like', $searchTerm)
                         ->orWhere('slug', 'like', $searchTerm)
-                        ->orWhereHas('careerPath', function ($query) use($searchTerm){
+                        ->orWhereHas('careerPath', function ($query) use ($searchTerm) {
                             $query->where('name', 'like', $searchTerm);
                         });
                 })
-                ->when($this->filter, function ($query){
+                ->when($this->filter, function ($query) {
                     $query->where('career_path_id', '=', $this->filter);
                 })
                 ->paginate(10)
         ]);
     }
+
     private function resetInput()
     {
         $this->name = null;
         $this->slug = null;
-        $this->careerPathId = null;
+        $this->career_path_id = null;
     }
+
     public function store()
     {
-        $this->validate([
-            'name' => 'required|unique:specialties,name',
-            'slug' => 'required|unique:specialties,slug',
-            'careerPathId' => 'required'
-        ],[
-            'name.required' => 'Please fill out this field',
-            'slug.required' => 'Short name is required',
-            'careerPathId.required' => 'Career Path is required',
+        $validatedData = $this->validate([
+            'name' => ['required',
+                Rule::unique('specialties', 'name')->ignore($this->selectedId)
+            ],
+            'slug' => ['required',
+                Rule::unique('specialties', 'slug')->ignore($this->selectedId)
+            ],
+            'career_path_id' => 'required'
         ]);
 
-        Specialty::create([
-            'name' => $this->name,
-            'slug' => $this->slug,
-            'career_path_id' => $this->careerPathId
-        ]);
+        Specialty::updateOrCreate(['id' => $this->selectedId], $validatedData);
+
+        $this->showSuccessAlert();
+
         $this->resetInput();
+
+        $this->closeModal();
     }
+
     public function edit($id)
     {
         $record = Specialty::findOrFail($id);
+
         $this->selectedId = $id;
         $this->name = $record->name;
         $this->slug = $record->slug;
-        $this->careerPathId = $record->career_path_id;
-        $this->updateMode = true;
+        $this->career_path_id = $record->career_path_id;
+
+        $this->openModal();
     }
 
-    public function update()
-    {
-        $this->validate([
-            'selectedId' => 'required|numeric',
-            'name' => 'required',
-            'slug' => 'required',
-            'careerPathId' => 'required',
-        ],[
-            'name.required' => 'Please fill out this field',
-            'slug.required' => 'Short name is required',
-            'careerPathId.required' => 'Career Path is required'
-        ]);
-
-        if ($this->selectedId) {
-            $record = Specialty::find($this->selectedId);
-            $record->update([
-                'name' => $this->name,
-                'slug' => $this->slug,
-                'career_path_id' => $this->careerPathId,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
-    }
-
-    public function destroy($id)
+    public function destroySpecialty($id)
     {
         if ($id) {
             $record = Specialty::where('id', $id);
+
             $record->delete();
+
+            $this->showDeleteAlert();
         }
     }
 }

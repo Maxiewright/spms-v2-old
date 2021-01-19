@@ -1,36 +1,5 @@
 <div>
-{{--    @if ($updateMode)--}}
-        <x-metadata.update title="{{$title}}">
-            <x-slot name="updateFields">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <input wire:model="userServicepersonName" type="text"
-                               class="form-control mb-2 mr-sm-2 @error('userServicepersonName') is-invalid @enderror" title="{{$title}}">
-                        @error('userServicepersonName')
-                        <div class="invalid-feedback">{{$message}}</div>
-                        @enderror
-                    </div>
-                </div >
-
-                <div wire:ignore class="col-sm-8" id="updateUserRole">
-                    <input type="hidden" wire:model="userRoleIds" id="userRoleIds" data-name="{{$userRoleIds}}">
-                    <select wire:key="userRoleIds" class=" form-control select2
-                    @error('userRoles.*') is-invalid @enderror"
-                         name="userRoles[]" id="userRoles" multiple required
-                    >
-                        @foreach($roles as $role)
-                            <option value="{{$role->id}}" >{{ $role->name }}</option>
-                        @endforeach
-                    </select>
-                    @error('userRoles.*')
-                    <div class="invalid-feedback">{{$message}}</div>
-                    @enderror
-                </div>
-            </x-slot>
-        </x-metadata.update>
-{{--    @endif--}}
-
-    <x-metadata.metadata-component title="{{$title}}">
+    <x-tables.data-table title="{{$title}}">
         <x-slot name="tableHeaders">
             <th>Serviceperson</th>
             <th>Roles</th>
@@ -83,14 +52,14 @@
                     <td wire:click="reloadUpdateField()">
                         <button wire:click="edit({{$row->id}})" class="btn btn-icon btn-sm editRoles"><i class="fa fa-edit text-danger"></i></button>
                     </td>
-{{--                    <x-metadata.action-buttons id="{{$row->id}}" destroyField="{{$title}}"/>--}}
+{{--                    --}}
                 </tr>
             @endforeach
         </x-slot>
         <x-slot name="pagination">
             {{$data->onEachSide(1)->links()}}
         </x-slot>
-    </x-metadata.metadata-component>
+    </x-tables.data-table>
 </div>
 
 @push('livewire-scripts')

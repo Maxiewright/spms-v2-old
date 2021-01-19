@@ -21,7 +21,7 @@
             }
         }
     }
-    .side-nav__devider {
+    .side-nav__divider {
         @apply w-full h-px bg-theme-3 z-10 relative;
     }
     .side-menu {
@@ -46,10 +46,10 @@
     > ul {
         @for $i from 1 through 50 {
             > li:nth-child(#{$i}) {
-                &.side-nav__devider {
+                &.side-nav__divider {
                     @apply opacity-0;
                     animation: 0.4s
-                        intro-devider-animation
+                        intro-divider-animation
                         ease-in-out
                         0.33333s;
                     animation-fill-mode: forwards;
@@ -164,7 +164,7 @@
     }
 }
 
-@keyframes intro-devider-animation {
+@keyframes intro-divider-animation {
     100% {
         @apply opacity-100;
     }
@@ -191,7 +191,7 @@
 }
 
 .dark {
-    .side-nav__devider {
+    .side-nav__divider {
         @apply bg-dark-3;
     }
     .side-nav {

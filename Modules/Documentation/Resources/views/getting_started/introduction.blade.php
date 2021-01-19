@@ -34,7 +34,6 @@
                         your different roles and permission will determine what a user can view and edit
                     </p>
                 </div>
-
             </x-cards.content-card>
             <x-cards.content-card title="Intended Audience" id="audience">
                 <div class="font-normal">

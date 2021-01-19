@@ -58,7 +58,7 @@ class CourseTypeComponent extends Component
     public function update()
     {
         $this->validate([
-            'selectedId' => 'required|numeric',
+            'selected_id' => 'required|numeric',
             'name' => 'required|unique:course_types,name',
             'slug' => 'required|unique:course_types,slug'
         ]);

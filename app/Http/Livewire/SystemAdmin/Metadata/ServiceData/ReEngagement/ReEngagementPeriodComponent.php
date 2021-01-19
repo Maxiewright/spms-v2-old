@@ -46,7 +46,7 @@ class ReEngagementPeriodComponent extends Component
 
     private function resetInput()
     {
-        $this->reset(['name', 'slug', 'selectedId']);
+        $this->reset(['name', 'slug', 'selected_id']);
     }
     public function store()
     {

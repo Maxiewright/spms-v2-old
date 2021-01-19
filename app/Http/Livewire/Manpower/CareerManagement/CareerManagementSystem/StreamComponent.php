@@ -2,24 +2,33 @@
 
 namespace App\Http\Livewire\Manpower\CareerManagement\CareerManagementSystem;
 
+use App\Http\Livewire\Traits\WithAlerts;
 use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\Branch;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\Stream;
+use Illuminate\Validation\Rule;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class StreamComponent extends Component
 {
-    use WithPagination, WithModal;
+    use WithPagination, WithModal, WithAlerts;
 
 
     public $search = '';
     public $filter;
-    public $name, $slug, $branchId, $branches, $selectedId;
-    public $updateMode = false;
+    public $name, $slug, $branch_id, $branches, $selectedId;
     public $title = 'Stream';
 
-    protected $listeners = ['stream' => 'destroy'];
+    protected $listeners = [ 'destroyStream'];
+
+    // Rules defined in store method
+
+    protected $messages = [
+        'name.required' => 'Please fill out this field',
+        'slug.required' => 'Short name is required',
+        'branch_id.required' => 'Branch is required',
+    ];
 
     public function mount()
     {
@@ -47,71 +56,59 @@ class StreamComponent extends Component
                 ->paginate(10)
         ]);
     }
+
     private function resetInput()
     {
         $this->name = null;
         $this->slug = null;
-        $this->branchId = null;
+        $this->branch_id = null;
     }
+
     public function store()
     {
-        $this->validate([
-            'name' => 'required|unique:branches,name',
-            'slug' => 'required|unique:branches,slug',
-            'branchId' => 'required|unique:branches,slug'
-        ],[
-            'name.required' => 'Please fill out this field',
-            'slug.required' => 'Short name is required',
-            'branchId.required' => 'Branch is required',
+        $validatedData = $this->validate([
+            'name' => [
+                'required',
+                Rule::unique('streams', 'name')->ignore($this->selectedId)
+            ],
+            'slug' => [
+                'required',
+                Rule::unique('streams', 'slug')->ignore($this->selectedId)
+            ],
+
+            'branch_id' => 'required'
         ]);
 
-        Stream::create([
-            'name' => $this->name,
-            'slug' => $this->slug,
-            'branch_id' => $this->branchId
-        ]);
+        Stream::updateOrCreate(['id' => $this->selectedId], $validatedData);
+
+        $this->showSuccessAlert();
+
         $this->resetInput();
+
+        $this->closeModal();
     }
+
     public function edit($id)
     {
         $record = Stream::findOrFail($id);
+
         $this->selectedId = $id;
         $this->name = $record->name;
         $this->slug = $record->slug;
-        $this->branchId = $record->branch_id;
-        $this->updateMode = true;
+        $this->branch_id = $record->branch_id;
+
+        $this->openModal();
     }
 
-    public function update()
-    {
-        $this->validate([
-            'selectedId' => 'required|numeric',
-            'name' => 'required',
-            'slug' => 'required',
-            'branchId' => 'required',
-        ],[
-            'name.required' => 'Please fill out this field',
-            'slug.required' => 'Short name is required',
-            'branchId.required' => 'Branch is required'
-        ]);
-
-        if ($this->selectedId) {
-            $record = Stream::find($this->selectedId);
-            $record->update([
-                'name' => $this->name,
-                'slug' => $this->slug,
-                'branch_id' => $this->branchId,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
-    }
-
-    public function destroy($id)
+    public function destroyStream($id)
     {
         if ($id) {
+
             $record = Stream::where('id', $id);
+
             $record->delete();
+
+            $this->showDeleteAlert();
         }
     }
 }

@@ -36,7 +36,8 @@
                     <x-tables.td>{{$row->establishment ?? ''}}</x-tables.td>
                     <x-tables.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-tables.td>
                     <x-tables.td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</x-tables.td>
-                    <x-crud.livewire-action-btns id="{{$row->id}}"/>
+                    <x-crud.livewire-action-btns id="{{$row->id}}" />
+{{--                    <x-livewire-double-id-action-btns id="{{$row->branch->id}}" id2="{{$row->rank->id}}" />--}}
                 </tr>
             @endforeach
         </x-slot>

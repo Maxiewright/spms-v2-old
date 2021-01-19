@@ -12,8 +12,7 @@ class MedicalSeeder extends Seeder
     {
         $this->call([
             BiodataSeeder::class,
-            MedicalHistorySeeder::class,
-            MedicalClassificationGradeSeeder::class,
+            MedicalHistorySeeder::class
         ]);
     }
 }

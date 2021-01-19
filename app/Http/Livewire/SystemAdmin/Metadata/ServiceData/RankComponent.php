@@ -55,7 +55,7 @@ class RankComponent extends Component
             'coastGuardSlug',
             'airGuard',
             'airGuardSlug',
-            'selectedId',
+            'selected_id',
         ]);
     }
 

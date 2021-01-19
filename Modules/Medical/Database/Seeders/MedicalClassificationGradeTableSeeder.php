@@ -2,9 +2,9 @@
 
 namespace Modules\Medical\Database\Seeders;
 
-use App\Models\System\Serviceperson\Medical\MedicalClassificationGrade;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Medical\Entities\MedicalClassificationGrade;
 
 class MedicalClassificationGradeTableSeeder extends Seeder
 {

@@ -11,8 +11,11 @@
 |
 */
 
+use Modules\Documentation\Http\Controllers\DocumentationController;
+
 Route::prefix('documentation')->group(function() {
-    Route::get('/', 'DocumentationController@index');
+    Route::get('/',  [DocumentationController::class, 'index' ])
+        ->name('documentation');
 
     // Getting Started
     Route::prefix('getting_started')->group(function(){
@@ -30,8 +33,9 @@ Route::prefix('documentation')->group(function() {
     Route::prefix('personnel')->group(function(){
         Route::view('leave', 'documentation::personnel.leave')
             ->name('personnel.leave');
-        Route::view('medical/medical_classification', 'documentation::personnel.medical.medical-classification')
-            ->name('personnel.medical.medical_classification');
+
+        Route::view('medical/classification', 'documentation::personnel.medical.classification')
+            ->name('personnel.medical.classification');
     });
 
     // Manpower

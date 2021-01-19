@@ -6,8 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Specialty extends Model
 {
-    protected $fillable = ['career_path_id', 'name', 'slug'];
 
+    protected $table = 'specialties';
+
+    protected $fillable = ['career_path_id', 'name', 'slug'];
 
     public function careerPath()
     {

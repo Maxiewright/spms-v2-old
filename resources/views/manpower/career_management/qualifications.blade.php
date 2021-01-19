@@ -5,7 +5,7 @@
             <i data-feather="activity" class="w-4 h-4 mr-2"></i>Course Types
         </a>
         <a data-toggle="tab" data-target="#course-institutions" href="javascript:;"
-           class="flex items-center ">
+           class="flex items-center mt-5">
             <i data-feather="activity" class="w-4 h-4 mr-2"></i>Course Institutions
         </a>
         <a data-toggle="tab" data-target="#courses" href="javascript:;"

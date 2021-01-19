@@ -1,36 +1,16 @@
 <x-crud.livewire-crud-modal title="{{$title}}">
-    <div class="col" wire:ignore>
-        <select wire:model="branchId" class="form-control custom-select mb-2 mr-sm-2 @error('branchId') is-invalid @enderror">
-            <option {{$branchId == null ? 'selected': ''}} value="">Select Branch</option>
+    <div class="" >
+        <x-form.input.livewire-select model="branch_id" label="Branch" placeholder="Select Branch" >
             @foreach ($branches as $branch)
-                <option {{$branchId == $branch->id ? 'selected': ''}} value="{{$branch->id}}">{{$branch->name}}</option>
+                <option value="{{$branch->id}}">{{$branch->name}}</option>
             @endforeach
-        </select>
-        @error('branchId')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+        </x-form.input.livewire-select>
     </div>
-    <div class="col">
-        <input wire:model="name"
-               type="text"
-               class="form-control mb-2 mr-sm-2 @error('name') is-invalid @enderror"
-               title="{{$title}}"
-               placeholder="Name"
-        >
-        @error('name')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+    <div class="mt-3">
+        <x-form.input.livewire-text placeholder="Enter Stream Name" label="Name" model="name" />
     </div>
-    <div class="col">
-        <input wire:model="slug"
-               type="text"
-               class="form-control mb-2 mr-sm-2 @error('slug') is-invalid @enderror"
-               title="{{$title}}"
-               placeholder="Short Name"
-        >
-        @error('slug')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+    <div class="mt-3">
+        <x-form.input.livewire-text placeholder="Enter Stream Abbreviation" label="Short Name" model="slug" />
     </div>
 </x-crud.livewire-crud-modal>
 

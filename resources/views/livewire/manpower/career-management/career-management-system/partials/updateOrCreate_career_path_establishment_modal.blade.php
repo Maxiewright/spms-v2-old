@@ -1,42 +1,20 @@
 <x-crud.livewire-crud-modal title="{{$title}}">
-    <div class="col" wire:ignore>
-        <select wire:model="careerPathId"
-                class="form-control custom-select mb-2 mr-sm-2 @error('careerPathId') is-invalid @enderror"
-            {{$updateMode != null ? 'readonly disabled':''}}
-        >
-            <option {{$careerPathId == null ? 'selected': ''}} value="">Select Career Path</option>
+    <div class="">
+        <x-form.input.livewire-select model="career_path_id" label="Career Path" placeholder="Select Career Path">
             @foreach ($careerPaths as $careerPath)
-                <option {{$careerPathId == $careerPath->id ? 'selected': ''}} value="{{$careerPath->id}}">{{$careerPath->name}}</option>
+                <option value="{{$careerPath->id}}">{{$careerPath->name}}</option>
             @endforeach
-        </select>
-        @error('careerPathId')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+        </x-form.input.livewire-select>
     </div>
-    <div class="col" wire:ignore>
-        <select wire:model="rankId"
-                class="form-control custom-select mb-2 mr-sm-2 @error('rankId') is-invalid @enderror"
-            {{$updateMode != null ? 'readonly disabled':''}}
-        >
-            <option {{$rankId == null ? 'selected': ''}} value="">Select Rank</option>
+    <div class="mt-3">
+        <x-form.input.livewire-select model="rank_id" label="Rank" placeholder="Select Rank">
             @foreach ($ranks as $rank)
-                <option {{$rankId == $rank->id ? 'selected': ''}} value="{{$rank->id}}">{{$rank->regiment}}</option>
+                <option value="{{$rank->id}}">{{$rank->regiment}}</option>
             @endforeach
-        </select>
-        @error('rankId')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+        </x-form.input.livewire-select>
     </div>
-    <div class="col-2">
-        <input wire:model="establishment"
-               type="text"
-               class="form-control mb-2 mr-sm-2 @error('establishment') is-invalid @enderror"
-               title="{{$title}}"
-               placeholder="Establishment"
-        >
-        @error('establishment')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+    <div class="mt-3">
+        <x-form.input.livewire-text model="establishment" label="Establishment" placeholder="Enter Establishment" />
     </div>
 </x-crud.livewire-crud-modal>
 

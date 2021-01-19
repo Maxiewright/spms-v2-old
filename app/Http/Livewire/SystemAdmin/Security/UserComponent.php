@@ -76,7 +76,7 @@ class UserComponent extends Component
     public function update()
     {
         $this->validate([
-            'selectedId' => 'required|numeric',
+            'selected_id' => 'required|numeric',
             'userRoles' => 'required',
         ],[
             'userRoles.required' => 'A user must have at least one role'

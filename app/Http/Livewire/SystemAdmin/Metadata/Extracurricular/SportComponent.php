@@ -56,7 +56,7 @@ class SportComponent extends Component
      */
     private function resetInput()
     {
-        $this->reset(['name', 'typeId', 'selectedId']);
+        $this->reset(['name', 'typeId', 'selected_id']);
     }
 
     /**

@@ -44,16 +44,9 @@ class DivisionOrRegionComponent extends Component
         ]);
     }
 
-
-    public function create()
-    {
-        $this->openModal();
-        $this->resetInput();
-    }
-
     private function resetInput()
     {
-        $this->reset(['name', 'code', 'typeId', 'selectedId']);
+        $this->reset(['name', 'code', 'typeId', 'selected_id']);
     }
 
     public function store()
@@ -100,6 +93,7 @@ class DivisionOrRegionComponent extends Component
         ]);
 
     }
+
     public function edit($id)
     {
         $record = DivisionOrRegion::findOrFail($id);

@@ -18,7 +18,7 @@
                             <div class="font-medium text-base">{{$title}}</div>
                         </div>
                     </div>
-                    <div class="nav-tabs p-5 border-t border-gray-200 dark:border-dark-5">
+                    <div class="nav-tabs px-5 pb-5 border-t border-gray-200 dark:border-dark-5">
                         {{$tabs}}
                     </div>
                 </div>

@@ -33,7 +33,7 @@
             <x-form.input.livewire-select model="data.serviceperson_job.{{$loop->index}}.speciality_id"
                                           placeholder="{{isset($data['serviceperson_job']['career_path_id']) ? 'Select Speciality' : 'Select Career Path First'}}"
                                           label="Speciality" class="sm:col-span-4">
-                @foreach($specialities as $speciality)
+                @foreach($specialties as $speciality)
                     <option
                         value="{{$speciality->id}}">{{$speciality->name}}
                     </option>

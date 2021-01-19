@@ -91,7 +91,7 @@ class DocsSimpleMenu
                 ],
                 'title' => 'Post'
             ],
-            'devider',
+            'divider',
             'crud' => [
                 'icon' => 'edit',
                 'title' => 'Crud',
@@ -354,7 +354,7 @@ class DocsSimpleMenu
                     ]
                 ]
             ],
-            'devider',
+            'divider',
             'components' => [
                 'icon' => 'inbox',
                 'title' => 'Components',

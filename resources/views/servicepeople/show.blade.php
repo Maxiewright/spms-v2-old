@@ -32,7 +32,7 @@
             @include('servicepeople.show.service_data')
         </div>
         <div class="tab-content__pane" id="medical-history">
-            @include('servicepeople.show.medical_history')
+            @include('servicepeople.show.medical')
         </div>
         <div class="tab-content__pane" id="qualification">
             @include('servicepeople.show.qualifications')

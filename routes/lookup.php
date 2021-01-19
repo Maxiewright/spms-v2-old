@@ -27,6 +27,6 @@ use Illuminate\Support\Facades\Route;
     // Serviceperson Job (Branch System)
     Route::get('getStreams/{id}','LookupController@getStreams')->name('getStreams');
     Route::get('getCareerPaths/{id}','LookupController@getCareerPaths')->name('getCareerPaths');
-    Route::get('getSpecialities/{id}','LookupController@getSpecialities')->name('getSpecialities');
+    Route::get('getspecialties/{id}','LookupController@getspecialties')->name('getspecialties');
     Route::get('getJobs/{id}', 'LookupController@getJobs')->name('getJobs');
 

@@ -54,7 +54,7 @@ class CompanyComponent extends Component
 
     private function resetInput()
     {
-        $this->reset(['name', 'slug', 'parentUnitId', 'selectedId']);
+        $this->reset(['name', 'slug', 'parentUnitId', 'selected_id']);
     }
 
     public function store()

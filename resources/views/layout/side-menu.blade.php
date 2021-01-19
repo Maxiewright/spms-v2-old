@@ -15,11 +15,11 @@
                     SpMS
                 </span>
             </a>
-            <div class="side-nav__devider my-6"></div>
+            <div class="side-nav__divider my-6"></div>
             <ul>
                 @foreach ($side_menu as $menuKey => $menu)
-                    @if ($menu == 'devider')
-                        <li class="side-nav__devider my-6"></li>
+                    @if ($menu == 'divider')
+                        <li class="side-nav__divider my-6"></li>
                     @else
                         <li>
                             <a href="{{ isset($menu['route_name']) ? route($menu['route_name'], $menu['params']) : 'javascript:;' }}" class="{{ $first_level_active_index == $menuKey ? 'side-menu side-menu--active' : 'side-menu' }}">

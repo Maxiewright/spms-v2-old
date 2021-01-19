@@ -1,42 +1,21 @@
 <x-crud.livewire-crud-modal title="{{$title}}">
-    <div class="col" wire:ignore>
-        <select wire:model="streamId"
-                class="form-control custom-select mb-2 mr-sm-2 @error('streamId') is-invalid @enderror"
-            {{$updateMode != null ? 'readonly disabled':''}}
-        >
-            <option {{$streamId == null ? 'selected': ''}} value="">Select Stream</option>
+    <div class="">
+        <x-form.input.livewire-select model="stream_id" label="Stream" placeholder="Select Stream">
             @foreach ($streams as $stream)
-                <option {{$streamId == $stream->id ? 'selected': ''}} value="{{$stream->id}}">{{$stream->name}}</option>
+                <option value="{{$stream->id}}">{{$stream->name}}</option>
             @endforeach
-        </select>
-        @error('streamId')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+        </x-form.input.livewire-select>
     </div>
-    <div class="col" wire:ignore>
-        <select wire:model="rankId"
-                class="form-control custom-select mb-2 mr-sm-2 @error('rankId') is-invalid @enderror"
-            {{$updateMode != null ? 'readonly disabled':''}}
-        >
-            <option {{$rankId == null ? 'selected': ''}} value="">Select Rank</option>
+    <div class="mt-3">
+        <x-form.input.livewire-select model="rank_id" label="Rank" placeholder="Select Rank">
             @foreach ($ranks as $rank)
-                <option {{$rankId == $rank->id ? 'selected': ''}} value="{{$rank->id}}">{{$rank->regiment}}</option>
+                <option value="{{$rank->id}}">{{$rank->regiment}}</option>
             @endforeach
-        </select>
-        @error('rankId')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+        </x-form.input.livewire-select>
     </div>
-    <div class="col-2">
-        <input wire:model="establishment"
-               type="text"
-               class="form-control mb-2 mr-sm-2 @error('establishment') is-invalid @enderror"
-               title="{{$title}}"
-               placeholder="Establishment"
-        >
-        @error('establishment')
-        <div class="invalid-feedback">{{$message}}</div>
-        @enderror
+
+    <div class="mt-2">
+        <x-form.input.livewire-text model="establishment" label="Establishment" placeholder="Enter Establishment" />
     </div>
 </x-crud.livewire-crud-modal>
 

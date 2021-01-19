@@ -88,7 +88,7 @@ class DocsMenuComposer
             }
         } else if ($layout == 'simple-menu') {
             foreach (DocsSimpleMenu::menu() as $menuKey => $menu) {
-                if ($menu !== 'devider' && isset($menu['route_name']) && $menu['route_name'] == $pageName && empty($firstPageName)) {
+                if ($menu !== 'divider' && isset($menu['route_name']) && $menu['route_name'] == $pageName && empty($firstPageName)) {
                     $firstLevelActiveIndex = $menuKey;
                 }
 
@@ -113,7 +113,7 @@ class DocsMenuComposer
             }
         } else {
             foreach (DocsSideMenu::menu() as $menuKey => $menu) {
-                if ($menu !== 'devider' && isset($menu['route_name']) && $menu['route_name'] == $pageName && empty($firstPageName)) {
+                if ($menu !== 'divider' && isset($menu['route_name']) && $menu['route_name'] == $pageName && empty($firstPageName)) {
                     $firstLevelActiveIndex = $menuKey;
                 }
 

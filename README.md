@@ -7,7 +7,7 @@ Trinidad and Tobago Defence Force.
 ## Contributors
 
 - **Maxie Wright**
-- **Alana Edwards**
+- **Allana Edwards**
 - **Mayon Thompson**
 - **Aaron Charles**
 - **Samuel Rogers**

@@ -1,11 +1,13 @@
 <x-crud.livewire-crud-modal title="{{$title}}">
     {{-- Serviceperson --}}
+
     <label class="block">
         <span class="text-gray-700">Serviceperson</span>
-        <input wire:model="serviceperson_number"
-               type="text" class="input w-full border mt-1"
-               placeholder="Serviceperson Number"
-        >
+        <livewire:serviceperson.search-dropdown />
+{{--        <input wire:model="serviceperson_number"--}}
+{{--               type="text" class="input w-full border mt-1"--}}
+{{--               placeholder="Serviceperson Number"--}}
+{{--        >--}}
         @error('medical_officer') <span class="text-red-500">{{ $message }}</span>@enderror
     </label>
 

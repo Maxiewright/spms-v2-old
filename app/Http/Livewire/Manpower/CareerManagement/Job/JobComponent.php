@@ -132,7 +132,7 @@ class JobComponent extends Component
     {
 
         $this->validate([
-            'selectedId' => 'required|numeric',
+            'selected_id' => 'required|numeric',
             'jobTitleId' => 'required',
 //            'classId' => 'required',
             'rankId' => 'required',

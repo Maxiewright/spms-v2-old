@@ -39,3 +39,6 @@ import "./side-menu-tooltip";
 
 // Dark mode switcher
 import "./dark-mode-switcher";
+
+//alpine
+import "alpinejs";

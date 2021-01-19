@@ -127,7 +127,7 @@ class LookupController extends Controller
       return json_encode($careerPaths);
     }
 
-    public function getSpecialities($id)
+    public function getspecialties($id)
     {
         $specialties = Specialty::where('career_path_id', $id)->pluck('name', 'id');
         return json_encode($specialties);

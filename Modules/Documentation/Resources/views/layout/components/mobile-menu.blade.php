@@ -10,8 +10,8 @@
     </div>
     <ul class="border-t border-theme-24 py-5 hidden">
         @foreach ($docs_side_menu as $menuKey => $menu)
-            @if ($menu == 'devider')
-                <li class="menu__devider my-6"></li>
+            @if ($menu == 'divider')
+                <li class="menu__divider my-6"></li>
             @else
                 <li>
                 <a href="{{ isset($menu['route_name']) ? route($menu['route_name'], $menu['params']) : 'javascript:;' }}" class="{{ $first_level_active_index == $menuKey ? 'menu menu--active' : 'menu' }}">

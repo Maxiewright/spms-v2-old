@@ -2,24 +2,33 @@
 
 namespace App\Http\Livewire\Manpower\CareerManagement\CareerManagementSystem;
 
+use App\Http\Livewire\Traits\WithAlerts;
 use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\CareerPath;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\Stream;
+use Illuminate\Validation\Rule;
 use Livewire\Component;
 use Livewire\WithPagination;
 
 class CareerPathComponent extends Component
 {
-    use WithPagination, WithModal;
-
+    use WithPagination, WithModal, WithAlerts;
 
     public $search = '';
     public $filterStream;
-    public $name, $slug, $streamId, $streams, $selectedId;
+    public $name, $slug, $stream_id, $streams, $selectedId;
     public $updateMode = false;
     public $title = 'Career Path';
 
-    protected $listeners = ['career_path' => 'destroy'];
+    protected $listeners = ['destroyCareerPath'];
+
+    // Rules are in the store method
+
+    protected $messages = [
+        'name.required' => 'Please fill out this field',
+        'slug.required' => 'Short name is required',
+        'stream_id.required' => 'Branch is required',
+    ];
 
     public function mount()
     {
@@ -51,68 +60,52 @@ class CareerPathComponent extends Component
     {
         $this->name = null;
         $this->slug = null;
-        $this->streamId = null;
+        $this->stream_id = null;
     }
 
     public function store()
     {
-        $this->validate([
-            'name' => 'required|unique:streams,name',
-            'slug' => 'required|unique:streams,slug',
-            'streamId' => 'required|unique:streams,slug'
-        ],[
-            'name.required' => 'Please fill out this field',
-            'slug.required' => 'Short name is required',
-            'streamId.required' => 'Branch is required',
+        $validatedData = $this->validate([
+            'name' => [
+                'required',
+                Rule::unique('streams', 'name')->ignore($this->selectedId)
+            ],
+            'slug' => [
+                'required',
+                Rule::unique('streams', 'slug')->ignore($this->selectedId)
+            ],
+            'stream_id' => 'required|unique:streams,slug'
         ]);
 
-        CareerPath::create([
-            'name' => $this->name,
-            'slug' => $this->slug,
-            'stream_id' => $this->streamId
-        ]);
+        CareerPath::updateOrCreate(['id' => $this->selectedId], $validatedData);
+
+        $this->showSuccessAlert();
+
         $this->resetInput();
+
+        $this->closeModal();
     }
+
     public function edit($id)
     {
         $record = CareerPath::findOrFail($id);
+
         $this->selectedId = $id;
         $this->name = $record->name;
         $this->slug = $record->slug;
-        $this->streamId = $record->stream_id;
-        $this->updateMode = true;
+        $this->stream_id = $record->stream_id;
+
+        $this->openModal();
     }
 
-    public function update()
-    {
-        $this->validate([
-            'selectedId' => 'required|numeric',
-            'name' => 'required',
-            'slug' => 'required',
-            'streamId' => 'required',
-        ],[
-            'name.required' => 'Please fill out this field',
-            'slug.required' => 'Short name is required',
-            'streamId.required' => 'Branch is required'
-        ]);
-
-        if ($this->selectedId) {
-            $record = CareerPath::find($this->selectedId);
-            $record->update([
-                'name' => $this->name,
-                'slug' => $this->slug,
-                'stream_id' => $this->streamId,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
-    }
-
-    public function destroy($id)
+    public function destroyCareerPath($id)
     {
         if ($id) {
             $record = CareerPath::where('id', $id);
+
             $record->delete();
+
+            $this->showDeleteAlert();
         }
     }
 }

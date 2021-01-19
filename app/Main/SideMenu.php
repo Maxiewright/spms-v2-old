@@ -13,6 +13,7 @@ class SideMenu
     public static function menu()
     {
         return [
+            // Servicepeople
             'dashboard' => [
                 'icon' => 'home',
                 'route_name' => 'dashboard',
@@ -60,9 +61,8 @@ class SideMenu
                 ],
 
             ],
-
-            'devider',
-
+            // Manpower and Admin
+            'divider',
             'manpower' => [
                 'icon' => 'users',
                 'title' => 'Manpower',
@@ -122,7 +122,6 @@ class SideMenu
                     ],
                 ],
             ],
-
             'administration' => [
                 'icon' => 'clipboard',
                 'title' => 'Admin',
@@ -138,29 +137,14 @@ class SideMenu
                 ],
 
             ],
-
-            'medical' => [
-                'icon' => 'plus',
-                'title' => 'Medical',
-                'sub_menu' => [
-                    'side-menu' => [
-                        'icon' => '',
-                        'route_name' => 'dashboard',
-                        'params' => [
-                            'layout' => 'side-menu'
-                        ],
-                        'title' => 'Basic Medical Info'
-                    ],
-                ]
-            ],
-
-            'devider',
-            'system-admin' => [
-                'icon' => 'settings',
+            // System Administration and Documentation
+            'divider',
+            'system' => [
+                'icon' => 'users',
                 'title' => 'System',
                 'sub_menu' => [
                     'metadata' => [
-                        'icon' => '',
+                        'icon' => 'user-minus',
                         'title' => 'Metadata',
                         'sub_menu' => [
                             'basic-info' => [
@@ -219,31 +203,40 @@ class SideMenu
                                 ],
                                 'title' => 'Extracurricular'
                             ],
-                        ]
+                        ],
+
                     ],
                     'security' => [
-                        'icon' => '',
+                        'icon' => 'user-check',
                         'title' => 'Security',
                         'sub_menu' => [
-                            'access-controll' => [
-                                'icon' => 'lock',
-                                'route_name' => 'dashboard',
+                            'access_control' => [
+                                'icon' => '',
+                                'route_name' => 'metadata.basic_info',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
                                 'title' => 'Access Control'
                             ],
-                            'audit-data' => [
+                            'audit' => [
                                 'icon' => '',
-                                'route_name' => 'dashboard',
+                                'route_name' => 'metadata.contact',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
-                                'title' => 'Audit Data'
+                                'title' => 'Audit'
                             ],
                         ]
                     ],
                 ],
+            ],
+            'documentation' => [
+                'icon' => 'book-open',
+                'route_name' => 'documentation',
+                'params' => [
+                    'layout' => 'side-menu'
+                ],
+                'title' => 'Documentation'
             ],
         ];
     }

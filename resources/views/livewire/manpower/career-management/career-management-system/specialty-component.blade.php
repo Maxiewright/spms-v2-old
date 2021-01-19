@@ -4,7 +4,7 @@
             @include('livewire.manpower.career-management.career-management-system.partials.updateOrCreate_specialty_modal')
         @endif
         <x-slot name="filters">
-            <div wire:ignore>
+            <div>
                 <select wire:model="filter" class="input box pr-10 w-full">
                     <option value="">Filter by Career Path</option>
                     @foreach ($careerPaths as $careerPath)
@@ -27,7 +27,7 @@
             @foreach($data as $row)
                 <tr>
                     <x-tables.td>{{$loop->iteration}}</x-tables.td>
-                    <x-tables.td>{{$rowname ?? ''}}</x-tables.td>
+                    <x-tables.td>{{$row->name ?? ''}}</x-tables.td>
                     <x-tables.td>{{$row->slug ?? ''}}</x-tables.td>
                     <x-tables.td>{{$row->careerPath->name ?? ''}}</x-tables.td>
                     <x-tables.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-tables.td>

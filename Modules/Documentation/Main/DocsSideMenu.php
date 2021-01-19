@@ -13,7 +13,8 @@ class DocsSideMenu
     public static function menu()
     {
         return [
-            'dashboard' => [
+            // Back to Main Site
+            'spms' => [
                 'icon' => 'home',
                 'route_name' => 'dashboard',
                 'params' => [
@@ -21,8 +22,20 @@ class DocsSideMenu
                 ],
                 'title' => 'Back to SpMS'
             ],
-            'devider',
+
+            // Documentation Dashboard
+            'divider',
+
+            'dashboard' => [
+                'icon' => 'home',
+                'route_name' => 'documentation',
+                'params' => [
+                    'layout' => 'side-menu'
+                ],
+                'title' => 'Docs Dashboard'
+            ],
             // Getting Started
+            'divider',
             'getting_started' => [
                 'icon' => 'flag',
                 'title' => 'Getting Started',
@@ -72,7 +85,7 @@ class DocsSideMenu
                         'sub_menu' => [
                             'medical_classification' => [
                                 'icon' => 'plus',
-                                'route_name' => 'personnel.medical.medical_classification',
+                                'route_name' => 'personnel.medical.classification',
                                 'params' => [
                                     'layout' => 'side-menu'
                                 ],
@@ -129,7 +142,8 @@ class DocsSideMenu
                     ],
                 ],
             ],
-            'devider',
+            // System Administration
+            'divider',
             'system_admin' => [
                 'icon' => 'settings',
                 'title' => 'System',
