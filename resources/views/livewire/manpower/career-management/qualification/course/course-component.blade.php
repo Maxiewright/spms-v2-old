@@ -1,59 +1,57 @@
 <div>
     <x-tables.data-table title="{{$title}}">
-        <div>
-            @if (session()->has('message'))
-                <div class="alert alert-success">
-                    {{ session('message') }}
-                </div>
-            @endif
-        </div>
-        {{--            filter by type--}}
-        <x-slot name="filter">
-            <div wire:ignore>
-                <select wire:model="filter" class="form-control custom-select">
-                    <option {{$institutionId == null ? 'selected': ''}} value="">Filter By Institution</option>
-                    @foreach($institutions as $institution)
-                        <option {{$institutionId == $institution->id ? 'selected': ''}} value="{{$institution->id}}">{{$institution->name}}</option>
-                    @endforeach
-                </select>
-            </div>
+        @if($isOpen)
+            @include('livewire.manpower.career-management.qualification.course.partials.updateOrCreate_course_modal')
+        @endif
+        <x-slot name="filters">
+            <x-form.input.filter-select model="filter" placeholder="Filter By Institution">
+                @foreach($institutions as $institution)
+                    <option
+                        {{$institutionId == $institution->id ? 'selected': ''}} value="{{$institution->id}}">{{$institution->name}}</option>
+                @endforeach
+            </x-form.input.filter-select>
         </x-slot>
-        <x-slot name="tableHeaders">
-            <th>Name</th>
-            <th>Short Name</th>
-            <th>Institutions</th>
-            <th>Description</th>
-            <th>Inserted</th>
-            <th>Updated</th>
+        <x-slot name="thead">
+            <x-tables.th>#</x-tables.th>
+            <x-tables.th>Name</x-tables.th>
+            <x-tables.th>Short Name</x-tables.th>
+            <x-tables.th>Institutions</x-tables.th>
+            <x-tables.th>Description</x-tables.th>
+            <x-tables.th>Inserted</x-tables.th>
+            <x-tables.th>Updated</x-tables.th>
+            <x-tables.th class="text-center">Action</x-tables.th>
         </x-slot>
-        <x-slot name="tableData">
+        <x-slot name="tbody">
             @foreach($data as $row)
                 <tr>
-                    <td class="w40">{{$loop->iteration}}</td>
-                    <td>{{$row->name ?? ''}}</td>
-                    <td>{{$row->slug ?? ''}}</td>
-                    <td>
-                        <div id="accordion">
-                            <button class="btn btn-link mb-3" data-toggle="collapse" data-target="#institutions{{$loop->index}}" aria-expanded="true" aria-controls="institutions{{$loop->index}}">
-                              {{$row->slug}} Institutions
-                            </button>
-                            <div class="collapse" id="institutions{{$loop->index}}">
-                            @foreach($row->institution as $institution)
-                                <ul class="list-group list-group-flush" style="list-style: none">
-                                    <li class="mb-1 d-flex list-group-item justify-content-between list-group-item-action">{{$loop->iteration.'. '. $institution->name}}
-                                        <a href="#" wire:click="$emit('course_institution_detach',{{$row->id}},{{$institution->id}})">
-                                            <i class="fa fa-sm fa-unlink text-danger"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            @endforeach
+                    <x-tables.td>{{$loop->iteration}}</x-tables.td>
+                    <x-tables.td>{{$row->name ?? ''}}</x-tables.td>
+                    <x-tables.td>{{$row->slug ?? ''}}</x-tables.td>
+                    <x-tables.td class="accordion">
+                        <div class="accordion__pane dark:border-dark-5">
+                            <a href="javascript:;" class="accordion__pane__toggle font-medium block">
+                                {{$row->slug}} Institutions
+                            </a>
+                            <div class="accordion__pane__content mt-3 text-gray-700 dark:text-gray-600 leading-relaxed">
+                                @foreach($row->institution as $institution)
+                                    <div class="flex items-center my-1">
+                                        <div class="flex-1 pl-2">
+                                            {{$loop->iteration.'. '. $institution->name}}
+                                        </div>
+                                        <div wire:click="$emit('course_institution_detach',{{$row->id}},{{$institution->id}})"
+                                             class=" text-red-700 ml-1 cursor-pointer">
+                                            <i data-feather="x" class="mx-auto"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="border-b-0 my-1"/>
+                                @endforeach
                             </div>
                         </div>
-                    </td>
-                    <td>{{$row->description ?? ''}}</td>
-                    <td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</td>
-                    <td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</td>
-
+                    </x-tables.td>
+                    <x-tables.td>{{$row->description ?? ''}}</x-tables.td>
+                    <x-tables.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-tables.td>
+                    <x-tables.td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</x-tables.td>
+                    <x-crud.livewire-action-btns id="{{$row->id}}" />
                 </tr>
             @endforeach
         </x-slot>
@@ -63,12 +61,3 @@
     </x-tables.data-table>
 </div>
 
-@push('livewire-scripts')
-    <script>
-        window.addEventListener('swal',function(e){
-            Swal.fire(e.detail);
-        });
-        livewireDeleteConfirmation('course_destroy','course')
-        livewireDetachConfirmation('course_institution_detach')
-    </script>
-@endpush

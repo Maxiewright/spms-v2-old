@@ -16,7 +16,9 @@
     <!-- BEGIN: CSS Assets-->
     <link rel="stylesheet" href="{{ asset('dist/css/ttr_theme.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/css/app.css') }}" />
+    <link rel="stylesheet" href="{{asset('css/modal.css')}}">
     <!-- END: CSS Assets-->
+
 </head>
 <!-- END: Head -->
 

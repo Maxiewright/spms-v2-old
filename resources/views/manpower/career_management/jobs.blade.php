@@ -1,17 +1,8 @@
-<x-layouts.side-menu-tabs sub-head="Career Management | Jobs" title="Jobs">
+<x-layouts.side-menu-tabs sub-head="Career Management" title="Jobs">
     <x-slot name="tabs">
-        <a data-toggle="tab" data-target="#jobs" href="javascript:;"
-           class="flex items-center active">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Jobs
-        </a>
-        <a data-toggle="tab" data-target="#job-titles" href="javascript:;"
-           class="flex items-center ">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Job Titles
-        </a>
-        <a data-toggle="tab" data-target="#job-classes" href="javascript:;"
-           class="flex items-center ">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Job Classes
-        </a>
+        <x-link.tab target="jobs" icon="chevrons-right" title="Jobs" class=" test active" />
+        <x-link.tab target="job-titles" icon="chevrons-right" title="Job Titles" class="test"/>
+        <x-link.tab target="job-classes" icon="chevrons-right" title="Job Classes" class="test"/>
     </x-slot>
     <x-slot name="tabContent">
         <div class="tab-content__pane active" id="jobs">

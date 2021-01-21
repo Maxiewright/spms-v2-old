@@ -1,38 +1,14 @@
-<x-layouts.side-menu-tabs sub-head="Career Management | Qualification" title="Qualification">
+<x-layouts.side-menu-tabs sub-head="Career Management" title="Qualification">
     <x-slot name="tabs">
-        <a data-toggle="tab" data-target="#course-types" href="javascript:;"
-           class="flex items-center active">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Course Types
-        </a>
-        <a data-toggle="tab" data-target="#course-institutions" href="javascript:;"
-           class="flex items-center mt-5">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Course Institutions
-        </a>
-        <a data-toggle="tab" data-target="#courses" href="javascript:;"
-           class="flex items-center ">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Courses
-        </a>
-        <a data-toggle="tab" data-target="#course-qualifications" href="javascript:;"
-           class="flex items-center ">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Course Qualifications
-        </a>
-        <a data-toggle="tab" data-target="#education-levels" href="javascript:;"
-           class="flex items-center ">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Education Levels
-        </a>
-        <a data-toggle="tab" data-target="#subjects" href="javascript:;"
-           class="flex items-center ">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Subjects
-        </a>
-        <a data-toggle="tab" data-target="#school-types" href="javascript:;"
-           class="flex items-center ">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>School types | Districts
-        </a>
-        <a data-toggle="tab" data-target="#schools" href="javascript:;"
-           class="flex items-center ">
-            <i data-feather="activity" class="w-4 h-4 mr-2"></i>Schools
-        </a>
-
+        <x-link.tab target="course-types" icon="chevrons-right" title="Course Types" class="active" />
+        <x-link.tab target="course-institutions" icon="chevrons-right" title="Course Institutions"  />
+        <x-link.tab target="courses" icon="chevrons-right" title="Courses"  />
+        <x-link.tab target="course-qualifications" icon="chevrons-right" title="Course Qualifications"  />
+        <x-link.tab target="education-levels" icon="chevrons-right" title="Education Levels"  />
+        <x-link.tab target="subjects" icon="chevrons-right" title="Subjects"  />
+        <x-link.tab target="school-types" icon="chevrons-right" title="School Types"  />
+        <x-link.tab target="school-districts" icon="chevrons-right" title="School Districts"  />
+        <x-link.tab target="schools" icon="chevrons-right" title="Schools"  />
     </x-slot>
     <x-slot name="tabContent">
         <div class="tab-content__pane active" id="course-types">
@@ -55,6 +31,8 @@
         </div>
         <div class="tab-content__pane " id="school-types">
             <livewire:manpower.career-management.qualification.education.school-type-component/>
+        </div>
+        <div class="tab-content__pane " id="school-districts">
             <livewire:manpower.career-management.qualification.education.school-district-component/>
         </div>
         <div class="tab-content__pane " id="schools">

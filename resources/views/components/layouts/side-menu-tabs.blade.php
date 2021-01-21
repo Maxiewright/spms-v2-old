@@ -6,27 +6,22 @@
     @endsection
 
     @section('subcontent')
-        <div class="intro-y flex items-center mt-8">
-            <h2 class="text-lg font-medium mr-auto">{{$subHead}}</h2>
-        </div>
-        <div class="grid grid-cols-12 gap-6">
-            <!-- BEGIN: Menu -->
-            <div class="col-span-12 lg:col-span-4 xxl:col-span-3 flex lg:block flex-col-reverse">
-                <div class="intro-y box mt-5">
-                    <div class="relative flex items-center p-5">
-                        <div class="ml-4 mr-auto">
-                            <div class="font-medium text-base">{{$title}}</div>
+        <div class="grid grid-cols-12 gap-6 mt-8">
+            <div class="col-span-12 lg:col-span-3 xxl:col-span-2">
+                <h2 class="intro-y text-lg font-medium mr-auto mt-2">{{$subHead}}</h2>
+                <!-- BEGIN: Menu -->
+                <div class="intro-y box bg-theme-1 p-5 mt-6" id="side-nav-tabs">
+                    <button type="button" class="button button--lg flex items-center justify-center text-gray-700 dark:text-gray-300 w-full bg-white dark:bg-theme-1 mt-2">
+                        {{Str::plural(ucfirst($title))}}
+                    </button>
+                        <div class=" nav-tabs border-t border-theme-3 dark:border-dark-5 mt-6 pt-6 text-white">
+                            {{$tabs}}
                         </div>
-                    </div>
-                    <div class="nav-tabs px-5 pb-5 border-t border-gray-200 dark:border-dark-5">
-                        {{$tabs}}
-                    </div>
                 </div>
+                <!-- END: Menu -->
             </div>
-            <!-- END: Menu -->
-
             <!-- BEGIN: Tabs -->
-            <div class="tab-content col-span-12 lg:col-span-8 xxl:col-span-9">
+            <div class="tab-content col-span-12 lg:col-span-9 xxl:col-span-10">
                 {{$tabContent}}
             </div>
             <!-- END: Tabs -->

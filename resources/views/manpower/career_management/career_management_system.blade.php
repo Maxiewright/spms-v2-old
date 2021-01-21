@@ -1,12 +1,12 @@
-<x-layouts.side-menu-tabs sub-head="Career Management | Career Management System" title="Career Management System">
+<x-layouts.side-menu-tabs sub-head="Career Management" title="PDCM">
     <x-slot name="tabs">
-        <x-link.tab target="#branch" icon="chevrons-right" title="Branch" class="active" />
-        <x-link.tab target="#branch-establishment" icon="chevrons-right" title="Branch Establishment"/>
-        <x-link.tab target="#streams" icon="chevrons-right" title="Streams"/>
-        <x-link.tab target="#stream-establishment" icon="chevrons-right" title="Stream Establishment"/>
-        <x-link.tab target="#career-paths" icon="chevrons-right" title="Career Paths"/>
-        <x-link.tab target="#career-path-establishment" icon="chevrons-right" title="Career Path Establishment"/>
-        <x-link.tab target="#specialties" icon="chevrons-right" title="specialties" class="mb-5" />
+        <x-link.tab target="branch" icon="chevrons-right" title="Branch" class="active" />
+        <x-link.tab target="branch-establishment" icon="chevrons-right" title="Branch Establishment"/>
+        <x-link.tab target="streams" icon="chevrons-right" title="Streams"/>
+        <x-link.tab target="stream-establishment" icon="chevrons-right" title="Stream Establishment"/>
+        <x-link.tab target="career-paths" icon="chevrons-right" title="Career Paths"/>
+        <x-link.tab target="career-path-establishment" icon="chevrons-right" title="Career Path Establishment"/>
+        <x-link.tab target="specialties" icon="chevrons-right" title="specialties" class="mb-5" />
     </x-slot>
 
     <x-slot name="tabContent">

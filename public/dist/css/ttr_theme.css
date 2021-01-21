@@ -37,4 +37,13 @@ ul > li > .side-menu:hover:not(.side-menu--active):not(.side-menu--open) .side-m
     border-radius: 0.375rem;
 }
 
+/*Side Menu Layout Tab*/
+
+#side-nav-tabs .nav-tabs .active {
+    background-color: rgba(57, 94, 193, var(--tw-bg-opacity));
+    --tw-border-opacity: 1;
+    /*border-color: red;*/
+    border-bottom-width: 2px;
+    font-weight: 500;
+}
 

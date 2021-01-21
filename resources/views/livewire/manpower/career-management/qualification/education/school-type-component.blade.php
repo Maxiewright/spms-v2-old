@@ -1,8 +1,4 @@
 <div>
-    @include('livewire.metadata.record-card.partials.single-field-metadata')
+    @include('livewire.system-admin.metadata.partials.metadata_with_single_field')
 </div>
-@push('livewire-scripts')
-    <script>
-        livewireDeleteConfirmation('school_type_destroy','school_type')
-    </script>
-@endpush
+
