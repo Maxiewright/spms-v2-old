@@ -11,7 +11,7 @@
 
         <!-- BEGIN: Parade State-->
         <div class="col-span-12 mt-8">
-            <x-layouts.page-header title="Parade State" />
+            <x-layout.page-header title="Parade State" />
             <!-- BEGIN: Parade State Summary -->
             <div class="grid grid-cols-12 gap-6 mt-5">
                 <x-cards.info-card title="Available" data-feather="shield" counter="{{$status->available}}"/>
@@ -26,24 +26,24 @@
 
 
         <!-- BEGIN: Parade State -->
-        <x-tables.responsive-table title="Parade State" options="">
+        <x-table.responsive-table title="Parade State" options="">
                 <x-slot name="thead">
-                    <x-tables.responsive.th details="Details"/>
-                    <x-tables.responsive.th details="Col"/>
-                    <x-tables.responsive.th details="Lt Col"/>
-                    <x-tables.responsive.th details="Maj"/>
-                    <x-tables.responsive.th details="Cpt"/>
-                    <x-tables.responsive.th details="Lt"/>
-                    <x-tables.responsive.th details="2 Lt"/>
-                    <x-tables.responsive.th details="Ocdt"/>
-                    <x-tables.responsive.th details="WO1"/>
-                    <x-tables.responsive.th details="WO2"/>
-                    <x-tables.responsive.th details="SSgt"/>
-                    <x-tables.responsive.th details="Sgt"/>
-                    <x-tables.responsive.th details="Cpl"/>
-                    <x-tables.responsive.th details="LCpl"/>
-                    <x-tables.responsive.th details="Pte"/>
-                    <x-tables.responsive.th details="Rec"/>
+                    <x-table.responsive.th details="Details"/>
+                    <x-table.responsive.th details="Col"/>
+                    <x-table.responsive.th details="Lt Col"/>
+                    <x-table.responsive.th details="Maj"/>
+                    <x-table.responsive.th details="Cpt"/>
+                    <x-table.responsive.th details="Lt"/>
+                    <x-table.responsive.th details="2 Lt"/>
+                    <x-table.responsive.th details="Ocdt"/>
+                    <x-table.responsive.th details="WO1"/>
+                    <x-table.responsive.th details="WO2"/>
+                    <x-table.responsive.th details="SSgt"/>
+                    <x-table.responsive.th details="Sgt"/>
+                    <x-table.responsive.th details="Cpl"/>
+                    <x-table.responsive.th details="LCpl"/>
+                    <x-table.responsive.th details="Pte"/>
+                    <x-table.responsive.th details="Rec"/>
                 </x-slot>
                 <x-slot name="tbody">
                     <tr>
@@ -209,7 +209,7 @@
                         <td><span><strong>{{$recruit->available}}</strong></span></td>
                     </tr>
                 </x-slot>
-            </x-tables.responsive-table>
+            </x-table.responsive-table>
         <!-- END: Parade State -->
 
     </div>

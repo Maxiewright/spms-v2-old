@@ -7,6 +7,7 @@ use App\Models\Serviceperson\JobAppointment;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\CareerPath;
 use App\Models\System\Serviceperson\ServiceData\Rank;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Job extends Model
 {
@@ -15,7 +16,7 @@ class Job extends Model
         'job_title_id','job_class_id', 'rank_id' ,'career_path_id', 'establishment', 'description'
     ];
 
-    protected static $logAttributes = ['job_title_id','job_class_id', 'rank_id' ,'career_path_id', 'establishment', 'description'];
+    protected static $logAttributes = ['job_title_id','job_class_id', 'rank_id' ,'career_path_id', 'establishment', 'job_description_path'];
 
     public function JobAppointments()
     {
@@ -51,5 +52,9 @@ class Job extends Model
         return $this->belongsTo(CareerPath::class);
     }
 
+    public function getJobDescriptionAttribute(): string
+    {
+        return Storage::url('job_descriptions/'.$this->job_description_path);
+    }
 
 }

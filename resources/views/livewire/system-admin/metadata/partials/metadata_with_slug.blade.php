@@ -1,43 +1,39 @@
 <div>
-<x-tables.data-table title="{{$title}}">
+<x-data.metadata title="{{$title}}">
     @if($isOpen)
         @include('livewire.system-admin.metadata.partials.updateOrCreate_modal_with_slug')
     @endif
     <x-slot name="filters"></x-slot>
     <x-slot name="thead">
-        <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">#</th>
-        <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Name</th>
-        <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Short Name</th>
-        <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Inserted</th>
-        <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap">Updated</th>
-        <th class="border-b-2 dark:border-dark-5 whitespace-no-wrap text-center">Actions</th>
+        <x-table.th>#</x-table.th>
+        <x-table.th>Name</x-table.th>
+        <x-table.th>Short Name</x-table.th>
+
+{{--        @if ($timestamps == true)--}}
+            <x-table.th>Inserted</x-table.th>
+            <x-table.th>Updated</x-table.th>
+{{--        @endif--}}
+
+        <x-table.th class="text-center">Actions</x-table.th>
     </x-slot>
     <x-slot name="tbody">
         @foreach($data as $row)
             <tr>
-                <td class="border-b whitespace-no-wrap w40">
-                    {{$loop->iteration}}
-                </td>
-                <td class="border-b whitespace-no-wrap">
-                    {{$row->name}}
-                </td>
-                <td class="border-b whitespace-no-wrap">
-                    {{$row->slug}}
-                </td>
-                <td class="border-b whitespace-no-wrap">
-                    {{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}
-                </td>
-                <td class="border-b whitespace-no-wrap">
-                    {{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}
-                </td>
-                <x-crud.livewire-action-btns id="{{$row->id}}" />
+                <x-table.td>{{$loop->iteration}}</x-table.td>
+                <x-table.td> {{$row->name}}</x-table.td>
+                <x-table.td>{{$row->slug}}</x-table.td>
+{{--                @if ($timestamps == true)--}}
+                    <x-table.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-table.td>
+                    <x-table.td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</x-table.td>
+{{--                @endif--}}
+                <x-table.action-buttons id="{{$row->id}}" />
             </tr>
         @endforeach
     </x-slot>
     <x-slot name="pagination">
         {{$data->links()}}
     </x-slot>
-</x-tables.data-table>
+</x-data.metadata>
 </div>
 
 

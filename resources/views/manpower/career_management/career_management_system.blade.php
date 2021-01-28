@@ -1,4 +1,4 @@
-<x-layouts.side-menu-tabs sub-head="Career Management" title="PDCM">
+<x-layout.side-menu-tabs sub-head="Career Management" title="PDCM">
     <x-slot name="tabs">
         <x-link.tab target="branch" icon="chevrons-right" title="Branch" class="active" />
         <x-link.tab target="branch-establishment" icon="chevrons-right" title="Branch Establishment"/>
@@ -32,4 +32,4 @@
             <livewire:manpower.career-management.career-management-system.specialty-component />
         </div>
     </x-slot>
-</x-layouts.side-menu-tabs>
+</x-layout.side-menu-tabs>

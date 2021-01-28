@@ -1,4 +1,4 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog title="{{$title}}">
     {{-- Division or Region--}}
     <div>
         <x-form.input.livewire-select model="divisionOrRegionId" label="Division or Region" placeholder="Select Division or Region">
@@ -12,4 +12,4 @@
     <div class="mt-3">
         <x-form.input.livewire-text model="name" label="City or Town Name" placeholder="Enter City or Town Name" />
     </div>
-</x-crud.livewire-crud-modal>
+</x-modal.livewire.dialog>

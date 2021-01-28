@@ -1,4 +1,4 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog title="{{$title}}">
     <label class="block mt-4">
         <span class="text-gray-700">Name</span>
         <input wire:model="name"
@@ -15,4 +15,4 @@
         >
         @error('slug') <span class="text-red-500">{{ $message }}</span>@enderror
     </label>
-</x-crud.livewire-crud-modal>
+</x-modal.livewire.dialog>

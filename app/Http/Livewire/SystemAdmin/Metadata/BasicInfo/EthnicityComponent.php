@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\SystemAdmin\Metadata\BasicInfo;
 
 use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithDataTable;
 use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Universal\Lookup\Ethnicity;
 use Illuminate\Contracts\Foundation\Application;
@@ -14,7 +15,7 @@ use Livewire\WithPagination;
 class EthnicityComponent extends Component
 {
 
-    use WithPagination, WithModal, WithAlerts;
+    use WithPagination, WithModal, WithAlerts, WithDataTable;
 
     public $search = '';
     public $name, $selectedId;

@@ -1,7 +1,7 @@
 @extends('documentation::layout/base')
 
 @section('body')
-    <body class="app" x-data="{ 'showModal': false }" @keydown.escape="showModal = false" x-cloak>
+    <body class="app">
         @yield('content')
         @include('documentation::layout.components.dark-mode-switcher')
 

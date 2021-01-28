@@ -132,7 +132,7 @@ class CreateServicepersonJobsTable extends Migration
             $table->foreignId('career_path_id')->constrained();
             $table->foreignId('rank_id')->constrained();
             $table->integer('establishment');
-            $table->text('description')->nullable();
+            $table->string('job_description_path')->nullable();
             $table->unique(['job_title_id', 'job_class_id', 'career_path_id', 'rank_id'], 'job_with_class_unique_id');
             $table->unique(['job_title_id', 'career_path_id', 'rank_id'], 'job_without_class_unique_id');
             $table->timestamps();

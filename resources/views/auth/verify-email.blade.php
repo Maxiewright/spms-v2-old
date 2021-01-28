@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <x-layouts.auth-layout  title="Verify Email">
+    <x-layout.auth-layout  title="Verify Email">
         <x-slot name="events"></x-slot>
         <div class="mb-4 text-sm text-gray-600">
             {{ __('Before proceeding, please check your email for a verification link.') }}
@@ -37,5 +37,5 @@
                 </button>
             </form>
         </div>
-    </x-layouts.auth-layout>
+    </x-layout.auth-layout>
 @endsection

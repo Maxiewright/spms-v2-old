@@ -1,4 +1,4 @@
-<x-layouts.side-menu-tabs sub-head="Metadata" title="Contact">
+<x-layout.side-menu-tabs sub-head="Metadata" title="Contact">
     <x-slot name="tabs">
         <a data-toggle="tab" data-target="#enlistment" href="javascript:;"
            class="flex items-center active">
@@ -60,4 +60,4 @@
             <livewire:system-admin.metadata.service-data.rank-component />
         </div>
     </x-slot>
-</x-layouts.side-menu-tabs>
+</x-layout.side-menu-tabs>

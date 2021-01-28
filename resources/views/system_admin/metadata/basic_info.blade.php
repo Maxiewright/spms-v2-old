@@ -1,4 +1,4 @@
-<x-layouts.side-menu-tabs sub-head="Metadata | Basic Info" title="Basic Info">
+<x-layout.side-menu-tabs sub-head="Metadata | Basic Info" title="Basic Info">
     <x-slot name="tabs">
         <a data-toggle="tab" data-target="#ethnicity" href="javascript:;"
            class="flex items-center active">
@@ -31,5 +31,5 @@
             <livewire:system-admin.metadata.basic-info.marital-status-component/>
         </div>
     </x-slot>
-</x-layouts.side-menu-tabs>
+</x-layout.side-menu-tabs>
 

@@ -1,4 +1,4 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog title="{{$title}}">
     {{-- Serviceperson --}}
 
     <label class="block">
@@ -129,4 +129,4 @@
         @error('medical_officer_remarks') <span class="text-red-500">{{ $message }}</span>@enderror
     </label>
 
-</x-crud.livewire-crud-modal>
+</x-modal.livewire.dialog>

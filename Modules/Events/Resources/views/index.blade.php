@@ -7,7 +7,7 @@
 @section('subcontent')
     <div class="grid grid-cols-12 gap-6">
         <div class="col-span-12 mt-8">
-            <x-layouts.page-header title="Events" />
+            <x-layout.page-header title="Events" />
             <livewire:events />
         </div>
     </div>

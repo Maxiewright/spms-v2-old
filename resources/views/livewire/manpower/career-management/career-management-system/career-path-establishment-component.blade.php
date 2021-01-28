@@ -1,5 +1,5 @@
 <div>
-    <x-tables.data-table title="{{$title}}">
+    <x-data.metadata title="{{$title}}">
         @if($isOpen)
             @include('livewire.manpower.career-management.career-management-system.partials.updateOrCreate_career_path_establishment_modal')
         @endif
@@ -26,31 +26,31 @@
         </x-slot>
 {{--        table--}}
         <x-slot name="thead">
-            <x-tables.th>#</x-tables.th>
-            <x-tables.th>Career Path</x-tables.th>
-            <x-tables.th>Rank</x-tables.th>
-            <x-tables.th>Establishment</x-tables.th>
-            <x-tables.th>Inserted</x-tables.th>
-            <x-tables.th>Updated</x-tables.th>
-            <x-tables.th class="text-center">Actions</x-tables.th>
+            <x-table.th>#</x-table.th>
+            <x-table.th>Career Path</x-table.th>
+            <x-table.th>Rank</x-table.th>
+            <x-table.th>Establishment</x-table.th>
+            <x-table.th>Inserted</x-table.th>
+            <x-table.th>Updated</x-table.th>
+            <x-table.th class="text-center">Actions</x-table.th>
         </x-slot>
         <x-slot name="tbody">
             @foreach($data as $row)
                 <tr>
-                    <x-tables.td>{{$loop->iteration}}</x-tables.td>
-                    <x-tables.td>{{$row->careerPath->name ?? ''}}</x-tables.td>
-                    <x-tables.td>{{$row->rank->regiment_slug ?? ''}}</x-tables.td>
-                    <x-tables.td>{{$row->establishment ?? ''}}</x-tables.td>
-                    <x-tables.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-tables.td>
-                    <x-tables.td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</x-tables.td>
-                    <x-crud.livewire-action-btns id="{{$row->id}}"/>
+                    <x-table.td>{{$loop->iteration}}</x-table.td>
+                    <x-table.td>{{$row->careerPath->name ?? ''}}</x-table.td>
+                    <x-table.td>{{$row->rank->regiment_slug ?? ''}}</x-table.td>
+                    <x-table.td>{{$row->establishment ?? ''}}</x-table.td>
+                    <x-table.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-table.td>
+                    <x-table.td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</x-table.td>
+                    <x-table.action-buttons id="{{$row->id}}"/>
                 </tr>
             @endforeach
         </x-slot>
         <x-slot name="pagination">
             {{$data->links()}}
         </x-slot>
-    </x-tables.data-table>
+    </x-data.metadata>
 </div>
 
 

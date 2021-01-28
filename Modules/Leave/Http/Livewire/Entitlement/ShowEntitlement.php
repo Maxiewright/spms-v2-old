@@ -35,7 +35,7 @@ class ShowEntitlement extends Component
             'entitlements' => $this->serviceperson->leaveEntitlements()
                 ->orderBy('year', 'desc')
                 ->paginate(10)
-        ])->extends('layouts.master')
+        ])->extends('layout.master')
             ->section(['title' => 'Entitlement'])
             ->section('content');
 

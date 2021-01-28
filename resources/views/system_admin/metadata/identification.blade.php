@@ -1,4 +1,4 @@
-<x-layouts.side-menu-tabs sub-head="Metadata" title="Contact">
+<x-layout.side-menu-tabs sub-head="Metadata" title="Contact">
     <x-slot name="tabs">
         <a data-toggle="tab" data-target="#dp-types" href="javascript:;"
            class="flex items-center active mt-5">
@@ -31,4 +31,4 @@
             <livewire:system-admin.metadata.identification.gender-component />
         </div>
     </x-slot>
-</x-layouts.side-menu-tabs>
+</x-layout.side-menu-tabs>

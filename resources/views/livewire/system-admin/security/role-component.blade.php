@@ -23,7 +23,7 @@
 {{--        </x-metadata.create>--}}
     @endif
 
-    <x-tables.data-table title="{{$title}}">
+    <x-data.metadata title="{{$title}}">
         <x-slot name="tableHeaders">
             <th>Name</th>
             <th>Permissions</th>
@@ -50,7 +50,7 @@
         <x-slot name="pagination">
             {{$data->onEachSide(1)->links()}}
         </x-slot>
-    </x-tables.data-table>
+    </x-data.metadata>
 </div>
 
 

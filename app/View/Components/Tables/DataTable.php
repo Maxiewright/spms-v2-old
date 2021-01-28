@@ -7,15 +7,18 @@ use Illuminate\View\Component;
 class DataTable extends Component
 {
     public $title;
+    public $link;
 
     /**
      * Create a new component instance.
      *
      * @param $title
+     * @param $link
      */
-    public function __construct($title)
+    public function __construct($title, $link)
     {
         $this->title = $title;
+        $this->link = $link;
     }
 
     /**

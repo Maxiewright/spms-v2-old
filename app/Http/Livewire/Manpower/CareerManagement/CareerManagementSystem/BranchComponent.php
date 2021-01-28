@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Manpower\CareerManagement\CareerManagementSystem;
 
 use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithDataTable;
 use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\Branch;
 use Illuminate\Validation\Rule;
@@ -11,7 +12,7 @@ use Livewire\WithPagination;
 
 class BranchComponent extends Component
 {
-    use WithPagination, WithModal, WithAlerts;
+    use WithPagination, WithModal, WithAlerts, WithDataTable;
 
     public $search = '';
     public $name, $slug, $selectedId;

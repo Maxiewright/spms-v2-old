@@ -29,7 +29,7 @@ class ServicepersonDropdown extends Component
 
             'selectedServiceperson' => Serviceperson::find($this->selectedServicepersonNumber)
         ])
-            ->extends('layouts.master')
+            ->extends('layout.master')
             ->section('content');
     }
 }

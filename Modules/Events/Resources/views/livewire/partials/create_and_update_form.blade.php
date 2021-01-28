@@ -1,4 +1,4 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog title="{{$title}}">
     <div>
         @if ($image)
             Photo Preview:
@@ -101,4 +101,4 @@
         </select>
     </label>
     @error('unitId') <span class="text-red-500">{{ $message }}</span>@enderror
-</x-crud.livewire-crud-modal>
+</x-modal.livewire.dialog>

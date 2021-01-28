@@ -1,5 +1,5 @@
 <div>
-    <x-tables.data-table title="{{$title}}">
+    <x-data.metadata title="{{$title}}">
         @if($isOpen)
             @include('livewire.manpower.career-management.qualification.education.partials.updateOrCreate_school_modal')
         @endif
@@ -23,32 +23,32 @@
             </x-form.input.filter-select>
         </x-slot>
         <x-slot name="thead">
-            <x-tables.th>#</x-tables.th>
-            <x-tables.th>Name</x-tables.th>
-            <x-tables.th>Type</x-tables.th>
-            <x-tables.th>District</x-tables.th>
-            <x-tables.th>Description</x-tables.th>
-            <x-tables.th>Inserted</x-tables.th>
-            <x-tables.th>Updated</x-tables.th>
-            <x-tables.th class="text-center">Action</x-tables.th>
+            <x-table.th>#</x-table.th>
+            <x-table.th>Name</x-table.th>
+            <x-table.th>Type</x-table.th>
+            <x-table.th>District</x-table.th>
+            <x-table.th>Description</x-table.th>
+            <x-table.th>Inserted</x-table.th>
+            <x-table.th>Updated</x-table.th>
+            <x-table.th class="text-center">Action</x-table.th>
         </x-slot>
         <x-slot name="tbody">
             @foreach($data as $row)
                 <tr>
-                    <x-tables.td>{{$loop->iteration}}</x-tables.td>
-                    <x-tables.td>{{$row->name ?? ''}}</x-tables.td>
-                    <x-tables.td>{{$row->type->name ?? ''}}</x-tables.td>
-                    <x-tables.td>{{$row->district->name ?? ''}}</x-tables.td>
-                    <x-tables.td>{{$row->description ?? ''}}</x-tables.td>
-                    <x-tables.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-tables.td>
-                    <x-tables.td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</x-tables.td>
-                    <x-crud.livewire-action-btns id="{{$row->id}}"/>
+                    <x-table.td>{{$loop->iteration}}</x-table.td>
+                    <x-table.td>{{$row->name ?? ''}}</x-table.td>
+                    <x-table.td>{{$row->type->name ?? ''}}</x-table.td>
+                    <x-table.td>{{$row->district->name ?? ''}}</x-table.td>
+                    <x-table.td>{{$row->description ?? ''}}</x-table.td>
+                    <x-table.td>{{$row->created_at != null ? $row->created_at->format('d M Y') : ''}}</x-table.td>
+                    <x-table.td>{{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}</x-table.td>
+                    <x-table.action-buttons id="{{$row->id}}"/>
                 </tr>
             @endforeach
         </x-slot>
         <x-slot name="pagination">
             {{$data->onEachSide(1)->links()}}
         </x-slot>
-    </x-tables.data-table>
+    </x-data.metadata>
 </div>
 

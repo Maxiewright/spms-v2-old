@@ -26,9 +26,9 @@ class CreateServicepersonComponent extends Component
     }
 
     public function mergeData($data)
-    {
-        $this->data = array_merge($this->data, $data);
-    }
+{
+    $this->data = array_merge($this->data, $data);
+}
 
     /**
      * Removes Dynamic Input data when field is removed

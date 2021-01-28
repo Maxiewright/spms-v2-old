@@ -1,4 +1,4 @@
-<x-layouts.side-menu-tabs sub-head="Career Management" title="Qualification">
+<x-layout.side-menu-tabs sub-head="Career Management" title="Qualification">
     <x-slot name="tabs">
         <x-link.tab target="course-types" icon="chevrons-right" title="Course Types" class="active" />
         <x-link.tab target="course-institutions" icon="chevrons-right" title="Course Institutions"  />
@@ -7,7 +7,7 @@
         <x-link.tab target="education-levels" icon="chevrons-right" title="Education Levels"  />
         <x-link.tab target="subjects" icon="chevrons-right" title="Subjects"  />
         <x-link.tab target="school-types" icon="chevrons-right" title="School Types"  />
-        <x-link.tab target="school-districts" icon="chevrons-right" title="School Districts"  />
+        <x-link.tab target="school-district" icon="chevrons-right" title="School Districts"  />
         <x-link.tab target="schools" icon="chevrons-right" title="Schools"  />
     </x-slot>
     <x-slot name="tabContent">
@@ -39,4 +39,4 @@
             <livewire:manpower.career-management.qualification.education.school-component/>
         </div>
     </x-slot>
-</x-layouts.side-menu-tabs>
+</x-layout.side-menu-tabs>

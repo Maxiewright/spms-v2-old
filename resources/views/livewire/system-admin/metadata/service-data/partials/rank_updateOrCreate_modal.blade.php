@@ -1,4 +1,4 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog title="{{$title}}">
 
     {{--BEGIN: Grade--}}
     <label class="block mt-4">
@@ -76,7 +76,7 @@
         @error('airGuardSlug') <span class="text-red-500">{{ $message }}</span>@enderror
     </label>
     {{--END: Air Guard Rank Abbreviation--}}
-</x-crud.livewire-crud-modal>
+</x-modal.livewire.dialog>
 
 
 {{--Air Guard Rank --}}

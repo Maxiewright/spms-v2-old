@@ -1,7 +1,7 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog wire:model.defer="isOpen" title="{{$title}}">
     {{--Job title--}}
     <div class="">
-        <x-form.input.livewire-select model="jobTitleId" label="Job Title" placeholder="Select Job Title">
+        <x-form.input.livewire-select model="job_title_id" label="Job Title" placeholder="Select Job Title">
             @foreach ($jobTitles as $jobTitle)
                 <option value="{{$jobTitle->id}}">{{$jobTitle->name}}</option>
             @endforeach
@@ -9,7 +9,7 @@
     </div>
     {{--Job class--}}
     <div class="mt-3">
-        <x-form.input.livewire-select model="classId" label="Job Class" placeholder="Select Job Class">
+        <x-form.input.livewire-select model="class_id" label="Job Class" placeholder="Select Job Class">
             @foreach ($classes as $class)
                 <option value="{{$class->id}}">{{$class->name}}</option>
             @endforeach
@@ -17,7 +17,7 @@
     </div>
     {{--Substantive Rank--}}
     <div class="mt-3">
-        <x-form.input.livewire-select model="rankId" label="Substantive Rank" placeholder="Select Substantive Rank">
+        <x-form.input.livewire-select model="rank_id" label="Substantive Rank" placeholder="Select Substantive Rank">
             @foreach ($ranks as $rank)
                 <option value="{{$rank->id}}">{{$rank->regiment_slug}}</option>
             @endforeach
@@ -25,7 +25,7 @@
     </div>
     {{--Career Path--}}
     <div class="mt-3">
-        <x-form.input.livewire-select model="careerPathId" label="Career Path" placeholder="Select">
+        <x-form.input.livewire-select model="career_path_id" label="Career Path" placeholder="Select">
             @foreach ($careerPaths as $careerPath)
                 <option value="{{$careerPath->id}}">{{$careerPath->name}}</option>
             @endforeach
@@ -59,5 +59,4 @@
         <div class="text-red-500">{{$message}}</div>
         @enderror
     </div>
-</x-crud.livewire-crud-modal>
-
+</x-modal.livewire.dialog>

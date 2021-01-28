@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\SystemAdmin\Metadata\Extracurricular;
 
 use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithDataTable;
 use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\Extracurricular\Sport;
 use App\Models\System\Serviceperson\Extracurricular\SportType;
@@ -12,7 +13,7 @@ use Livewire\WithPagination;
 
 class SportComponent extends Component
 {
-    use WithPagination, WithModal, WithAlerts;
+    use WithPagination, WithModal, WithAlerts, WithDataTable;
 
 
     public $search, $filter;

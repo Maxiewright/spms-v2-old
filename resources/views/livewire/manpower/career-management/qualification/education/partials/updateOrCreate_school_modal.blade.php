@@ -1,4 +1,4 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog title="{{$title}}">
     <div>
         <x-form.input.livewire-select model="schoolTypeId" label="School Type" placeholder="Select Type">
             @foreach($schoolTypes as $schoolType)
@@ -19,5 +19,5 @@
     <div class="mt-3">
         <x-form.input.livewire-textarea model="description" label="Description" rows="1" cols="" />
     </div>
-</x-crud.livewire-crud-modal>
+</x-modal.livewire.dialog>
 

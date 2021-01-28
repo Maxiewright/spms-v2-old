@@ -9,7 +9,7 @@
 {{--        <ul class="list-unstyled feeds_widget">--}}
 {{--            @foreach(auth()->user()->unreadNotifications as $notification)--}}
 {{--                @if($notification->type ==  'App\Notifications\Approval\ModificationNotification')--}}
-{{--                    @include('layouts.partials.notification.modification')--}}
+{{--                    @include('layout.partials.notification.modification')--}}
 {{--                @endif--}}
 {{--            @endforeach--}}
 {{--        </ul>--}}

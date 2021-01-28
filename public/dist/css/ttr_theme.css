@@ -39,6 +39,11 @@ ul > li > .side-menu:hover:not(.side-menu--active):not(.side-menu--open) .side-m
 
 /*Side Menu Layout Tab*/
 
+.ttr-bg-theme{
+    --tw-bg-opacity: 1;
+    background-color: rgba(48, 80, 48, var(--tw-bg-opacity));
+}
+
 #side-nav-tabs .nav-tabs .active {
     background-color: rgba(57, 94, 193, var(--tw-bg-opacity));
     --tw-border-opacity: 1;

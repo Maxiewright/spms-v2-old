@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\SystemAdmin\Metadata\Identification;
 
 use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithDataTable;
 use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Universal\Lookup\Gender;
 use Illuminate\Contracts\Foundation\Application;
@@ -13,7 +14,7 @@ use Livewire\WithPagination;
 
 class GenderComponent extends Component
 {
-    use WithPagination, WithModal, WithAlerts;
+    use WithPagination, WithModal, WithAlerts, WithDataTable;
 
     public $search = '';
     public $name, $selectedId;

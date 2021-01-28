@@ -17,40 +17,40 @@
                 <table class="table">
                     <thead>
                     <tr>
-                        <x-tables.th rowspan="2" class="border text-center"></x-tables.th>
-                        <x-tables.th colspan="2" class="border text-center">WO1</x-tables.th>
-                        <x-tables.th colspan="2" class="border text-center">WO2</x-tables.th>
-                        <x-tables.th colspan="2" class="border text-center">SSgt</x-tables.th>
-                        <x-tables.th colspan="2" class="border text-center">Sgt</x-tables.th>
-                        <x-tables.th colspan="2" class="border text-center">Cpl</x-tables.th>
-                        <x-tables.th colspan="2" class="border text-center">LCpl</x-tables.th>
-                        <x-tables.th colspan="2" class="border text-center">Pte</x-tables.th>
-                        <x-tables.th colspan="2" class="border text-center">Total</x-tables.th>
+                        <x-table.th rowspan="2" class="border text-center"></x-table.th>
+                        <x-table.th colspan="2" class="border text-center">WO1</x-table.th>
+                        <x-table.th colspan="2" class="border text-center">WO2</x-table.th>
+                        <x-table.th colspan="2" class="border text-center">SSgt</x-table.th>
+                        <x-table.th colspan="2" class="border text-center">Sgt</x-table.th>
+                        <x-table.th colspan="2" class="border text-center">Cpl</x-table.th>
+                        <x-table.th colspan="2" class="border text-center">LCpl</x-table.th>
+                        <x-table.th colspan="2" class="border text-center">Pte</x-table.th>
+                        <x-table.th colspan="2" class="border text-center">Total</x-table.th>
                     </tr>
                     <tr>
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcnt.</x-tables.th>
+                        <x-table.th class="border text-bold text-green-500">Est.</x-table.th>
+                        <x-table.th class="border text-bold text-red-500">Vcnt.</x-table.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcnt.</x-tables.th>
+                        <x-table.th class="border text-bold text-green-500">Est.</x-table.th>
+                        <x-table.th class="border text-bold text-red-500">Vcnt.</x-table.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcnt.</x-tables.th>
+                        <x-table.th class="border text-bold text-green-500">Est.</x-table.th>
+                        <x-table.th class="border text-bold text-red-500">Vcnt.</x-table.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcnt.</x-tables.th>
+                        <x-table.th class="border text-bold text-green-500">Est.</x-table.th>
+                        <x-table.th class="border text-bold text-red-500">Vcnt.</x-table.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcnt.</x-tables.th>
+                        <x-table.th class="border text-bold text-green-500">Est.</x-table.th>
+                        <x-table.th class="border text-bold text-red-500">Vcnt.</x-table.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcnt.</x-tables.th>
+                        <x-table.th class="border text-bold text-green-500">Est.</x-table.th>
+                        <x-table.th class="border text-bold text-red-500">Vcnt.</x-table.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcnt.</x-tables.th>
+                        <x-table.th class="border text-bold text-green-500">Est.</x-table.th>
+                        <x-table.th class="border text-bold text-red-500">Vcnt.</x-table.th>
 
-                        <x-tables.th class="border text-bold text-green-500">Est.</x-tables.th>
-                        <x-tables.th class="border text-bold text-red-500">Vcnt.</x-tables.th>
+                        <x-table.th class="border text-bold text-green-500">Est.</x-table.th>
+                        <x-table.th class="border text-bold text-red-500">Vcnt.</x-table.th>
                     </tr>
                     </thead>
                     <tbody>

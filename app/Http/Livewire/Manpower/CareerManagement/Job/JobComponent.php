@@ -4,6 +4,8 @@ namespace App\Http\Livewire\Manpower\CareerManagement\Job;
 
 
 use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithBulkActions;
+use App\Http\Livewire\Traits\WithDataTable;
 use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\CareerManagement\CareerManagementSystem\CareerPath;
 use App\Models\System\Serviceperson\CareerManagement\Job\Job;
@@ -16,35 +18,41 @@ use Livewire\WithPagination;
 
 class JobComponent extends Component
 {
-    use WithPagination, WithFileUploads, WithModal, WithAlerts;
+    use WithPagination, WithFileUploads, WithModal, WithAlerts, WithDataTable, WithBulkActions;
 
-
-    public $search = '';
-    public $filterClass, $filterCareerPath, $filterTitle, $filterRank;
-    public $jobTitleId, $classId, $rankId, $careerPathId,$establishment, $description, $selectedId;
+    public $job_title_id, $class_id, $rank_id, $career_path_id,$establishment, $job_description_path;
+    public $selectedId;
     public $jobTitles, $classes, $ranks, $careerPaths;
-    public $updateMode = false;
     public $jobDescription;
     public $jobDescriptionText;
 
+    public array $filters = [
+        'search' => '',
+        'class' => '',
+        'careerPath' => '',
+        'title' => '',
+        'rank' => '',
+    ];
+
     public $title = 'Job';
 
-    protected $listeners = ['job' => 'destroy'];
+    protected $listeners = ['destroyJob'];
 
     protected $rules = [
-        'jobTitleId' => 'required',
-//            'classId' => 'required',
-        'rankId' => 'required',
-        'careerPathId' => 'required',
+        'job_title_id' => 'required',
+//            'class_id' => 'required',
+        'rank_id' => 'required',
+        'career_path_id' => 'required',
         'establishment' => 'required|numeric',
         'jobDescription' => 'nullable|file|mimes:pdf,doc,docx',
+        'job_description_path' => 'sometimes'
     ];
 
     protected $messages = [
-        'jobTitleId.required' => 'A title is required',
-//            'classId.required' => 'class is required',
-        'rankId.required' => 'A rank is required',
-        'careerPathId.required' => 'Career Path is required',
+        'job_title_id.required' => 'A title is required',
+//            'class_id.required' => 'class is required',
+        'rank_id.required' => 'A rank is required',
+        'career_path_id.required' => 'Career Path is required',
         'establishment.required' => 'Establishment is required',
         'jobDescription.mimes' => 'The file must be a PDF or MS Word document'
     ];
@@ -55,51 +63,41 @@ class JobComponent extends Component
         $this->classes = JobClass::all('id', 'name');
         $this->careerPaths = CareerPath::all('id', 'name');
         $this->ranks = Rank::all('id', 'regiment_slug');
-        $this->jobDescriptionText = 'Choose Job Description';
+        $this->jobDescriptionText = 'Upload Job Description';
+    }
+
+    public function getRowsQueryProperty()
+    {
+        $query = Job::query()
+            ->when($this->filters['title'], fn($query, $title) => $query->where('job_title_id', '=', $title))
+            ->when($this->filters['rank'], fn($query, $rank) => $query->where('rank_id', '=', $rank))
+            ->when($this->filters['class'], fn($query, $class) => $query->where('job_class_id', '=', $class))
+            ->when($this->filters['careerPath'], fn($query, $careerPath) => $query->where('career_path_id', '=', $careerPath))
+            ->whereHas('title', fn($query) => $query->where('name', 'like', '%'.$this->filters['search'].'%' ));
+
+            return $this->applySorting($query);
+    }
+
+    public function getRowsProperty()
+    {
+        return $this->rowsQuery->paginate(10);
     }
 
     public function render()
     {
-        $searchTerm = '%'  .$this->search . '%';
         return view('livewire.manpower.career-management.job.job-component',[
-            'data' =>  Job::query()
-                ->orderBy('created_at', 'desc')
-                ->whereHas('title', function ($q) use($searchTerm){
-                    $q->where('name', 'like', $searchTerm);
-                })->with('title')
-                ->orWhereHas('class', function ($q) use($searchTerm){
-                    $q->where('name', 'like', $searchTerm);
-                })->with('class')
-                ->orWhereHas('careerPath', function ($q) use($searchTerm){
-                    $q->where('name', 'like', $searchTerm);
-                })->with('careerPath')
-                ->orWhereHas('rank', function ($q) use($searchTerm){
-                    $q->where('regiment', 'like', $searchTerm);
-                    $q->orwhere('regiment_slug', 'like', $searchTerm);
-                })->with('rank')
-                ->when($this->filterTitle, function ($query){
-                    $query->where('job_title_id', '=', $this->filterTitle);
-                })
-                ->when($this->filterClass, function ($query){
-                    $query->where('job_class_id', '=', $this->filterClass);
-                })
-                ->when($this->filterRank, function ($query){
-                    $query->where('rank_id', '=', $this->filterRank);
-                })
-                ->when($this->filterCareerPath, function ($query){
-                    $query->where('career_path_id', '=', $this->filterCareerPath);
-                })->paginate(10)
+            'data' =>  $this->rows,
         ]);
     }
 
     private function resetInput()
     {
-        $this->jobTitleId = null;
-        $this->classId = null;
-        $this->rankId = null;
-        $this->careerPathId = null;
+        $this->job_title_id = null;
+        $this->class_id = null;
+        $this->rank_id = null;
+        $this->career_path_id = null;
         $this->establishment  = null;
-        $this->description = null;
+        $this->job_description_path = null;
         $this->jobDescriptionText = 'Upload Job Description';
     }
 
@@ -118,14 +116,18 @@ class JobComponent extends Component
     public function store()
     {
 
+        $fileName = $this->uploadJobDescription();
+
         $validatedData = $this->validate();
 
-        $this->uploadJobDescription();
 
-        Job::updateOrCreate(['id' => $this->selectedId], $validatedData);
+        Job::updateOrCreate(['id' => $this->selectedId],$validatedData, ['job_description_path' => $fileName]);
 
+        $this->showSuccessAlert();
 
         $this->resetInput();
+
+        $this->closeModal();
     }
 
     public function edit($id)
@@ -133,72 +135,44 @@ class JobComponent extends Component
         $record = Job::findOrFail($id);
 
         $this->selectedId = $id;
-        $this->jobTitleId = $record->job_title_id ;
-        $this->classId = $record->job_class_id ;
-        $this->rankId = $record->rank_id ;
-        $this->careerPathId = $record->career_path_id ;
-        $this->establishment  = $record->establishment ;
-        $this->description = $record->description ;
 
-        if (!$this->jobDescription){
+        $this->job_title_id = $record->job_title_id ;
+        $this->class_id = $record->job_class_id ;
+        $this->rank_id = $record->rank_id ;
+        $this->career_path_id = $record->career_path_id ;
+        $this->establishment  = $record->establishment ;
+        $this->job_description_path = $record->job_description_path;
+
+        if ($this->job_description_path != null){
             $this->jobDescriptionText = $record->job_description_path ;
         }else{
             $this->jobDescriptionText = $this->uploadJobDescription() ;
         }
 
-        $this->updateMode = true;
+        $this->openModal();
     }
 
-    public function update()
-    {
-
-        $this->validate([
-            'selected_id' => 'required|numeric',
-            'jobTitleId' => 'required',
-//            'classId' => 'required',
-            'rankId' => 'required',
-            'careerPathId' => 'required',
-            'establishment' => 'required',
-            'description' => 'sometimes',
-        ],[
-            'jobTitleId.required' => 'A title is required',
-//            'classId.required' => 'class is required',
-            'rankId.required' => 'A rank is required',
-            'careerPathId.required' => 'Career Path is required',
-            'establishment.required' => 'Establishment is required',
-        ]);
-
-        if ($this->selectedId) {
-            $record = Job::find($this->selectedId);
-            $record->update([
-                'job_title_id' => $this->jobTitleId,
-                'job_class_id' => $this->classId,
-                'rank_id' => $this->rankId,
-                'career_path_id' => $this->careerPathId,
-                'establishment' => $this->establishment ,
-                'description' => $this->description,
-            ]);
-            $this->resetInput();
-            $this->updateMode = false;
-        }
-    }
-
-    public function destroy($id)
+    public function destroyJob($id)
     {
         if ($id) {
+
             $record = Job::where('id', $id);
+
             $record->delete();
+
+            $this->showDeleteAlert();
         }
     }
+
 
     public function uploadJobDescription()
     {
         if ($this->jobDescription){
 
-            $rank = preg_replace('/\s+/', '', Rank::where('id',$this->rankId)
+            $rank = preg_replace('/\s+/', '', Rank::where('id',$this->rank_id)
                 ->get()->pluck('grade')->first()) ;
 
-            $jobTitle = preg_replace('/\s+/', '', JobTitle::where('id',$this->jobTitleId)
+            $jobTitle = preg_replace('/\s+/', '', JobTitle::where('id',$this->job_title_id)
                 ->get()->pluck('name')->first()) ;
 
             $filename = $rank.'-'.$jobTitle.'.'.$this->jobDescription->extension();
@@ -209,4 +183,7 @@ class JobComponent extends Component
         }
 
     }
+
+
+
 }

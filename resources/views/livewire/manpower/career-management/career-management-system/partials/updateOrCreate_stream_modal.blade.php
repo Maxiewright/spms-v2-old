@@ -1,4 +1,4 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog title="{{$title}}">
     <div class="" >
         <x-form.input.livewire-select model="branch_id" label="Branch" placeholder="Select Branch" >
             @foreach ($branches as $branch)
@@ -12,5 +12,5 @@
     <div class="mt-3">
         <x-form.input.livewire-text placeholder="Enter Stream Abbreviation" label="Short Name" model="slug" />
     </div>
-</x-crud.livewire-crud-modal>
+</x-modal.livewire.dialog>
 

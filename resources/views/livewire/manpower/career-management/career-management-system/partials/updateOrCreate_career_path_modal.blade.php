@@ -1,4 +1,4 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog title="{{$title}}">
     <div class="">
         <x-form.input.livewire-select model="stream_id" label="Stream" placeholder="Select Stream">
             @foreach ($streams as $stream)
@@ -12,5 +12,5 @@
     <div class="mt-3" >
         <x-form.input.livewire-text model="slug" label="Short Name" placeholder="Enter Career Path Short Name" />
     </div>
-</x-crud.livewire-crud-modal>
+</x-modal.livewire.dialog>
 

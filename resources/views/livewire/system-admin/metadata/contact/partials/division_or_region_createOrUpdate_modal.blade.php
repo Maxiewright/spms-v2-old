@@ -1,4 +1,4 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog title="{{$title}}">
     {{--BEGIN: Type--}}
     <label class="block mt-4" wire:ignore>
         <span class="text-gray-700">Select Type</span>
@@ -35,4 +35,4 @@
         @error('code') <span class="text-red-500">{{ $message }}</span>@enderror
     </label>
     {{--END: Code--}}
-</x-crud.livewire-crud-modal>
+</x-modal.livewire.dialog>

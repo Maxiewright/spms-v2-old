@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\SystemAdmin\Metadata\ServiceData\ReEngagement;
 
 use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithDataTable;
 use App\Http\Livewire\Traits\WithModal;
 use App\Models\System\Serviceperson\ServiceData\ReEngagementPeriod;
 use Illuminate\Validation\Rule;
@@ -12,7 +13,7 @@ use Livewire\WithPagination;
 class ReEngagementPeriodComponent extends Component
 {
 
-    use WithPagination, WithModal, WithAlerts;
+    use WithPagination, WithModal, WithAlerts, WithDataTable;
 
 
     public $search = '';

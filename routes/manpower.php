@@ -1,12 +1,16 @@
 <?php
 
 use App\Http\Controllers\Manpower\ManpowerController;
+use App\Http\Livewire\Manpower\CareerManagement\Job\JobComponent;
 use Illuminate\Support\Facades\Route;
 
 /**
  * Career Management Module
  */
 Route::group(['prefix' => 'career_management'], function () {
+
+    Route::get('job', \App\Http\Livewire\Manpower\Job\JobViewComponent::class);
+
     Route::view('jobs', 'manpower.career_management.jobs')
         ->name('manpower.career_management.jobs');
 

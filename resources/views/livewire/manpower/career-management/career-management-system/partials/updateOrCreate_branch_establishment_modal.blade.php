@@ -1,4 +1,4 @@
-<x-crud.livewire-crud-modal title="{{$title}}">
+<x-modal.livewire.dialog title="{{$title}}">
     {{--Branch--}}
     <div>
         <x-form.input.livewire-select model="branch_id" placeholder="Select Branch" label="Select Branch">
@@ -21,7 +21,7 @@
     <div class="mt-3">
         <x-form.input.livewire-text model="establishment" placeholder="Establishment" label="Establishment" />
     </div>
-</x-crud.livewire-crud-modal>
+</x-modal.livewire.dialog>
 
 
 

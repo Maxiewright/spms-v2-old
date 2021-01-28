@@ -3,6 +3,7 @@
 namespace Modules\Medical\Http\Livewire;
 
 use App\Http\Livewire\Traits\WithAlerts;
+use App\Http\Livewire\Traits\WithDataTable;
 use App\Http\Livewire\Traits\WithModal;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -11,7 +12,7 @@ use Modules\Medical\Entities\MedicalClassificationGrade;
 
 class MedicalClassificationComponent extends Component
 {
-    use WithPagination, WithModal, WithAlerts;
+    use WithPagination, WithModal, WithAlerts, WithDataTable;
 
     public $search = '';
     public $filterRank;

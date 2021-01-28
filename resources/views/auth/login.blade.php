@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <x-layouts.auth-layout  title="Sign In">
+    <x-layout.auth-layout  title="Sign In">
         <x-slot name="events">
             <img src="{{asset('dist/images/ttr-logo.png')}}" alt="">
         </x-slot>
@@ -23,6 +23,6 @@
                 @endif
             </div>
         </x-form.auth-form>
-    </x-layouts.auth-layout>
+    </x-layout.auth-layout>
 @endsection
 

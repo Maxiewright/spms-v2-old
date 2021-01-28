@@ -7,7 +7,7 @@
 @section('subcontent')
     <div class="grid grid-cols-12 gap-6">
         <div class="col-span-12 mt-8">
-            <x-layouts.page-header title="Medical Classification" />
+            <x-layout.page-header title="Medical Classification" />
             <livewire:medical-classification />
         </div>
     </div>

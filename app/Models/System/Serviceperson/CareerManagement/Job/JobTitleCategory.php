@@ -14,6 +14,6 @@ class JobTitleCategory extends Model
 
     public function title()
     {
-        return $this->hasMany(JobTitle::class);
+        return $this->hasMany(JobTitle::class, 'job_title_category_id');
     }
 }

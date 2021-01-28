@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <x-layouts.auth-layout  title="">
+    <x-layout.auth-layout  title="">
         <x-slot name="events"></x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
@@ -15,6 +15,6 @@
         <x-form.auth-form action="password.email" submitBtn="Email Password Reset Link" btnSize="auto">
             <x-form.input.auth-input type="text" name="email" placeholder="Email" required autofocus/>
         </x-form.auth-form>
-    </x-layouts.auth-layout>
+    </x-layout.auth-layout>
 @endsection
 

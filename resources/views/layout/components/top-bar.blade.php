@@ -1,5 +1,5 @@
 <!-- BEGIN: Top Bar -->
-<div class="top-bar">
+<div class="top-bar z-40">
     <!-- BEGIN: Breadcrumb -->
     <div class="-intro-x breadcrumb mr-auto hidden sm:flex">
 {{--        <a href="" class="">Application</a>--}}

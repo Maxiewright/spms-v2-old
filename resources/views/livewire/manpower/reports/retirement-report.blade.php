@@ -1,4 +1,4 @@
-<x-tables.data-table title="CROD">
+<x-data.metadata title="CROD">
     <x-slot name="filter">
         <div class="col ml-2">
             <input class="form-control col" type="date" wire:model="startDate">
@@ -58,5 +58,5 @@
     <x-slot name="pagination">
         {{ $servicepeople->links() }}
     </x-slot>
-</x-tables.data-table>
+</x-data.metadata>
 

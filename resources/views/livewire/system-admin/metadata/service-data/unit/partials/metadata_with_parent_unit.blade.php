@@ -1,5 +1,5 @@
 <div>
-    <x-tables.data-table title="{{$title}}">
+    <x-data.metadata title="{{$title}}">
         @if ($isOpen)
             @include('livewire.system-admin.metadata.service-data.unit.partials.createOrUpdate_modal_with_parent_unit')
         @endif
@@ -43,14 +43,14 @@
                     <td class="border-b whitespace-no-wrap">
                         {{$row->updated_at != null ? $row->updated_at->format('d M Y') : ''}}
                     </td>
-                    <x-crud.livewire-action-btns id="{{$row->id}}" />
+                    <x-table.action-buttons id="{{$row->id}}" />
                 </tr>
             @endforeach
         </x-slot>
         <x-slot name="pagination">
             {{$data->links()}}
         </x-slot>
-    </x-tables.data-table>
+    </x-data.metadata>
 </div>
 
 

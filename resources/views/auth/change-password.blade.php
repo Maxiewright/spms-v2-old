@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <x-layouts.auth-layout  title="">
+    <x-layout.auth-layout  title="">
         <x-slot name="events"></x-slot>
         @if (session('error'))
             <div class="mb-4 font-medium text-sm text-red-600">
@@ -27,5 +27,5 @@
                 </div>
             </div>
         </x-form.auth-form>
-    </x-layouts.auth-layout>
+    </x-layout.auth-layout>
 @endsection
