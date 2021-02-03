@@ -22,8 +22,6 @@ class ServicepersonService
         $this->serviceperson = $serviceperson;
     }
 
-
-
     /**
      * Groups servicepeople by officers and other ranks and gender and counts them
      *

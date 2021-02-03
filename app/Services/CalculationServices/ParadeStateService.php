@@ -16,7 +16,7 @@ class ParadeStateService
     {
        return Serviceperson::selectRaw('count(*) as total')
             ->selectRaw("count(case when serviceperson_status_id = 1 then 1 end) as available")
-            ->selectRaw("count(case when serviceperson_status_id = 2 then 1 end) as privilegeLeave ")
+            ->selectRaw("count(case when serviceperson_status_id = 2 then 1 end) as privilegeLeave")
             ->selectRaw("count(case when serviceperson_status_id = 3 then 1 end) as sickLeave")
             ->selectRaw("count(case when serviceperson_status_id = 4 then 1 end) as internalTraining")
             ->selectRaw("count(case when serviceperson_status_id = 5 then 1 end) as inServiceTraining")
